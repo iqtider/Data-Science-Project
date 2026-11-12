@@ -1,0 +1,920 @@
+site_id,street,description,orientation,total_inventory,8_am_occ,9_am_occ,10_am_occ,11_am_occ,12_pm_occ,1_pm_occ,2_pm_occ,3_pm_occ,4_pm_occ,5_pm_occ,6_pm_occ,7_pm_occ,8_pm_occ,8_am_pct,9_am_pct,10_am_pct,11_am_pct,12_pm_pct,1_pm_pct,2_pm_pct,3_pm_pct,4_pm_pct,5_pm_pct,6_pm_pct,7_pm_pct,8_pm_pct,day_of_week,neighborhood,region,on_boundary,site_type,area_type
+1,Lot 1,,,275,196,254,259,263,259,265,266,273,274,182,272,154,270,0.713,0.924,0.942,0.956,0.942,0.964,0.967,0.993,0.996,0.662,0.989,0.56,0.982,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+2,Lot 2,,,141,89,139,139,140,138,138,139,140,139,91,139,92,140,0.631,0.986,0.986,0.993,0.979,0.979,0.986,0.993,0.986,0.645,0.986,0.652,0.993,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+3,Lot 3,,,146,57,61,67,70,69,69,69,68,69,68,63,62,61,0.39,0.418,0.459,0.479,0.473,0.473,0.473,0.466,0.473,0.466,0.432,0.425,0.418,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+3.1,Lot 3.1,,,54,14,16,18,29,32,33,31,33,29,28,26,21,22,0.259,0.296,0.333,0.537,0.593,0.611,0.574,0.611,0.537,0.519,0.481,0.389,0.407,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+4,Lot 4,,,62,12,15,17,25,22,30,33,39,40,45,46,35,19,0.194,0.242,0.274,0.403,0.355,0.484,0.532,0.629,0.645,0.726,0.742,0.565,0.306,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+5,Lot 5,,,536,197,264,392,519,533,534,534,534,535,529,526,458,368,0.368,0.493,0.731,0.968,0.994,0.996,0.996,0.996,0.998,0.987,0.981,0.854,0.687,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+6,Lot 6,,,78,23,38,57,74,75,75,76,74,75,75,75,64,51,0.295,0.487,0.731,0.949,0.962,0.962,0.974,0.949,0.962,0.962,0.962,0.821,0.654,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+7,Lot 7,,,14,13,14,13,14,14,14,14,14,8,13,11,14,13,0.929,1,0.929,1,1,1,1,1,0.571,0.929,0.786,1,0.929,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+8,Lot 8,,,213,37,82,133,208,206,206,206,208,132,208,87,196,110,0.174,0.385,0.624,0.977,0.967,0.967,0.967,0.977,0.62,0.977,0.408,0.92,0.516,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+9,Lot 9,,,448,99,171,337,440,441,442,444,446,250,445,221,443,352,0.221,0.382,0.752,0.982,0.984,0.987,0.991,0.996,0.558,0.993,0.493,0.989,0.786,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+10,Lot 10,,,252,113,182,226,233,237,238,241,244,152,240,103,235,217,0.448,0.722,0.897,0.925,0.94,0.944,0.956,0.968,0.603,0.952,0.409,0.933,0.861,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+11,Lot 11,,,69,13,38,68,71,73,73,74,41,75,32,72,53,70,0.188,0.551,0.986,1.029,1.058,1.058,1.072,0.594,1.087,0.464,1.043,0.768,1.014,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+12,Lot 12,,,459,332,450,456,455,455,454,454,271,457,238,454,330,457,0.723,0.98,0.993,0.991,0.991,0.989,0.989,0.59,0.996,0.519,0.989,0.719,0.996,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+13,Lot 13,,,463,182,278,430,453,455,458,461,461,461,236,464,252,456,0.393,0.6,0.929,0.978,0.983,0.989,0.996,0.996,0.996,0.51,1.002,0.544,0.985,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+15,Lot 15,,,202,155,177,181,190,192,197,195,192,190,184,185,182,167,0.767,0.876,0.896,0.941,0.95,0.975,0.965,0.95,0.941,0.911,0.916,0.901,0.827,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+16,Lot 16,,,98,56,88,92,94,96,96,96,95,94,81,80,71,51,0.571,0.898,0.939,0.959,0.98,0.98,0.98,0.969,0.959,0.827,0.816,0.724,0.52,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+18,Lot 18,,,297,69,93,144,227,280,291,290,293,294,294,287,257,213,0.232,0.313,0.485,0.764,0.943,0.98,0.976,0.987,0.99,0.99,0.966,0.865,0.717,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+19,Lot 19,,,334,38,56,79,98,140,237,293,304,292,266,233,214,182,0.114,0.168,0.237,0.293,0.419,0.71,0.877,0.91,0.874,0.796,0.698,0.641,0.545,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+20,Lot 20,,,176,91,80,77,110,166,170,169,164,154,148,142,145,102,0.517,0.455,0.438,0.625,0.943,0.966,0.96,0.932,0.875,0.841,0.807,0.824,0.58,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+21,Lot 21,,,278,128,155,171,193,229,274,277,278,278,278,272,249,197,0.46,0.558,0.615,0.694,0.824,0.986,0.996,1,1,1,0.978,0.896,0.709,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+22,Lot 22,,,199,30,63,83,104,132,170,192,194,196,187,180,151,123,0.151,0.317,0.417,0.523,0.663,0.854,0.965,0.975,0.985,0.94,0.905,0.759,0.618,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+23,Lot 23,,,104,32,38,46,54,44,61,92,104,104,97,94,84,47,0.308,0.365,0.442,0.519,0.423,0.587,0.885,1,1,0.933,0.904,0.808,0.452,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+24,Lot 24,,,135,10,14,18,26,42,74,100,131,133,133,133,130,83,0.074,0.104,0.133,0.193,0.311,0.548,0.741,0.97,0.985,0.985,0.985,0.963,0.615,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+25,Lot 25,,,12,1,1,3,3,3,4,2,12,12,12,12,12,6,0.083,0.083,0.25,0.25,0.25,0.333,0.167,1,1,1,1,1,0.5,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+26,Lot 26,,,17,0,1,1,1,2,5,9,17,17,17,15,12,4,0,0.059,0.059,0.059,0.118,0.294,0.529,1,1,1,0.882,0.706,0.235,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+27,Lot 27,,,80,7,17,24,26,28,41,73,78,75,78,75,68,50,0.088,0.213,0.3,0.325,0.35,0.513,0.913,0.975,0.938,0.975,0.938,0.85,0.625,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+28,Lot 28,,,60,7,12,12,18,25,58,60,60,59,60,60,59,60,0.117,0.2,0.2,0.3,0.417,0.967,1,1,0.983,1,1,0.983,1,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+29,Lot 29,,,54,11,14,18,31,50,53,54,54,54,54,51,52,53,0.204,0.259,0.333,0.574,0.926,0.981,1,1,1,1,0.944,0.963,0.981,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+30,Lot 30,,,148,51,50,59,67,83,103,123,123,129,120,92,79,57,0.345,0.338,0.399,0.453,0.561,0.696,0.831,0.831,0.872,0.811,0.622,0.534,0.385,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+31,Lot 31,,,304,69,109,118,111,154,211,247,266,264,248,224,173,101,0.227,0.359,0.388,0.365,0.507,0.694,0.813,0.875,0.868,0.816,0.737,0.569,0.332,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+32,Lot 32,,,289,74,133,135,187,291,291,291,275,232,191,142,136,104,0.256,0.46,0.467,0.647,1.007,1.007,1.007,0.952,0.803,0.661,0.491,0.471,0.36,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+33,Lot 33,,,46,14,17,16,23,27,41,45,38,43,43,37,42,26,0.304,0.37,0.348,0.5,0.587,0.891,0.978,0.826,0.935,0.935,0.804,0.913,0.565,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+34,Lot 34,,,266,122,139,148,161,161,190,206,223,222,208,184,176,128,0.459,0.523,0.556,0.605,0.605,0.714,0.774,0.838,0.835,0.782,0.692,0.662,0.481,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+35,Lot 35,,,87,35,76,79,75,77,70,72,80,67,72,65,46,19,0.402,0.874,0.908,0.862,0.885,0.805,0.828,0.92,0.77,0.828,0.747,0.529,0.218,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+36,Lot 36,,,88,84,88,88,84,88,89,89,91,90,89,79,88,54,0.955,1,1,0.955,1,1.011,1.011,1.034,1.023,1.011,0.898,1,0.614,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+37,Lot 37,,,261,85,76,110,159,199,259,257,256,246,247,198,181,133,0.326,0.291,0.421,0.609,0.762,0.992,0.985,0.981,0.943,0.946,0.759,0.693,0.51,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+38,Lot 38,,,103,19,25,40,81,103,106,107,106,104,106,105,101,82,0.184,0.243,0.388,0.786,1,1.029,1.039,1.029,1.01,1.029,1.019,0.981,0.796,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+38.1,Lot 38.1,,,53,5,11,25,43,51,53,55,54,52,54,52,50,38,0.094,0.208,0.472,0.811,0.962,1,1.038,1.019,0.981,1.019,0.981,0.943,0.717,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+38.2,Lot 38.2,,,62,14,31,51,61,61,62,65,66,64,62,62,61,54,0.226,0.5,0.823,0.984,0.984,1,1.048,1.065,1.032,1,1,0.984,0.871,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+39,Lot 39,,,25,11,21,23,23,25,25,25,25,25,25,24,24,17,0.44,0.84,0.92,0.92,1,1,1,1,1,1,0.96,0.96,0.68,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+40,Lot 40,,,76,25,45,58,72,76,76,77,78,76,77,74,66,32,0.329,0.592,0.763,0.947,1,1,1.013,1.026,1,1.013,0.974,0.868,0.421,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+41,Lot 41,,,1595,87,542,1153,1522,1575,1581,1554,1430,1345,1235,1108,929,591,0.055,0.34,0.723,0.954,0.987,0.991,0.974,0.897,0.843,0.774,0.695,0.582,0.371,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+42,Lot 42,,,1394,4,50,505,1109,1335,1391,1331,1117,881,663,481,325,166,0.003,0.036,0.362,0.796,0.958,0.998,0.955,0.801,0.632,0.476,0.345,0.233,0.119,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+43,Lot 43,,,90,2,31,88,87,86,89,85,85,83,66,57,47,36,0.022,0.344,0.978,0.967,0.956,0.989,0.944,0.944,0.922,0.733,0.633,0.522,0.4,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+44,Lot 44,,,226,32,64,144,227,224,225,226,225,217,146,95,93,82,0.142,0.283,0.637,1.004,0.991,0.996,1,0.996,0.96,0.646,0.42,0.412,0.363,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+44.1,Village Pl,Curve and Lots,N,14,0,2,14,14,13,14,15,14,13,10,10,13,14,0,0.143,1,1,0.929,1,1.071,1,0.929,0.714,0.714,0.929,1,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+44.2,Village Pl,Curve and Lots,S,8,0,0,8,9,7,8,8,8,8,5,6,6,6,0,0,1,1.125,0.875,1,1,1,1,0.625,0.75,0.75,0.75,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+44.3,Village Pl,Old Globe and Crosswalk,E,12,0,8,12,11,11,12,12,12,12,11,12,11,12,0,0.667,1,0.917,0.917,1,1,1,1,0.917,1,0.917,1,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+44.4,Village Pl,Crosswalk and El Prado,E,25,0,13,18,24,24,25,25,25,25,15,14,21,23,0,0.52,0.72,0.96,0.96,1,1,1,1,0.6,0.56,0.84,0.92,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+44.5,Village Pl,Old Globe and El Prado,W,12,0,0,0,4,0,4,6,3,2,0,2,1,1,0,0,0,0.333,0,0.333,0.5,0.25,0.167,0,0.167,0.083,0.083,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+45,Lot 45,,,102,67,87,96,95,97,97,97,97,97,92,89,86,85,0.657,0.853,0.941,0.931,0.951,0.951,0.951,0.951,0.951,0.902,0.873,0.843,0.833,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+46,Lot 46,,,82,55,80,81,81,81,82,82,81,81,64,63,66,54,0.671,0.976,0.988,0.988,0.988,1,1,0.988,0.988,0.78,0.768,0.805,0.659,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+47,Lot 47,,,154,33,62,133,152,152,152,152,153,148,111,135,134,100,0.214,0.403,0.864,0.987,0.987,0.987,0.987,0.994,0.961,0.721,0.877,0.87,0.649,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+48,Lot 48,,,120,4,8,32,112,121,120,121,120,109,61,38,33,19,0.033,0.067,0.267,0.933,1.008,1,1.008,1,0.908,0.508,0.317,0.275,0.158,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+49,Lot 49,,,120,35,73,105,110,112,115,116,114,107,97,113,116,115,0.292,0.608,0.875,0.917,0.933,0.958,0.967,0.95,0.892,0.808,0.942,0.967,0.958,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+50,Lot 50,,,352,37,85,185,305,311,318,310,318,287,271,287,293,295,0.105,0.241,0.526,0.866,0.884,0.903,0.881,0.903,0.815,0.77,0.815,0.832,0.838,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+51,Lot 51,,,150,26,82,147,146,145,141,145,146,148,143,147,147,140,0.173,0.547,0.98,0.973,0.967,0.94,0.967,0.973,0.987,0.953,0.98,0.98,0.933,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+52,Lot 52,,,32,6,8,9,10,11,16,15,17,17,14,10,4,3,0.188,0.25,0.281,0.313,0.344,0.5,0.469,0.531,0.531,0.438,0.313,0.125,0.094,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+53,Lot 53,,,509,17,42,81,186,307,427,490,465,348,239,211,217,220,0.033,0.083,0.159,0.365,0.603,0.839,0.963,0.914,0.684,0.47,0.415,0.426,0.432,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+54,Lot 54,,,406,194,96,46,112,202,272,311,269,164,72,30,20,15,0.478,0.236,0.113,0.276,0.498,0.67,0.766,0.663,0.404,0.177,0.074,0.049,0.037,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+55,Lot 55,,,924,316,159,62,69,90,121,131,115,101,43,15,8,7,0.342,0.172,0.067,0.075,0.097,0.131,0.142,0.124,0.109,0.047,0.016,0.009,0.008,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+59,Lindo Paseo,College and Cantina,N,3,1,2,2,1,0,0,0,0,0,0,0,0,1,0.333,0.667,0.667,0.333,0,0,0,0,0,0,0,0,0.333,saturday,College Area,College Area,FALSE,on_street,urban_corridor
+60,Lindo Paseo,College and Cantina,S,6,2,5,3,4,5,6,1,5,3,2,4,3,2,0.333,0.833,0.5,0.667,0.833,1,0.167,0.833,0.5,0.333,0.667,0.5,0.333,saturday,College Area,College Area,FALSE,on_street,urban_corridor
+61,El Cajon Blvd,55th and 56th,N,6,2,5,1,4,2,2,1,0,0,1,0,0,0,0.333,0.833,0.167,0.667,0.333,0.333,0.167,0,0,0.167,0,0,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+62,El Cajon Blvd,55th and 56th,S,12,2,3,3,4,6,6,6,7,5,7,6,5,1,0.167,0.25,0.25,0.333,0.5,0.5,0.5,0.583,0.417,0.583,0.5,0.417,0.083,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+63,El Cajon Blvd,56th and El Cerrito,N,12,5,7,8,7,9,7,6,4,3,3,0,0,0,0.417,0.583,0.667,0.583,0.75,0.583,0.5,0.333,0.25,0.25,0,0,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+64,El Cajon Blvd,56th and 58th,S,15,7,9,8,8,6,7,7,6,3,3,4,3,4,0.467,0.6,0.533,0.533,0.4,0.467,0.467,0.4,0.2,0.2,0.267,0.2,0.267,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+65,El Cajon Blvd,El Cerrito and 58th,N,6,1,3,4,5,3,4,3,1,2,2,1,1,0,0.167,0.5,0.667,0.833,0.5,0.667,0.5,0.167,0.333,0.333,0.167,0.167,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+66,El Cajon Blvd,58th and Alice,N,2,2,2,2,2,3,4,5,3,3,4,4,4,2,1,1,1,1,1.5,2,2.5,1.5,1.5,2,2,2,1,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+67,El Cajon Blvd,58th and 59th,S,21,7,7,12,13,14,11,13,12,13,12,12,10,9,0.333,0.333,0.571,0.619,0.667,0.524,0.619,0.571,0.619,0.571,0.571,0.476,0.429,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+68,El Cajon Blvd,Alice and 59th,N,10,4,4,5,4,4,5,4,5,5,4,4,4,6,0.4,0.4,0.5,0.4,0.4,0.5,0.4,0.5,0.5,0.4,0.4,0.4,0.6,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+69,El Cajon Blvd,59th and Esther,N,5,1,1,1,2,2,2,2,2,1,2,3,2,1,0.2,0.2,0.2,0.4,0.4,0.4,0.4,0.4,0.2,0.4,0.6,0.4,0.2,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+70,El Cajon Blvd,59th and 60th,S,15,6,8,12,14,10,11,11,10,9,5,10,9,8,0.4,0.533,0.8,0.933,0.667,0.733,0.733,0.667,0.6,0.333,0.667,0.6,0.533,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+71,El Cajon Blvd,Esther and 60th,N,5,0,0,1,1,3,3,2,1,0,1,1,1,0,0,0,0.2,0.2,0.6,0.6,0.4,0.2,0,0.2,0.2,0.2,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+72,El Cajon Blvd,60th and College,N,8,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0.125,0,0,0,0,0,0,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+73,El Cajon Blvd,60th and College,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+74,El Cajon Blvd,College and 62nd,N,16,4,4,4,5,10,5,8,8,8,8,9,8,9,0.25,0.25,0.25,0.313,0.625,0.313,0.5,0.5,0.5,0.5,0.563,0.5,0.563,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+75,El Cajon Blvd,College and Driveway,S,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+76,El Cajon Blvd,Driveway and 62nd,S,15,1,4,1,1,0,1,0,0,0,0,0,0,0,0.067,0.267,0.067,0.067,0,0.067,0,0,0,0,0,0,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+77,El Cajon Blvd,62nd and 63rd,N,5,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0.2,0.2,0,0,0,0.2,0.2,0.2,0,0,0,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+78,El Cajon Blvd,62nd and 63rd,S,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+79,El Cajon Blvd,63rd and Chocaw,N,18,2,5,6,7,10,11,15,12,10,12,13,13,15,0.111,0.278,0.333,0.389,0.556,0.611,0.833,0.667,0.556,0.667,0.722,0.722,0.833,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+80,El Cajon Blvd,63rd and Art,S,21,4,3,6,9,13,13,11,13,8,3,11,7,7,0.19,0.143,0.286,0.429,0.619,0.619,0.524,0.619,0.381,0.143,0.524,0.333,0.333,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+81,El Cajon Blvd,Choctaw and Art,N,11,3,3,5,9,9,10,8,3,2,5,3,1,0,0.273,0.273,0.455,0.818,0.818,0.909,0.727,0.273,0.182,0.455,0.273,0.091,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+82,El Cajon Blvd,Art and Filipo,S,16,10,10,9,9,9,13,13,8,9,5,3,2,5,0.625,0.625,0.563,0.563,0.563,0.813,0.813,0.5,0.563,0.313,0.188,0.125,0.313,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+83,El Cajon Blvd,Art and Aragon,N,23,16,16,19,20,18,18,13,13,8,11,11,10,9,0.696,0.696,0.826,0.87,0.783,0.783,0.565,0.565,0.348,0.478,0.478,0.435,0.391,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+84,El Cajon Blvd,Filipo and Aragon,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+85,El Cajon Blvd,Aragon and Rolando,N,9,7,7,6,6,6,7,6,6,6,7,6,5,4,0.778,0.778,0.667,0.667,0.667,0.778,0.667,0.667,0.667,0.778,0.667,0.556,0.444,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+86,El Cajon Blvd,Aragon and Rolando,S,10,6,5,9,10,8,9,9,9,9,8,1,1,1,0.6,0.5,0.9,1,0.8,0.9,0.9,0.9,0.9,0.8,0.1,0.1,0.1,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+87,El Cajon Blvd,Rolando and Amherst,S,1,0,0,0,1,1,1,1,1,0,1,0,0,0,0,0,0,1,1,1,1,1,0,1,0,0,0,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+88,El Cajon Blvd,Rolando and Montezuma,N,25,7,13,17,16,17,16,14,18,22,16,13,13,14,0.28,0.52,0.68,0.64,0.68,0.64,0.56,0.72,0.88,0.64,0.52,0.52,0.56,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+89,El Cajon Blvd,Amherst and 67th,S,11,2,2,3,3,3,3,2,2,3,3,3,3,5,0.182,0.182,0.273,0.273,0.273,0.273,0.182,0.182,0.273,0.273,0.273,0.273,0.455,saturday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+90,Adams Ave,Mountainview and 32nd,N,9,2,3,4,5,2,4,4,2,3,3,1,4,4,0.222,0.333,0.444,0.556,0.222,0.444,0.444,0.222,0.333,0.333,0.111,0.444,0.444,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+91,Adams Ave,Mountainview and Iowa,S,7,3,3,2,3,3,4,3,3,3,4,2,1,1,0.429,0.429,0.286,0.429,0.429,0.571,0.429,0.429,0.429,0.571,0.286,0.143,0.143,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+92,Adams Ave,Iowa and 32nd,S,8,5,5,5,4,6,4,4,4,5,2,6,7,6,0.625,0.625,0.625,0.5,0.75,0.5,0.5,0.5,0.625,0.25,0.75,0.875,0.75,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+93,Adams Ave,32nd and Bancroft,N,8,5,8,8,6,6,7,5,5,5,5,4,8,8,0.625,1,1,0.75,0.75,0.875,0.625,0.625,0.625,0.625,0.5,1,1,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+94,Adams Ave,32nd and Bancroft,S,9,2,8,7,6,9,8,8,7,6,6,8,7,9,0.222,0.889,0.778,0.667,1,0.889,0.889,0.778,0.667,0.667,0.889,0.778,1,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+95,Adams Ave,Bancroft and 33rd,N,9,7,8,9,8,6,7,9,6,4,8,8,8,8,0.778,0.889,1,0.889,0.667,0.778,1,0.667,0.444,0.889,0.889,0.889,0.889,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+96,Adams Ave,Bancroft and 33rd,S,7,4,5,5,5,7,6,5,5,4,4,5,6,6,0.571,0.714,0.714,0.714,1,0.857,0.714,0.714,0.571,0.571,0.714,0.857,0.857,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+97,Adams Ave,33rd and Felton,N,10,10,9,8,9,10,9,9,7,8,10,10,11,9,1,0.9,0.8,0.9,1,0.9,0.9,0.7,0.8,1,1,1.1,0.9,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+98,Adams Ave,33rd and Felton,S,12,8,9,8,8,7,9,8,9,8,9,11,12,10,0.667,0.75,0.667,0.667,0.583,0.75,0.667,0.75,0.667,0.75,0.917,1,0.833,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+99,Adams Ave,Felton and 34th,N,8,10,9,8,9,10,9,10,9,9,7,7,8,8,1.25,1.125,1,1.125,1.25,1.125,1.25,1.125,1.125,0.875,0.875,1,1,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+100,Adams Ave,Felton and 34th,S,11,7,9,9,11,9,8,10,10,9,7,7,8,7,0.636,0.818,0.818,1,0.818,0.727,0.909,0.909,0.818,0.636,0.636,0.727,0.636,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+101,Adams Ave,34th and Hawley,N,5,7,5,5,4,6,6,8,10,8,8,7,8,8,1.4,1,1,0.8,1.2,1.2,1.6,2,1.6,1.6,1.4,1.6,1.6,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+102,Adams Ave,34th and Hawley,S,8,7,6,8,8,5,7,5,7,7,6,5,6,5,0.875,0.75,1,1,0.625,0.875,0.625,0.875,0.875,0.75,0.625,0.75,0.625,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+103,Adams Ave,Hawley and Mansfield,N,3,1,0,1,1,3,3,2,2,2,4,3,3,2,0.333,0,0.333,0.333,1,1,0.667,0.667,0.667,1.333,1,1,0.667,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+104,Adams Ave,Hawley and Mansfield,S,10,6,4,8,8,8,8,7,6,8,8,8,6,8,0.6,0.4,0.8,0.8,0.8,0.8,0.7,0.6,0.8,0.8,0.8,0.6,0.8,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+105,Adams Ave,Mansfield and 35th,N,8,0,6,2,4,7,7,6,4,6,2,2,3,2,0,0.75,0.25,0.5,0.875,0.875,0.75,0.5,0.75,0.25,0.25,0.375,0.25,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+106,Adams Ave,Mansfield and 35th,S,6,2,5,6,6,6,5,5,5,6,4,4,2,1,0.333,0.833,1,1,1,0.833,0.833,0.833,1,0.667,0.667,0.333,0.167,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+107,Adams Ave,35th and Wilson,N,14,2,9,11,9,9,8,8,8,4,6,7,9,7,0.143,0.643,0.786,0.643,0.643,0.571,0.571,0.571,0.286,0.429,0.5,0.643,0.5,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+108,Adams Ave,35th and Wilson,S,11,5,10,10,9,10,5,9,6,9,5,4,2,4,0.455,0.909,0.909,0.818,0.909,0.455,0.818,0.545,0.818,0.455,0.364,0.182,0.364,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+109,Adams Ave,Wilson and 36th,N,13,7,11,10,9,9,8,8,9,5,6,4,4,4,0.538,0.846,0.769,0.692,0.692,0.615,0.615,0.692,0.385,0.462,0.308,0.308,0.308,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+110,Adams Ave,Wilson and 36th,S,10,8,10,10,9,9,9,8,9,7,6,2,3,4,0.8,1,1,0.9,0.9,0.9,0.8,0.9,0.7,0.6,0.2,0.3,0.4,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+111,Adams Ave,36th and Cherokee,N,6,3,5,5,4,4,4,3,3,1,2,3,2,1,0.5,0.833,0.833,0.667,0.667,0.667,0.5,0.5,0.167,0.333,0.5,0.333,0.167,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+112,Adams Ave,36th and Cherokee,S,11,7,8,8,8,7,5,7,8,6,7,6,4,5,0.636,0.727,0.727,0.727,0.636,0.455,0.636,0.727,0.545,0.636,0.545,0.364,0.455,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+113,Adams Ave,Cherokee and Mountainview,N,14,12,12,13,12,10,13,10,7,4,5,6,5,6,0.857,0.857,0.929,0.857,0.714,0.929,0.714,0.5,0.286,0.357,0.429,0.357,0.429,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+114,Adams Ave,Cherokee and Mountainview,S,19,17,17,16,16,15,15,10,12,12,12,11,13,15,0.895,0.895,0.842,0.842,0.789,0.789,0.526,0.632,0.632,0.632,0.579,0.684,0.789,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+115,Adams Ave,Mountainview and 39th,N,7,7,7,7,8,6,6,5,4,5,4,3,4,4,1,1,1,1.143,0.857,0.857,0.714,0.571,0.714,0.571,0.429,0.571,0.571,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+116,Adams Ave,Mountainview and 39th,S,10,7,8,9,9,8,8,8,4,4,2,2,3,4,0.7,0.8,0.9,0.9,0.8,0.8,0.8,0.4,0.4,0.2,0.2,0.3,0.4,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+117,Adams Ave,39th and Bonnie,N,6,1,3,4,4,5,4,4,4,3,2,1,0,0,0.167,0.5,0.667,0.667,0.833,0.667,0.667,0.667,0.5,0.333,0.167,0,0,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+118,Adams Ave,39th and 40th,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+119,Adams Ave,Bonnie and NB Ramp,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+120,Adams Ave,40th and NB Ramp,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+121,Adams Ave,Terrace and Kensington,N,11,4,3,6,8,9,7,7,4,9,10,10,10,7,0.364,0.273,0.545,0.727,0.818,0.636,0.636,0.364,0.818,0.909,0.909,0.909,0.636,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+122,Adams Ave,Terrace and Kensington,S,11,3,4,2,7,8,9,2,6,6,9,10,10,10,0.273,0.364,0.182,0.636,0.727,0.818,0.182,0.545,0.545,0.818,0.909,0.909,0.909,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+123,Terrace Dr,Adams and Park,W,14,1,2,2,7,11,9,9,12,11,13,13,13,11,0.071,0.143,0.143,0.5,0.786,0.643,0.643,0.857,0.786,0.929,0.929,0.929,0.786,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+124,Adams Ave,Adams and Park,E,5,0,1,3,4,4,3,3,4,4,4,5,4,3,0,0.2,0.6,0.8,0.8,0.6,0.6,0.8,0.8,0.8,1,0.8,0.6,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+125,Adams Ave,Kensington and Marlborough,N,8,3,4,6,5,8,5,4,4,6,6,5,6,5,0.375,0.5,0.75,0.625,1,0.625,0.5,0.5,0.75,0.75,0.625,0.75,0.625,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+126,Adams Ave,Kensington and Marlborough,S,7,4,5,5,6,6,5,4,3,3,6,4,6,5,0.571,0.714,0.714,0.857,0.857,0.714,0.571,0.429,0.429,0.857,0.571,0.857,0.714,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+127,Kensington Dr,Adams and Park,W,3,3,2,2,3,2,2,2,2,2,3,3,3,2,1,0.667,0.667,1,0.667,0.667,0.667,0.667,0.667,1,1,1,0.667,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+128,Kensington Dr,Adams and Park,E,3,2,3,3,4,3,3,2,2,2,3,3,3,3,0.667,1,1,1.333,1,1,0.667,0.667,0.667,1,1,1,1,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+129,Park Pl,Kensington and Marlborough,N,12,10,12,12,12,12,11,11,11,9,11,10,7,7,0.833,1,1,1,1,0.917,0.917,0.917,0.75,0.917,0.833,0.583,0.583,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+130,Park Pl,Kensington and Marlborough,S,11,8,9,9,8,9,10,9,7,8,8,9,7,7,0.727,0.818,0.818,0.727,0.818,0.909,0.818,0.636,0.727,0.727,0.818,0.636,0.636,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+131,Marlborough Dr,Adams and Park,W,2,2,2,2,2,1,0,1,0,0,2,1,2,2,1,1,1,1,0.5,0,0.5,0,0,1,0.5,1,1,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+132,Marlborough Dr,Adams and Park,E,4,4,4,4,4,4,4,3,3,2,2,2,3,3,1,1,1,1,1,1,0.75,0.75,0.5,0.5,0.5,0.75,0.75,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+133,Adams Ave,Marlborough and Edgeware,N,13,7,8,9,9,9,7,8,8,6,1,4,5,5,0.538,0.615,0.692,0.692,0.692,0.538,0.615,0.615,0.462,0.077,0.308,0.385,0.385,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+134,Adams Ave,Marlborough and Edgeware,S,10,5,8,10,9,4,5,9,3,6,8,6,5,5,0.5,0.8,1,0.9,0.4,0.5,0.9,0.3,0.6,0.8,0.6,0.5,0.5,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+135,Adams Ave,Edgeware and 42nd,N,4,0,2,0,4,3,0,2,1,1,0,2,2,1,0,0.5,0,1,0.75,0,0.5,0.25,0.25,0,0.5,0.5,0.25,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+136,Adams Ave,Edgeware and 42nd,S,4,1,4,4,4,4,4,4,2,2,4,3,4,3,0.25,1,1,1,1,1,1,0.5,0.5,1,0.75,1,0.75,saturday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+137,El Cajon Blvd,Louisiana and Texas,N,6,2,3,3,3,4,6,5,5,6,6,6,7,7,0.333,0.5,0.5,0.5,0.667,1,0.833,0.833,1,1,1,1.167,1.167,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+138,El Cajon Blvd,Louisiana and Texas,S,4,3,2,3,2,3,4,3,2,3,4,4,4,4,0.75,0.5,0.75,0.5,0.75,1,0.75,0.5,0.75,1,1,1,1,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+139,El Cajon Blvd,Texas and Arizona,N,6,1,1,1,1,1,1,1,2,4,3,6,6,6,0.167,0.167,0.167,0.167,0.167,0.167,0.167,0.333,0.667,0.5,1,1,1,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+140,El Cajon Blvd,Texas and Arizona,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+141,El Cajon Blvd,Arizona and Hamilton,N,11,3,4,3,1,1,1,1,1,0,2,1,3,3,0.273,0.364,0.273,0.091,0.091,0.091,0.091,0.091,0,0.182,0.091,0.273,0.273,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+142,El Cajon Blvd,Arizona and Hamilton,S,10,4,4,3,5,5,5,4,3,3,3,3,1,3,0.4,0.4,0.3,0.5,0.5,0.5,0.4,0.3,0.3,0.3,0.3,0.1,0.3,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+143,El Cajon Blvd,Hamilton and Oregon,N,12,6,4,4,5,2,3,2,2,3,3,3,6,6,0.5,0.333,0.333,0.417,0.167,0.25,0.167,0.167,0.25,0.25,0.25,0.5,0.5,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+144,El Cajon Blvd,Hamilton and Oregon,S,11,9,8,9,9,9,9,8,8,8,9,9,9,7,0.818,0.727,0.818,0.818,0.818,0.818,0.727,0.727,0.727,0.818,0.818,0.818,0.636,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+145,El Cajon Blvd,Oregon and Idaho,N,6,2,2,2,1,0,0,0,0,1,2,1,2,1,0.333,0.333,0.333,0.167,0,0,0,0,0.167,0.333,0.167,0.333,0.167,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+146,El Cajon Blvd,Oregon and Idaho,S,9,6,6,9,6,6,2,1,3,3,5,3,4,5,0.667,0.667,1,0.667,0.667,0.222,0.111,0.333,0.333,0.556,0.333,0.444,0.556,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+147,El Cajon Blvd,Idaho and Utah,N,9,6,5,6,7,8,7,7,6,4,7,6,7,5,0.667,0.556,0.667,0.778,0.889,0.778,0.778,0.667,0.444,0.778,0.667,0.778,0.556,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+148,El Cajon Blvd,Idaho and Utah,S,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,1,0.5,1,1,1,1,0.5,1,1,1,1,1,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+149,El Cajon Blvd,Utah and Kansas,N,10,5,7,10,9,9,10,10,6,6,7,6,6,7,0.5,0.7,1,0.9,0.9,1,1,0.6,0.6,0.7,0.6,0.6,0.7,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+150,El Cajon Blvd,Utah and Kansas,S,10,8,8,10,8,7,7,9,7,8,9,9,10,9,0.8,0.8,1,0.8,0.7,0.7,0.9,0.7,0.8,0.9,0.9,1,0.9,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+151,El Cajon Blvd,Kansas and 30th,N,8,2,5,4,4,5,6,5,6,4,5,5,6,5,0.25,0.625,0.5,0.5,0.625,0.75,0.625,0.75,0.5,0.625,0.625,0.75,0.625,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+152,El Cajon Blvd,Kansas and 30th,S,10,3,6,5,7,9,8,7,8,5,6,8,9,10,0.3,0.6,0.5,0.7,0.9,0.8,0.7,0.8,0.5,0.6,0.8,0.9,1,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+153,El Cajon Blvd,30th and Ohio,N,5,0,0,1,0,2,1,5,5,3,4,4,6,4,0,0,0.2,0,0.4,0.2,1,1,0.6,0.8,0.8,1.2,0.8,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+154,El Cajon Blvd,30th and Ohio,S,5,0,1,3,1,2,2,4,2,4,4,4,4,4,0,0.2,0.6,0.2,0.4,0.4,0.8,0.4,0.8,0.8,0.8,0.8,0.8,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+155,El Cajon Blvd,Ohio and Illinois,N,10,1,0,1,6,5,6,10,11,8,9,10,8,7,0.1,0,0.1,0.6,0.5,0.6,1,1.1,0.8,0.9,1,0.8,0.7,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+156,El Cajon Blvd,Ohio and Illinois,S,12,2,6,5,5,6,5,11,7,9,5,10,8,6,0.167,0.5,0.417,0.417,0.5,0.417,0.917,0.583,0.75,0.417,0.833,0.667,0.5,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+157,El Cajon Blvd,Illinois and Iowa,N,10,1,0,0,2,2,2,0,2,4,4,6,8,7,0.1,0,0,0.2,0.2,0.2,0,0.2,0.4,0.4,0.6,0.8,0.7,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+158,El Cajon Blvd,Illinois and Iowa,S,9,8,8,9,8,8,6,4,8,7,8,8,9,6,0.889,0.889,1,0.889,0.889,0.667,0.444,0.889,0.778,0.889,0.889,1,0.667,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+159,El Cajon Blvd,Iowa and SB Ramps,N,3,3,2,1,2,2,2,2,2,2,2,2,1,1,1,0.667,0.333,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.333,0.333,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+160,El Cajon Blvd,Iowa and SB Ramps,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+161,El Cajon Blvd,NB Ramps and 33rd Pl,N,2,0,2,1,0,0,0,0,0,0,0,0,0,0,0,1,0.5,0,0,0,0,0,0,0,0,0,0,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+162,El Cajon Blvd,NB Ramps and 33rd St,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+163,El Cajon Blvd,33rd Pl and 33rd St,N,4,3,3,3,3,2,3,3,3,3,1,1,2,2,0.75,0.75,0.75,0.75,0.5,0.75,0.75,0.75,0.75,0.25,0.25,0.5,0.5,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+164,El Cajon Blvd,33rd and Felton,N,5,5,5,5,5,5,4,5,5,5,5,4,4,4,1,1,1,1,1,0.8,1,1,1,1,0.8,0.8,0.8,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+165,El Cajon Blvd,33rd and Felton,S,8,5,5,5,6,5,7,8,5,3,4,1,3,3,0.625,0.625,0.625,0.75,0.625,0.875,1,0.625,0.375,0.5,0.125,0.375,0.375,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+166,El Cajon Blvd,Felton and 34th,N,10,4,4,4,4,8,4,7,6,6,6,5,6,6,0.4,0.4,0.4,0.4,0.8,0.4,0.7,0.6,0.6,0.6,0.5,0.6,0.6,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+167,El Cajon Blvd,Felton and 34th,S,8,7,7,6,5,6,6,6,6,4,5,5,6,6,0.875,0.875,0.75,0.625,0.75,0.75,0.75,0.75,0.5,0.625,0.625,0.75,0.75,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+168,El Cajon Blvd,34th and Swift,N,8,6,7,7,7,7,7,5,5,6,5,5,5,5,0.75,0.875,0.875,0.875,0.875,0.875,0.625,0.625,0.75,0.625,0.625,0.625,0.625,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+169,El Cajon Blvd,34th and Swift,S,8,6,6,6,6,5,6,5,5,3,3,3,3,1,0.75,0.75,0.75,0.75,0.625,0.75,0.625,0.625,0.375,0.375,0.375,0.375,0.125,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+170,El Cajon Blvd,Swift and 35th,N,3,2,2,2,2,3,3,3,2,2,2,3,3,2,0.667,0.667,0.667,0.667,1,1,1,0.667,0.667,0.667,1,1,0.667,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+171,El Cajon Blvd,Swift and 35th,S,5,4,3,3,5,5,3,5,2,4,1,2,1,1,0.8,0.6,0.6,1,1,0.6,1,0.4,0.8,0.2,0.4,0.2,0.2,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+172,El Cajon Blvd,35th and Wilson,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+173,El Cajon Blvd,35th and Wilson,N,3,2,1,1,1,2,2,2,3,2,2,2,1,3,0.667,0.333,0.333,0.333,0.667,0.667,0.667,1,0.667,0.667,0.667,0.333,1,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+174,El Cajon Blvd,Wilson and 36th,S,7,3,4,4,5,4,3,2,2,2,1,1,1,1,0.429,0.571,0.571,0.714,0.571,0.429,0.286,0.286,0.286,0.143,0.143,0.143,0.143,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+175,El Cajon Blvd,Wilson and 36th,N,6,4,2,2,3,2,0,1,0,0,0,0,0,3,0.667,0.333,0.333,0.5,0.333,0,0.167,0,0,0,0,0,0.5,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+176,El Cajon Blvd,36th and Cherokee,S,5,1,2,2,3,2,2,2,2,2,2,2,2,2,0.2,0.4,0.4,0.6,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+177,El Cajon Blvd,36th and Cherokee,N,6,4,5,3,6,4,5,4,4,4,4,3,5,4,0.667,0.833,0.5,1,0.667,0.833,0.667,0.667,0.667,0.667,0.5,0.833,0.667,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+178,El Cajon Blvd,Cherokee and 37th,N,7,6,6,7,5,7,5,5,7,5,4,5,6,5,0.857,0.857,1,0.714,1,0.714,0.714,1,0.714,0.571,0.714,0.857,0.714,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+179,El Cajon Blvd,Cherokee and 37th,N,5,3,3,2,3,2,4,2,1,0,1,1,3,3,0.6,0.6,0.4,0.6,0.4,0.8,0.4,0.2,0,0.2,0.2,0.6,0.6,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+180,El Cajon Blvd,37th and McClintock,N,9,7,6,5,6,4,6,4,4,4,5,5,4,5,0.778,0.667,0.556,0.667,0.444,0.667,0.444,0.444,0.444,0.556,0.556,0.444,0.556,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+181,El Cajon Blvd,37th and 38th,S,12,10,11,11,12,12,10,9,9,9,9,8,12,10,0.833,0.917,0.917,1,1,0.833,0.75,0.75,0.75,0.75,0.667,1,0.833,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+182,El Cajon Blvd,McClintock and 38th,N,10,8,5,10,6,9,6,5,2,4,5,5,5,4,0.8,0.5,1,0.6,0.9,0.6,0.5,0.2,0.4,0.5,0.5,0.5,0.4,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+183,El Cajon Blvd,38th and 39th,N,5,1,4,5,4,4,3,3,3,3,0,0,0,0,0.2,0.8,1,0.8,0.8,0.6,0.6,0.6,0.6,0,0,0,0,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+184,El Cajon Blvd,38th and 39th,S,9,0,0,5,6,5,7,6,5,6,7,7,4,0,0,0,0.556,0.667,0.556,0.778,0.667,0.556,0.667,0.778,0.778,0.444,0,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+185,El Cajon Blvd,39th and SB Ramps,N,11,0,7,8,0,1,2,1,3,0,0,0,0,0,0,0.636,0.727,0,0.091,0.182,0.091,0.273,0,0,0,0,0,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+186,El Cajon Blvd,39th and SB Ramps,S,4,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0.25,0.25,0,0,0,0,0,0,0,0,0,0,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+187,El Cajon Blvd,SB and NB Ramps,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+188,El Cajon Blvd,SB and NB Ramps,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+189,El Cajon Blvd,Central and 41st,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+190,El Cajon Blvd,Central and 41st,S,4,1,3,3,3,2,3,3,3,1,1,1,1,2,0.25,0.75,0.75,0.75,0.5,0.75,0.75,0.75,0.25,0.25,0.25,0.25,0.5,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+191,El Cajon Blvd,41st and Marlborough,N,7,1,2,2,2,1,1,4,3,2,3,0,2,2,0.143,0.286,0.286,0.286,0.143,0.143,0.571,0.429,0.286,0.429,0,0.286,0.286,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+192,El Cajon Blvd,41st and Marlborough,S,9,2,4,5,5,8,9,7,8,4,4,5,7,8,0.222,0.444,0.556,0.556,0.889,1,0.778,0.889,0.444,0.444,0.556,0.778,0.889,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+193,El Cajon Blvd,Marlborough and 42nd,N,9,5,7,6,8,7,4,8,6,6,3,3,4,6,0.556,0.778,0.667,0.889,0.778,0.444,0.889,0.667,0.667,0.333,0.333,0.444,0.667,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+194,El Cajon Blvd,Marlborough and 42nd,S,11,5,6,7,4,5,5,6,6,6,7,6,7,8,0.455,0.545,0.636,0.364,0.455,0.455,0.545,0.545,0.545,0.636,0.545,0.636,0.727,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+195,El Cajon Blvd,42nd and Copeland,N,7,5,5,6,6,4,4,5,7,7,6,6,7,7,0.714,0.714,0.857,0.857,0.571,0.571,0.714,1,1,0.857,0.857,1,1,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+196,El Cajon Blvd,42nd and Copeland,S,10,8,8,9,9,9,9,8,9,8,8,9,8,8,0.8,0.8,0.9,0.9,0.9,0.9,0.8,0.9,0.8,0.8,0.9,0.8,0.8,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+197,El Cajon Blvd,Copeland and Van Dyke,N,10,8,4,5,6,5,4,6,6,5,5,7,10,9,0.8,0.4,0.5,0.6,0.5,0.4,0.6,0.6,0.5,0.5,0.7,1,0.9,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+198,El Cajon Blvd,Copeland and Van Dyke,S,4,3,3,4,4,4,1,1,3,2,2,4,4,4,0.75,0.75,1,1,1,0.25,0.25,0.75,0.5,0.5,1,1,1,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+199,El Cajon Blvd,Van Dyke and 43rd,N,7,5,7,3,3,4,4,3,3,1,1,0,2,4,0.714,1,0.429,0.429,0.571,0.571,0.429,0.429,0.143,0.143,0,0.286,0.571,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+200,El Cajon Blvd,Van Dyke and 43rd,S,5,0,0,0,0,0,0,0,0,0,1,4,4,4,0,0,0,0,0,0,0,0,0,0.2,0.8,0.8,0.8,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+201,El Cajon Blvd,43rd and Fairmount,N,7,2,2,2,0,0,4,2,2,1,0,0,0,1,0.286,0.286,0.286,0,0,0.571,0.286,0.286,0.143,0,0,0,0.143,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+202,El Cajon Blvd,43rd and Fairmount,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+203,University Ave,NB Ramps and 41st,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+204,University Ave,NB Ramps and 41st,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+205,University Ave,41st and Marlborough,N,6,2,4,2,2,2,2,0,0,0,0,0,0,0,0.333,0.667,0.333,0.333,0.333,0.333,0,0,0,0,0,0,0,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+206,University Ave,41st and Marlborough,S,7,4,2,1,5,6,5,3,2,3,2,2,7,6,0.571,0.286,0.143,0.714,0.857,0.714,0.429,0.286,0.429,0.286,0.286,1,0.857,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+207,University Ave,Marlborough and 42nd,N,6,3,5,5,6,4,5,5,5,5,6,5,6,4,0.5,0.833,0.833,1,0.667,0.833,0.833,0.833,0.833,1,0.833,1,0.667,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+208,University Ave,Marlborough and 42nd,S,6,4,4,4,5,4,5,5,4,5,3,3,1,0,0.667,0.667,0.667,0.833,0.667,0.833,0.833,0.667,0.833,0.5,0.5,0.167,0,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+209,University Ave,42nd and Van Dyke,N,8,2,2,1,5,7,3,2,4,5,4,4,4,6,0.25,0.25,0.125,0.625,0.875,0.375,0.25,0.5,0.625,0.5,0.5,0.5,0.75,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+210,University Ave,42nd and Van Dyke,S,14,5,7,8,6,4,7,7,7,8,5,6,4,3,0.357,0.5,0.571,0.429,0.286,0.5,0.5,0.5,0.571,0.357,0.429,0.286,0.214,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+211,University Ave,Van Dyke and 43rd,N,12,2,8,6,11,9,8,8,8,7,9,11,8,5,0.167,0.667,0.5,0.917,0.75,0.667,0.667,0.667,0.583,0.75,0.917,0.667,0.417,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+212,University Ave,Van Dyke and 43rd,S,9,5,7,6,8,8,8,8,8,8,7,6,5,3,0.556,0.778,0.667,0.889,0.889,0.889,0.889,0.889,0.889,0.778,0.667,0.556,0.333,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+213,University Ave,43rd and Fairmount,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+214,University Ave,43rd and Fairmount,S,11,10,9,9,9,7,8,6,7,7,7,9,7,9,0.909,0.818,0.818,0.818,0.636,0.727,0.545,0.636,0.636,0.636,0.818,0.636,0.818,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+215,University Ave,Fairmount and 44th,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+216,University Ave,Fairmount and 44th,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+217,University Ave,44th and Highland,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+218,University Ave,44th and Highland,S,3,2,2,1,2,1,1,2,2,2,1,2,1,2,0.667,0.667,0.333,0.667,0.333,0.333,0.667,0.667,0.667,0.333,0.667,0.333,0.667,saturday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+219,University Ave,Hamilton and Villa Terrace,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+220,University Ave,Hamilton and Villa Terrace,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+221,University Ave,Villa Terrace and Oregon,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+222,University Ave,Villa Terrace and Pershing,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+223,University Ave,Oregon and Idaho,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+224,University Ave,Pershing and 28th,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+225,University Ave,Idaho and Utah,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+226,University Ave,28th and Utah,S,6,6,6,4,5,4,4,3,3,5,5,5,2,4,1,1,0.667,0.833,0.667,0.667,0.5,0.5,0.833,0.833,0.833,0.333,0.667,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+227,University Ave,Utah and Kansas,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+228,University Ave,Utah and Granada,S,10,3,4,9,8,9,8,7,8,8,8,8,8,9,0.3,0.4,0.9,0.8,0.9,0.8,0.7,0.8,0.8,0.8,0.8,0.8,0.9,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+229,University Ave,Granada and 29th,S,6,1,2,6,6,6,6,5,5,6,5,6,6,6,0.167,0.333,1,1,1,1,0.833,0.833,1,0.833,1,1,1,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+230,University Ave,Kansas and 30th,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+231,University Ave,29th and 30th,S,5,4,3,5,7,5,5,6,4,3,3,4,4,5,0.8,0.6,1,1.4,1,1,1.2,0.8,0.6,0.6,0.8,0.8,1,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+232,University Ave,30th and Ohio,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+233,University Ave,30th and Ray,S,3,3,3,3,3,3,2,2,3,4,3,3,3,5,1,1,1,1,1,0.667,0.667,1,1.333,1,1,1,1.667,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+234,University Ave,Ray and Grim,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+235,University Ave,Ohio and Illinois,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+236,University Ave,Grim and 31st,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+237,University Ave,Illinois and Iowa,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+238,University Ave,31st and Herman,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+239,University Ave,Iowa and 32nd,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+240,University Ave,Herman and 32nd,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,North Park,North Park,FALSE,on_street,urban_corridor
+241,Park Blvd,University and Robinson,W,17,11,13,14,14,16,12,9,7,10,13,17,15,18,0.647,0.765,0.824,0.824,0.941,0.706,0.529,0.412,0.588,0.765,1,0.882,1.059,saturday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+242,Park Blvd,University and Robinson,E,15,9,13,12,13,11,13,7,5,11,10,12,13,14,0.6,0.867,0.8,0.867,0.733,0.867,0.467,0.333,0.733,0.667,0.8,0.867,0.933,saturday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+243,Cleveland Ave,Vermont and Richmond,N,31,22,24,26,24,29,28,28,26,24,26,30,27,27,0.71,0.774,0.839,0.774,0.935,0.903,0.903,0.839,0.774,0.839,0.968,0.871,0.871,saturday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+244,Cleveland Ave,Vermont and Richmond,S,28,10,13,20,19,24,20,19,17,20,19,26,22,20,0.357,0.464,0.714,0.679,0.857,0.714,0.679,0.607,0.714,0.679,0.929,0.786,0.714,saturday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+245,University Ave,10th and Vermont,N,17,0,3,5,4,2,2,4,4,3,1,6,9,10,0,0.176,0.294,0.235,0.118,0.118,0.235,0.235,0.176,0.059,0.353,0.529,0.588,saturday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+246,University Ave,10th and Vermont,S,9,1,5,8,2,9,7,9,10,7,7,7,8,7,0.111,0.556,0.889,0.222,1,0.778,1,1.111,0.778,0.778,0.778,0.889,0.778,saturday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+247,University Ave,Vermont and Richmond,N,33,4,2,7,18,21,29,22,29,17,24,31,30,30,0.121,0.061,0.212,0.545,0.636,0.879,0.667,0.879,0.515,0.727,0.939,0.909,0.909,saturday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+248,University Ave,Vermont and Richmond,S,25,20,15,20,21,21,25,24,22,25,23,25,24,23,0.8,0.6,0.8,0.84,0.84,1,0.96,0.88,1,0.92,1,0.96,0.92,saturday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+249,7th Ave,University and Robinson,W,19,12,10,11,16,14,17,13,17,13,16,10,13,13,0.632,0.526,0.579,0.842,0.737,0.895,0.684,0.895,0.684,0.842,0.526,0.684,0.684,saturday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+250,7th Ave,University and Robinson,E,17,16,14,16,16,16,17,17,17,13,16,14,14,16,0.941,0.824,0.941,0.941,0.941,1,1,1,0.765,0.941,0.824,0.824,0.941,saturday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+251,W Washington St,Hawk and Goldfinch,N,4,1,1,3,2,3,3,4,3,1,4,3,3,4,0.25,0.25,0.75,0.5,0.75,0.75,1,0.75,0.25,1,0.75,0.75,1,saturday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+252,W Washington St,Hawk and Goldfinch,S,7,4,4,5,5,5,6,7,5,4,4,5,6,6,0.571,0.571,0.714,0.714,0.714,0.857,1,0.714,0.571,0.571,0.714,0.857,0.857,saturday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+253,Goldfinch St,Fort Stockton and Washington,W,8,1,2,6,5,5,7,5,4,8,5,7,8,7,0.125,0.25,0.75,0.625,0.625,0.875,0.625,0.5,1,0.625,0.875,1,0.875,saturday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+254,Goldfinch St,Fort Stockton and Washington,E,12,9,9,9,10,10,10,7,10,10,10,10,11,11,0.75,0.75,0.75,0.833,0.833,0.833,0.583,0.833,0.833,0.833,0.833,0.917,0.917,saturday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+255,Goldfinch St,Washington and University,W,2,2,2,2,2,2,2,2,2,3,2,2,2,2,1,1,1,1,1,1,1,1,1.5,1,1,1,1,saturday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+256,Goldfinch St,Washington and University,E,6,6,3,5,6,5,2,4,2,2,3,4,4,6,1,0.5,0.833,1,0.833,0.333,0.667,0.333,0.333,0.5,0.667,0.667,1,saturday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+257,W Washington St,Falcon and Eagle,N,8,1,1,6,8,8,7,5,4,3,1,4,6,7,0.125,0.125,0.75,1,1,0.875,0.625,0.5,0.375,0.125,0.5,0.75,0.875,saturday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+258,W Washington St,Falcon and Eagle,S,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,saturday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+259,30th St,Kalmia and Juniper,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+260,30th St,Kalmia and Juniper,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+261,Fern St,Juniper and Ivy,W,11,3,8,10,7,8,8,10,7,9,6,6,9,10,0.273,0.727,0.909,0.636,0.727,0.727,0.909,0.636,0.818,0.545,0.545,0.818,0.909,saturday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+262,Fern St,Juniper and Ivy,E,8,4,5,8,8,7,8,7,8,8,5,8,8,8,0.5,0.625,1,1,0.875,1,0.875,1,1,0.625,1,1,1,saturday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+263,Fern St,Ivy and Hawthorn,W,8,5,5,7,8,8,8,8,8,8,8,8,8,8,0.625,0.625,0.875,1,1,1,1,1,1,1,1,1,1,saturday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+264,Fern St,Ivy and Hawthorn,E,8,0,5,6,6,8,7,7,6,6,6,7,7,7,0,0.625,0.75,0.75,1,0.875,0.875,0.75,0.75,0.75,0.875,0.875,0.875,saturday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+265,Fern St,Hawthorn and Grape,W,12,6,6,8,9,8,7,7,7,9,9,9,8,8,0.5,0.5,0.667,0.75,0.667,0.583,0.583,0.583,0.75,0.75,0.75,0.667,0.667,saturday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+266,Fern St,Hawthorn and Grape,E,6,1,3,2,4,6,4,6,6,4,4,5,6,6,0.167,0.5,0.333,0.667,1,0.667,1,1,0.667,0.667,0.833,1,1,saturday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+267,Kettner Blvd,Hawthorn and Grape,W,9,9,10,8,8,8,11,8,8,10,8,8,8,8,1,1.111,0.889,0.889,0.889,1.222,0.889,0.889,1.111,0.889,0.889,0.889,0.889,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+268,Kettner Blvd,Hawthorn and Grape,E,8,8,7,8,7,8,7,7,5,6,6,6,6,7,1,0.875,1,0.875,1,0.875,0.875,0.625,0.75,0.75,0.75,0.75,0.875,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+269,Pacific Hwy,Grape and Cedar,W,14,4,5,6,6,8,9,12,10,13,13,12,13,11,0.286,0.357,0.429,0.429,0.571,0.643,0.857,0.714,0.929,0.929,0.857,0.929,0.786,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+270,Pacific Hwy,Grape and Cedar,E,2,0,0,0,1,0,0,2,0,0,0,0,2,1,0,0,0,0.5,0,0,1,0,0,0,0,1,0.5,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+271,N Harbor Dr,Grape and County Center N,E,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+272,N Harbor Dr,County Center N and Walkway,E,38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+273,N Harbor Dr,Walkway and County Center S,E,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+274,N Harbor Dr,County Center S and Ash,E,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+275,Columbia St,Elm and Date,E,6,6,7,6,6,6,6,7,8,6,7,7,8,7,1,1.167,1,1,1,1,1.167,1.333,1,1.167,1.167,1.333,1.167,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+276,Columbia St,Elm and Date,W,6,4,6,6,5,5,4,4,4,6,5,6,5,5,0.667,1,1,0.833,0.833,0.667,0.667,0.667,1,0.833,1,0.833,0.833,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+277,State St,Cedar and Beech,W,10,8,8,9,9,11,11,10,9,9,10,11,11,10,0.8,0.8,0.9,0.9,1.1,1.1,1,0.9,0.9,1,1.1,1.1,1,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+278,State St,Cedar and Beech,E,13,12,12,12,12,11,12,10,11,12,12,12,12,12,0.923,0.923,0.923,0.923,0.846,0.923,0.769,0.846,0.923,0.923,0.923,0.923,0.923,saturday,Little Italy,Downtown,FALSE,on_street,urban_core
+279,India St,Ash and A,W,8,8,8,8,8,7,6,7,8,8,8,8,8,9,1,1,1,1,0.875,0.75,0.875,1,1,1,1,1,1.125,saturday,Columbia,Downtown,FALSE,on_street,urban_core
+280,India St,Ash and A,E,14,8,8,9,10,9,9,12,10,11,12,12,11,11,0.571,0.571,0.643,0.714,0.643,0.643,0.857,0.714,0.786,0.857,0.857,0.786,0.786,saturday,Columbia,Downtown,FALSE,on_street,urban_core
+281,Kettner Blvd,E and F,W,8,2,4,4,5,8,9,8,8,7,7,8,8,8,0.25,0.5,0.5,0.625,1,1.125,1,1,0.875,0.875,1,1,1,saturday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+282,Kettner Blvd,E and F,E,12,4,4,5,10,11,12,12,12,12,12,12,12,12,0.333,0.333,0.417,0.833,0.917,1,1,1,1,1,1,1,1,saturday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+283,W G St,India and Columbia,N,13,4,6,13,13,13,13,13,13,13,13,13,13,14,0.308,0.462,1,1,1,1,1,1,1,1,1,1,1.077,saturday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+284,W G St,India and Columbia,S,8,1,6,8,8,7,8,8,8,8,8,8,8,8,0.125,0.75,1,1,0.875,1,1,1,1,1,1,1,1,saturday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+285,Columbia St,G and Market,W,6,2,3,4,5,6,6,5,6,5,6,6,6,6,0.333,0.5,0.667,0.833,1,1,0.833,1,0.833,1,1,1,1,saturday,Marina,Downtown,FALSE,on_street,urban_core
+286,Columbia St,G and Market,E,8,4,5,6,6,6,7,7,8,8,8,8,8,9,0.5,0.625,0.75,0.75,0.75,0.875,0.875,1,1,1,1,1,1.125,saturday,Marina,Downtown,FALSE,on_street,urban_core
+287,W G St,State and Union,N,13,5,1,1,9,13,13,13,13,13,13,13,13,13,0.385,0.077,0.077,0.692,1,1,1,1,1,1,1,1,1,saturday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+288,W G St,State and Union,S,8,8,8,8,8,8,7,8,8,7,8,8,8,8,1,1,1,1,1,0.875,1,1,0.875,1,1,1,1,saturday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+289,4th Ave,Island and J,W,10,8,7,7,8,7,7,8,8,8,8,9,10,12,0.8,0.7,0.7,0.8,0.7,0.7,0.8,0.8,0.8,0.8,0.9,1,1.2,saturday,Gaslamp,Downtown,FALSE,on_street,urban_core
+290,4th Ave,Island and J,E,9,6,6,7,6,6,7,8,8,7,8,9,9,11,0.667,0.667,0.778,0.667,0.667,0.778,0.889,0.889,0.778,0.889,1,1,1.222,saturday,Gaslamp,Downtown,FALSE,on_street,urban_core
+291,6th Ave,Island and J,W,12,6,5,3,8,7,3,5,6,4,4,7,7,10,0.5,0.417,0.25,0.667,0.583,0.25,0.417,0.5,0.333,0.333,0.583,0.583,0.833,saturday,Gaslamp,Downtown,TRUE,on_street,urban_core
+292,6th Ave,Island and J,E,7,5,4,8,6,5,5,7,5,5,5,4,6,5,0.714,0.571,1.143,0.857,0.714,0.714,1,0.714,0.714,0.714,0.571,0.857,0.714,saturday,Gaslamp,Downtown,TRUE,on_street,urban_core
+293,J St,6th and 7th,N,6,6,6,6,6,6,6,5,5,5,5,5,5,5,1,1,1,1,1,1,0.833,0.833,0.833,0.833,0.833,0.833,0.833,saturday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+294,J St,6th and 7th,S,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,saturday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+295,7th Ave,Island and J,E,3,1,1,1,1,1,6,4,2,2,2,3,3,3,0.333,0.333,0.333,0.333,0.333,2,1.333,0.667,0.667,0.667,1,1,1,saturday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+296,7th Ave,Island and J,W,11,4,7,9,6,5,6,5,6,6,4,7,11,11,0.364,0.636,0.818,0.545,0.455,0.545,0.455,0.545,0.545,0.364,0.636,1,1,saturday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+297,Market St,9th and 10th,N,9,2,4,3,7,5,6,6,5,6,7,8,8,8,0.222,0.444,0.333,0.778,0.556,0.667,0.667,0.556,0.667,0.778,0.889,0.889,0.889,saturday,East Village,Downtown,FALSE,on_street,urban_core
+298,Market St,9th and 10th,S,4,2,3,2,6,3,2,3,4,3,3,2,2,3,0.5,0.75,0.5,1.5,0.75,0.5,0.75,1,0.75,0.75,0.5,0.5,0.75,saturday,East Village,Downtown,FALSE,on_street,urban_core
+299,7th Ave,E and F,W,8,6,6,6,6,6,6,6,8,6,7,8,9,7,0.75,0.75,0.75,0.75,0.75,0.75,0.75,1,0.75,0.875,1,1.125,0.875,saturday,Core / East Village,Downtown,TRUE,on_street,urban_core
+300,7th Ave,E and F,E,21,21,19,19,19,20,20,21,21,20,21,21,21,21,1,0.905,0.905,0.905,0.952,0.952,1,1,0.952,1,1,1,1,saturday,Core / East Village,Downtown,TRUE,on_street,urban_core
+301,10th Ave,E and F,W,12,6,4,6,3,6,9,10,11,11,11,11,11,11,0.5,0.333,0.5,0.25,0.5,0.75,0.833,0.917,0.917,0.917,0.917,0.917,0.917,saturday,East Village,Downtown,FALSE,on_street,urban_core
+302,10th Ave,E and F,E,5,3,3,2,1,1,2,4,4,5,6,5,4,6,0.6,0.6,0.4,0.2,0.2,0.4,0.8,0.8,1,1.2,1,0.8,1.2,saturday,East Village,Downtown,FALSE,on_street,urban_core
+303,F St,10th and 11th,N,7,7,6,8,8,6,5,8,5,4,5,8,8,7,1,0.857,1.143,1.143,0.857,0.714,1.143,0.714,0.571,0.714,1.143,1.143,1,saturday,East Village,Downtown,FALSE,on_street,urban_core
+304,F St,10th and 11th,S,6,6,4,3,4,3,4,5,5,5,6,6,6,6,1,0.667,0.5,0.667,0.5,0.667,0.833,0.833,0.833,1,1,1,1,saturday,East Village,Downtown,FALSE,on_street,urban_core
+305,E St,14th and 15th,N,21,9,11,18,14,18,19,16,17,16,15,17,19,18,0.429,0.524,0.857,0.667,0.857,0.905,0.762,0.81,0.762,0.714,0.81,0.905,0.857,saturday,East Village,Downtown,FALSE,on_street,urban_core
+306,E St,14th and 15th,S,15,11,10,10,7,11,10,7,8,7,6,12,13,14,0.733,0.667,0.667,0.467,0.733,0.667,0.467,0.533,0.467,0.4,0.8,0.867,0.933,saturday,East Village,Downtown,FALSE,on_street,urban_core
+307,C St,14th and 15th,N,5,5,4,5,5,5,5,4,3,4,5,5,5,5,1,0.8,1,1,1,1,0.8,0.6,0.8,1,1,1,1,saturday,East Village,Downtown,FALSE,on_street,urban_core
+308,C St,14th and 15th,S,17,11,11,12,13,12,12,9,11,12,12,13,12,10,0.647,0.647,0.706,0.765,0.706,0.706,0.529,0.647,0.706,0.706,0.765,0.706,0.588,saturday,East Village,Downtown,FALSE,on_street,urban_core
+309,C St,15th and 16th,N,4,4,4,4,4,3,4,4,3,3,4,4,3,3,1,1,1,1,0.75,1,1,0.75,0.75,1,1,0.75,0.75,saturday,East Village,Downtown,FALSE,on_street,urban_core
+310,C St,15th and 16th,S,9,7,7,7,7,7,7,6,6,7,6,7,7,7,0.778,0.778,0.778,0.778,0.778,0.778,0.667,0.667,0.778,0.667,0.778,0.778,0.778,saturday,East Village,Downtown,FALSE,on_street,urban_core
+311,C St,16th and 17th,N,4,4,4,4,4,4,4,4,4,3,3,2,2,3,1,1,1,1,1,1,1,1,0.75,0.75,0.5,0.5,0.75,saturday,East Village,Downtown,FALSE,on_street,urban_core
+312,C St,16th and 17th,S,4,4,4,2,2,3,4,4,4,4,4,4,4,3,1,1,0.5,0.5,0.75,1,1,1,1,1,1,1,0.75,saturday,East Village,Downtown,FALSE,on_street,urban_core
+313,B St,Park and West side of Overhead,N,14,13,11,14,12,12,12,10,9,7,7,7,7,5,0.929,0.786,1,0.857,0.857,0.857,0.714,0.643,0.5,0.5,0.5,0.5,0.357,saturday,East Village,Downtown,FALSE,on_street,urban_core
+314,B St,Park and West side of Overhead,S,15,13,11,10,11,9,11,11,9,11,12,11,10,10,0.867,0.733,0.667,0.733,0.6,0.733,0.733,0.6,0.733,0.8,0.733,0.667,0.667,saturday,East Village,Downtown,FALSE,on_street,urban_core
+315,B St,Under Overhead,N,16,4,4,4,4,4,6,5,6,6,5,5,6,5,0.25,0.25,0.25,0.25,0.25,0.375,0.313,0.375,0.375,0.313,0.313,0.375,0.313,saturday,East Village,Downtown,FALSE,on_street,urban_core
+316,B St,Under Overhead,S,19,14,14,15,13,12,13,8,5,6,7,10,7,8,0.737,0.737,0.789,0.684,0.632,0.684,0.421,0.263,0.316,0.368,0.526,0.368,0.421,saturday,East Village,Downtown,FALSE,on_street,urban_core
+317,B St,East side of Overhead and 16th,N,11,3,2,2,2,2,7,7,6,7,7,6,5,5,0.273,0.182,0.182,0.182,0.182,0.636,0.636,0.545,0.636,0.636,0.545,0.455,0.455,saturday,East Village,Downtown,FALSE,on_street,urban_core
+318,B St,East side of Overhead and 16th,S,17,4,5,6,9,11,12,12,12,12,12,11,10,8,0.235,0.294,0.353,0.529,0.647,0.706,0.706,0.706,0.706,0.706,0.647,0.588,0.471,saturday,East Village,Downtown,FALSE,on_street,urban_core
+319,B St,16th and 17th,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,East Village,Downtown,FALSE,on_street,urban_core
+320,B St,16th and 17th,S,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,saturday,East Village,Downtown,FALSE,on_street,urban_core
+321,B St,8th and 9th,N,7,4,5,1,1,3,6,4,6,6,7,5,7,6,0.571,0.714,0.143,0.143,0.429,0.857,0.571,0.857,0.857,1,0.714,1,0.857,saturday,East Village,Downtown,FALSE,on_street,urban_core
+322,B St,8th and 9th,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,East Village,Downtown,FALSE,on_street,urban_core
+323,8th Ave,Beech and Ash,E,14,14,14,14,13,11,12,10,9,12,13,15,15,15,1,1,1,0.929,0.786,0.857,0.714,0.643,0.857,0.929,1.071,1.071,1.071,saturday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+324,8th Ave,Beech and Ash,W,10,10,11,8,10,9,9,10,8,10,10,9,10,10,1,1.1,0.8,1,0.9,0.9,1,0.8,1,1,0.9,1,1,saturday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+325,Beech St,6th and 7th,N,6,5,5,4,4,5,5,5,4,3,3,3,1,1,0.833,0.833,0.667,0.667,0.833,0.833,0.833,0.667,0.5,0.5,0.5,0.167,0.167,saturday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+326,Beech St,6th and 7th,S,15,14,12,12,14,13,10,13,9,7,7,9,8,7,0.933,0.8,0.8,0.933,0.867,0.667,0.867,0.6,0.467,0.467,0.6,0.533,0.467,saturday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+327,Beech St,5th and 6th,N,6,5,5,5,5,5,5,4,4,5,5,5,4,5,0.833,0.833,0.833,0.833,0.833,0.833,0.667,0.667,0.833,0.833,0.833,0.667,0.833,saturday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+328,Beech St,5th and 6th,S,8,6,7,7,4,7,7,7,7,7,7,6,7,7,0.75,0.875,0.875,0.5,0.875,0.875,0.875,0.875,0.875,0.875,0.75,0.875,0.875,saturday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+329,6th Ave,Beech and Ash,W,7,7,7,4,7,7,6,8,1,3,4,6,6,6,1,1,0.571,1,1,0.857,1.143,0.143,0.429,0.571,0.857,0.857,0.857,saturday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+330,6th Ave,Beech and Ash,E,7,6,3,4,7,6,3,5,1,2,4,2,2,3,0.857,0.429,0.571,1,0.857,0.429,0.714,0.143,0.286,0.571,0.286,0.286,0.429,saturday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+331,Ash St,4th and 5th,N,7,2,4,2,3,5,5,4,4,4,4,5,5,6,0.286,0.571,0.286,0.429,0.714,0.714,0.571,0.571,0.571,0.571,0.714,0.714,0.857,saturday,Cortez Hill / Core,Downtown,TRUE,on_street,urban_core
+332,Ash St,4th and 5th,S,6,1,2,1,4,4,1,2,5,5,5,3,3,5,0.167,0.333,0.167,0.667,0.667,0.167,0.333,0.833,0.833,0.833,0.5,0.5,0.833,saturday,Cortez Hill / Core,Downtown,TRUE,on_street,urban_core
+333,3rd Ave,Ash and A,W,14,6,6,6,4,2,4,3,5,9,11,10,12,14,0.429,0.429,0.429,0.286,0.143,0.286,0.214,0.357,0.643,0.786,0.714,0.857,1,saturday,Core,Downtown,FALSE,on_street,urban_core
+334,3rd Ave,Ash and A,E,11,4,6,4,4,5,7,5,9,9,11,11,11,13,0.364,0.545,0.364,0.364,0.455,0.636,0.455,0.818,0.818,1,1,1,1.182,saturday,Core,Downtown,FALSE,on_street,urban_core
+335,Juan St,Taylor and Wallace,E,14,3,3,6,7,6,7,8,7,7,5,9,7,7,0.214,0.214,0.429,0.5,0.429,0.5,0.571,0.5,0.5,0.357,0.643,0.5,0.5,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+336,Juan St,Taylor and Wallace,W,7,3,3,6,7,7,7,8,9,7,8,7,7,7,0.429,0.429,0.857,1,1,1,1.143,1.286,1,1.143,1,1,1,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+337,Juan St,Wallace and Mason,W,3,0,3,3,3,3,3,3,4,3,2,3,3,3,0,1,1,1,1,1,1,1.333,1,0.667,1,1,1,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+338,Juan St,Wallace and Mason,E,10,5,6,9,9,10,11,9,9,9,9,9,9,9,0.5,0.6,0.9,0.9,1,1.1,0.9,0.9,0.9,0.9,0.9,0.9,0.9,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+339,Calhoun St,Taylor and Wallace,E,18,2,3,4,12,12,13,13,14,14,14,16,14,16,0.111,0.167,0.222,0.667,0.667,0.722,0.722,0.778,0.778,0.778,0.889,0.778,0.889,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+340,Calhoun St,Taylor and Wallace,W,20,3,4,7,14,15,15,15,15,16,16,16,16,16,0.15,0.2,0.35,0.7,0.75,0.75,0.75,0.75,0.8,0.8,0.8,0.8,0.8,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+341,Congress St,Telegraph and Smith,E,0,0,0,1,0,0,0,1,0,0,0,0,1,1,,,,,,,,,,,,,,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+342,Congress St,Telegraph and Smith,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+343,Congress St,Smith and Mason,E,8,1,5,5,6,7,6,6,6,6,6,6,6,6,0.125,0.625,0.625,0.75,0.875,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+344,Congress St,Smith and Mason,W,16,0,1,5,11,9,10,12,13,12,10,12,12,12,0,0.063,0.313,0.688,0.563,0.625,0.75,0.813,0.75,0.625,0.75,0.75,0.75,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+345,Congress St,Mason and Twiggs,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+346,Congress St,Mason and Twiggs,W,11,2,3,6,8,8,7,7,9,6,7,8,9,10,0.182,0.273,0.545,0.727,0.727,0.636,0.636,0.818,0.545,0.636,0.727,0.818,0.909,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+347,Twiggs St,Juan and San Diego,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,,,,,,,,,,,,,,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+348,Twiggs St,Juan and San Diego,S,5,4,4,5,5,6,6,5,5,5,6,7,7,5,0.8,0.8,1,1,1.2,1.2,1,1,1,1.2,1.4,1.4,1,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+349,San Diego Ave,Twiggs and Harney,E,15,9,8,9,11,11,10,10,10,8,10,10,11,11,0.6,0.533,0.6,0.733,0.733,0.667,0.667,0.667,0.533,0.667,0.667,0.733,0.733,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+350,San Diego Ave,Twiggs and Harney,W,16,1,7,11,8,10,9,14,12,12,8,11,10,11,0.063,0.438,0.688,0.5,0.625,0.563,0.875,0.75,0.75,0.5,0.688,0.625,0.688,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+351,San Diego Ave,Harney and Conde,E,14,5,8,8,7,7,10,10,11,7,9,10,10,10,0.357,0.571,0.571,0.5,0.5,0.714,0.714,0.786,0.5,0.643,0.714,0.714,0.714,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+352,San Diego Ave,Harney and Conde,W,8,5,4,5,6,7,7,7,7,7,7,8,7,6,0.625,0.5,0.625,0.75,0.875,0.875,0.875,0.875,0.875,0.875,1,0.875,0.75,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+353,San Diego Ave,Conde and Linwood,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+354,San Diego Ave,Conde and Arista,W,2,1,1,2,3,3,7,5,3,4,5,5,5,5,0.5,0.5,1,1.5,1.5,3.5,2.5,1.5,2,2.5,2.5,2.5,2.5,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+355,San Diego Ave,Conde and Arista,E,6,1,1,3,4,4,4,5,5,4,4,5,6,5,0.167,0.167,0.5,0.667,0.667,0.667,0.833,0.833,0.667,0.667,0.833,1,0.833,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+356,San Diego Ave,Arista and Ampudia,W,10,1,0,0,4,7,7,7,6,6,6,8,10,10,0.1,0,0,0.4,0.7,0.7,0.7,0.6,0.6,0.6,0.8,1,1,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+357,San Diego Ave,Arista and Ampudia,E,8,2,2,3,5,6,7,5,5,5,6,5,6,7,0.25,0.25,0.375,0.625,0.75,0.875,0.625,0.625,0.625,0.75,0.625,0.75,0.875,saturday,Old Town,Old Town,FALSE,on_street,tourist_district
+358,Mission Blvd,Law and Chalcedony,W,7,6,6,7,7,7,6,6,6,6,6,7,6,6,0.857,0.857,1,1,1,0.857,0.857,0.857,0.857,0.857,1,0.857,0.857,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+359,Mission Blvd,Law and Chalcedony,E,9,8,8,8,9,9,10,9,9,9,7,9,9,9,0.889,0.889,0.889,1,1,1.111,1,1,1,0.778,1,1,1,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+360,Mission Blvd,Chalcedony and Missouri,W,8,7,8,8,8,8,8,8,8,8,7,7,7,7,0.875,1,1,1,1,1,1,1,1,0.875,0.875,0.875,0.875,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+361,Mission Blvd,Chalcedony and Missouri,E,9,7,10,9,9,9,9,9,9,9,9,8,8,9,0.778,1.111,1,1,1,1,1,1,1,1,0.889,0.889,1,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+362,Mission Blvd,Missouri and Diamond,W,7,6,6,6,7,7,8,7,7,7,6,7,7,6,0.857,0.857,0.857,1,1,1.143,1,1,1,0.857,1,1,0.857,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+363,Mission Blvd,Missouri and Diamond,E,7,3,7,7,7,7,7,8,8,8,8,8,8,7,0.429,1,1,1,1,1,1.143,1.143,1.143,1.143,1.143,1.143,1,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+364,Mission Blvd,Diamond and Emerald,W,10,7,9,10,10,10,10,10,10,10,11,9,9,10,0.7,0.9,1,1,1,1,1,1,1,1.1,0.9,0.9,1,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+365,Mission Blvd,Diamond and Emerald,E,8,5,6,6,8,9,8,8,8,8,8,8,8,5,0.625,0.75,0.75,1,1.125,1,1,1,1,1,1,1,0.625,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+366,Mission Blvd,Emerald and Felspar,W,11,7,9,10,10,9,9,9,8,8,8,9,10,5,0.636,0.818,0.909,0.909,0.818,0.818,0.818,0.727,0.727,0.727,0.818,0.909,0.455,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+367,Mission Blvd,Emerald and Felspar,E,8,3,8,6,7,8,8,8,7,5,5,7,8,8,0.375,1,0.75,0.875,1,1,1,0.875,0.625,0.625,0.875,1,1,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+368,Mission Blvd,Felspar and Garnet,W,0,0,0,0,0,0,1,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+369,Mission Blvd,Felspar and Garnet,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+370,Mission Blvd,Garnet and Hornblend,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+371,Mission Blvd,Garnet and Hornblend,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+372,Mission Blvd,Hornblend and Grand,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+373,Mission Blvd,Hornblend and Grand,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+374,Mission Blvd,Grand and Thomas,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+375,Mission Blvd,Grand and Thomas,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+376,Mission Blvd,Thomas and Reed,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+377,Mission Blvd,Thomas and Reed,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+378,Mission Blvd,Reed and Pacific Beach,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+379,Mission Blvd,Reed and Pacific Beach,E,6,1,1,3,1,1,3,1,3,2,3,3,6,7,0.167,0.167,0.5,0.167,0.167,0.5,0.167,0.5,0.333,0.5,0.5,1,1.167,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+380,Bayard St,Grand and Thomas,W,11,10,10,10,11,10,8,10,10,10,10,9,10,11,0.909,0.909,0.909,1,0.909,0.727,0.909,0.909,0.909,0.909,0.818,0.909,1,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+381,Bayard St,Grand and Thomas,E,10,10,10,9,10,10,10,10,10,9,10,9,10,10,1,1,0.9,1,1,1,1,1,0.9,1,0.9,1,1,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+382,Bayard St,Hornblend and Grand,W,10,3,5,7,8,8,8,9,9,8,10,10,10,9,0.3,0.5,0.7,0.8,0.8,0.8,0.9,0.9,0.8,1,1,1,0.9,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+383,Bayard St,Hornblend and Grand,E,6,1,5,5,6,5,7,5,7,6,6,6,6,6,0.167,0.833,0.833,1,0.833,1.167,0.833,1.167,1,1,1,1,1,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+384,Hornblend St,Bayard and Cass,N,21,17,21,21,22,23,22,21,23,21,20,21,21,21,0.81,1,1,1.048,1.095,1.048,1,1.095,1,0.952,1,1,1,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+385,Hornblend St,Bayard and Cass,S,30,8,19,26,30,31,29,31,31,31,31,31,32,31,0.267,0.633,0.867,1,1.033,0.967,1.033,1.033,1.033,1.033,1.033,1.067,1.033,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+386,Garnet Ave,Fanuel and Gresham,N,22,10,12,19,20,16,17,18,20,20,17,18,16,19,0.455,0.545,0.864,0.909,0.727,0.773,0.818,0.909,0.909,0.773,0.818,0.727,0.864,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+387,Garnet Ave,Fanuel and Gresham,S,16,2,4,8,11,8,9,9,9,7,9,7,8,7,0.125,0.25,0.5,0.688,0.5,0.563,0.563,0.563,0.438,0.563,0.438,0.5,0.438,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+388,Garnet Ave,Gresham and Haines,N,22,6,8,18,20,19,19,19,18,19,19,20,24,17,0.273,0.364,0.818,0.909,0.864,0.864,0.864,0.818,0.864,0.864,0.909,1.091,0.773,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+389,Garnet Ave,Gresham and Haines,S,20,0,5,18,17,15,18,14,15,19,16,19,19,18,0,0.25,0.9,0.85,0.75,0.9,0.7,0.75,0.95,0.8,0.95,0.95,0.9,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+390,Garnet Ave,Haines and Ingraham,N,17,10,13,12,10,9,11,13,12,12,13,16,13,13,0.588,0.765,0.706,0.588,0.529,0.647,0.765,0.706,0.706,0.765,0.941,0.765,0.765,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+391,Garnet Ave,Haines and Ingraham,S,10,4,10,11,8,7,8,4,7,7,8,9,8,8,0.4,1,1.1,0.8,0.7,0.8,0.4,0.7,0.7,0.8,0.9,0.8,0.8,saturday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+397,Balboa Dr,6th and Quince,E,64,8,21,28,26,38,39,44,41,33,25,17,13,8,0.125,0.328,0.438,0.406,0.594,0.609,0.688,0.641,0.516,0.391,0.266,0.203,0.125,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+398,Balboa Dr,6th and Quince,W,85,0,6,20,22,37,45,52,48,38,33,28,18,11,0,0.071,0.235,0.259,0.435,0.529,0.612,0.565,0.447,0.388,0.329,0.212,0.129,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+399,Quince Dr,6th and Balboa,N,5,1,1,1,3,4,2,2,3,2,2,1,0,0,0.2,0.2,0.2,0.6,0.8,0.4,0.4,0.6,0.4,0.4,0.2,0,0,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+400,Quince Dr,6th and Balboa,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+401,Balboa Dr,Quince and El Prado,E,77,27,34,24,34,38,45,46,48,36,32,26,24,25,0.351,0.442,0.312,0.442,0.494,0.584,0.597,0.623,0.468,0.416,0.338,0.312,0.325,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+402,Balboa Dr,Quince and El Prado,W,115,35,35,40,56,65,77,93,82,60,48,38,42,34,0.304,0.304,0.348,0.487,0.565,0.67,0.809,0.713,0.522,0.417,0.33,0.365,0.296,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+403,El Prado,6th and Balboa,N,7,7,7,4,6,7,6,8,6,8,7,7,6,7,1,1,0.571,0.857,1,0.857,1.143,0.857,1.143,1,1,0.857,1,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+404,El Prado,6th and Balboa,S,10,8,7,8,9,10,9,9,9,10,10,8,9,7,0.8,0.7,0.8,0.9,1,0.9,0.9,0.9,1,1,0.8,0.9,0.7,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+405,Juniper Rd,6th and Balboa,N,9,3,4,4,6,7,7,7,8,8,5,5,5,3,0.333,0.444,0.444,0.667,0.778,0.778,0.778,0.889,0.889,0.556,0.556,0.556,0.333,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+406,Balboa Dr,El Prado and Juniper,W,37,17,25,24,37,37,35,37,37,36,35,34,28,29,0.459,0.676,0.649,1,1,0.946,1,1,0.973,0.946,0.919,0.757,0.784,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+407,Balboa Dr,El Prado and Juniper,E,30,13,19,20,27,28,28,27,27,27,26,25,22,20,0.433,0.633,0.667,0.9,0.933,0.933,0.9,0.9,0.9,0.867,0.833,0.733,0.667,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+408,Juniper Rd,6th and Balboa,S,16,2,4,12,13,14,14,15,14,13,13,11,7,4,0.125,0.25,0.75,0.813,0.875,0.875,0.938,0.875,0.813,0.813,0.688,0.438,0.25,saturday,Balboa Park,Balboa Park,FALSE,on_street,park
+409,Lot 409,,,2,2,2,1,1,2,2,0,0,1,2,1,1,0,1,1,0.5,0.5,1,1,0,0,0.5,1,0.5,0.5,0,saturday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+241,Park Blvd,University and Robinson,W,17,11,13,12,16,15,13,11,8,11,11,13,16,,0.647,0.765,0.706,0.941,0.882,0.765,0.647,0.471,0.647,0.647,0.765,0.941,,sunday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+242,Park Blvd,University and Robinson,E,15,9,11,15,17,15,15,10,5,8,11,15,13,,0.6,0.733,1,1.133,1,1,0.667,0.333,0.533,0.733,1,0.867,,sunday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+243,Cleveland Ave,Vermont and Richmond,N,30,19,26,29,30,31,29,27,24,26,30,29,25,,0.633,0.867,0.967,1,1.033,0.967,0.9,0.8,0.867,1,0.967,0.833,,sunday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+244,Cleveland Ave,Vermont and Richmond,S,27,12,19,24,25,24,24,25,22,25,22,20,13,,0.444,0.704,0.889,0.926,0.889,0.889,0.926,0.815,0.926,0.815,0.741,0.481,,sunday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+245,University Ave,10th and Vermont,N,17,2,1,9,10,9,11,13,13,10,6,6,10,,0.118,0.059,0.529,0.588,0.529,0.647,0.765,0.765,0.588,0.353,0.353,0.588,,sunday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+246,University Ave,10th and Vermont,S,9,2,3,7,7,8,9,8,9,11,9,7,10,,0.222,0.333,0.778,0.778,0.889,1,0.889,1,1.222,1,0.778,1.111,,sunday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+247,University Ave,Vermont and Richmond,N,33,5,19,30,33,33,32,31,31,31,32,30,23,,0.152,0.576,0.909,1,1,0.97,0.939,0.939,0.939,0.97,0.909,0.697,,sunday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+248,University Ave,Vermont and Richmond,S,25,5,11,19,22,27,24,24,24,24,24,21,14,,0.2,0.44,0.76,0.88,1.08,0.96,0.96,0.96,0.96,0.96,0.84,0.56,,sunday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+249,7th Ave,University and Robinson,W,19,15,15,17,16,16,18,16,17,16,17,16,13,,0.789,0.789,0.895,0.842,0.842,0.947,0.842,0.895,0.842,0.895,0.842,0.684,,sunday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+250,7th Ave,University and Robinson,E,17,16,17,17,17,17,18,16,17,14,16,14,14,,0.941,1,1,1,1,1.059,0.941,1,0.824,0.941,0.824,0.824,,sunday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+251,W Washington St,Hawk and Goldfinch,N,4,1,2,4,4,4,3,2,4,4,2,4,4,,0.25,0.5,1,1,1,0.75,0.5,1,1,0.5,1,1,,sunday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+252,W Washington St,Hawk and Goldfinch,S,7,6,8,7,5,6,5,4,3,6,6,6,6,,0.857,1.143,1,0.714,0.857,0.714,0.571,0.429,0.857,0.857,0.857,0.857,,sunday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+253,Goldfinch St,Fort Stockton and Washington,W,7,2,4,6,7,8,7,8,5,9,5,7,8,,0.286,0.571,0.857,1,1.143,1,1.143,0.714,1.286,0.714,1,1.143,,sunday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+254,Goldfinch St,Fort Stockton and Washington,E,12,9,9,10,11,11,11,10,11,10,11,11,11,,0.75,0.75,0.833,0.917,0.917,0.917,0.833,0.917,0.833,0.917,0.917,0.917,,sunday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+255,Goldfinch St,Washington and University,W,3,2,3,3,3,2,3,3,2,3,3,2,2,,0.667,1,1,1,0.667,1,1,0.667,1,1,0.667,0.667,,sunday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+256,Goldfinch St,Washington and University,E,6,5,5,6,6,6,6,6,5,6,3,6,5,,0.833,0.833,1,1,1,1,1,0.833,1,0.5,1,0.833,,sunday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+257,W Washington St,Falcon and Eagle,N,8,0,5,8,8,8,7,7,5,4,3,5,6,,0,0.625,1,1,1,0.875,0.875,0.625,0.5,0.375,0.625,0.75,,sunday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+258,W Washington St,Falcon and Eagle,S,1,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,,sunday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+267,Kettner Blvd,Hawthorn and Grape,W,9,7,7,8,8,8,8,7,8,8,8,8,10,,0.778,0.778,0.889,0.889,0.889,0.889,0.778,0.889,0.889,0.889,0.889,1.111,,sunday,Little Italy,Downtown,FALSE,on_street,urban_core
+268,Kettner Blvd,Hawthorn and Grape,E,8,7,8,6,8,7,6,6,6,6,6,6,6,,0.875,1,0.75,1,0.875,0.75,0.75,0.75,0.75,0.75,0.75,0.75,,sunday,Little Italy,Downtown,FALSE,on_street,urban_core
+269,Pacific Hwy,Grape and Cedar,W,14,1,2,2,2,5,8,14,14,12,11,14,14,,0.071,0.143,0.143,0.143,0.357,0.571,1,1,0.857,0.786,1,1,,sunday,Little Italy,Downtown,FALSE,on_street,urban_core
+270,Pacific Hwy,Grape and Cedar,E,2,0,2,2,2,2,2,3,0,0,0,0,0,,0,1,1,1,1,1,1.5,0,0,0,0,0,,sunday,Little Italy,Downtown,FALSE,on_street,urban_core
+271,N Harbor Dr,Grape and County Center N,E,17,2,6,8,17,17,17,17,17,15,14,17,16,,0.118,0.353,0.471,1,1,1,1,1,0.882,0.824,1,0.941,,sunday,Little Italy,Downtown,FALSE,on_street,urban_core
+272,N Harbor Dr,County Center N and Walkway,E,38,17,24,26,34,36,38,38,36,33,36,38,31,,0.447,0.632,0.684,0.895,0.947,1,1,0.947,0.868,0.947,1,0.816,,sunday,Little Italy,Downtown,FALSE,on_street,urban_core
+273,N Harbor Dr,Walkway and County Center S,E,6,5,6,6,6,6,6,6,6,6,6,6,6,,0.833,1,1,1,1,1,1,1,1,1,1,1,,sunday,Little Italy,Downtown,FALSE,on_street,urban_core
+274,N Harbor Dr,County Center S and Ash,E,18,11,14,16,16,17,17,17,17,14,17,17,15,,0.611,0.778,0.889,0.889,0.944,0.944,0.944,0.944,0.778,0.944,0.944,0.833,,sunday,Little Italy,Downtown,FALSE,on_street,urban_core
+277,State St,Cedar and Beech,W,10,7,9,9,10,10,10,9,9,12,11,12,12,,0.7,0.9,0.9,1,1,1,0.9,0.9,1.2,1.1,1.2,1.2,,sunday,Little Italy,Downtown,FALSE,on_street,urban_core
+278,State St,Cedar and Beech,E,13,9,9,10,10,10,10,9,10,10,10,10,11,,0.692,0.692,0.769,0.769,0.769,0.769,0.692,0.769,0.769,0.769,0.769,0.846,,sunday,Little Italy,Downtown,FALSE,on_street,urban_core
+279,India St,Ash and A,W,8,3,3,6,8,8,8,8,8,8,7,8,8,,0.375,0.375,0.75,1,1,1,1,1,1,0.875,1,1,,sunday,Columbia,Downtown,FALSE,on_street,urban_core
+280,India St,Ash and A,E,14,1,1,3,9,10,11,7,9,10,8,10,9,,0.071,0.071,0.214,0.643,0.714,0.786,0.5,0.643,0.714,0.571,0.714,0.643,,sunday,Columbia,Downtown,FALSE,on_street,urban_core
+281,Kettner Blvd,E and F,W,8,5,8,8,8,8,8,8,8,8,8,7,6,,0.625,1,1,1,1,1,1,1,1,1,0.875,0.75,,sunday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+282,Kettner Blvd,E and F,E,12,4,12,12,12,12,11,12,12,12,11,12,9,,0.333,1,1,1,1,0.917,1,1,1,0.917,1,0.75,,sunday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+283,W G St,India and Columbia,N,13,8,13,13,13,13,13,14,13,13,12,12,6,,0.615,1,1,1,1,1,1.077,1,1,0.923,0.923,0.462,,sunday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+284,W G St,India and Columbia,S,8,7,8,8,8,8,8,8,8,8,6,8,8,,0.875,1,1,1,1,1,1,1,1,0.75,1,1,,sunday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+285,Columbia St,G and Market,W,6,6,7,7,7,6,6,6,7,6,6,6,4,,1,1.167,1.167,1.167,1,1,1,1.167,1,1,1,0.667,,sunday,Marina,Downtown,FALSE,on_street,urban_core
+286,Columbia St,G and Market,E,8,8,8,8,8,8,8,8,8,9,8,8,7,,1,1,1,1,1,1,1,1,1.125,1,1,0.875,,sunday,Marina,Downtown,FALSE,on_street,urban_core
+287,W G St,State and Union,N,13,5,13,13,13,13,13,13,13,13,13,9,10,,0.385,1,1,1,1,1,1,1,1,1,0.692,0.769,,sunday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+288,W G St,State and Union,S,8,8,8,8,8,8,8,8,8,8,8,8,8,,1,1,1,1,1,1,1,1,1,1,1,1,,sunday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+289,4th Ave,Island and J,W,10,8,8,10,10,10,10,11,11,10,8,9,8,,0.8,0.8,1,1,1,1,1.1,1.1,1,0.8,0.9,0.8,,sunday,Gaslamp,Downtown,FALSE,on_street,urban_core
+290,4th Ave,Island and J,E,9,6,9,9,8,9,9,8,10,10,10,12,10,,0.667,1,1,0.889,1,1,0.889,1.111,1.111,1.111,1.333,1.111,,sunday,Gaslamp,Downtown,FALSE,on_street,urban_core
+291,6th Ave,Island and J,W,12,8,7,10,12,12,11,11,8,9,10,9,7,,0.667,0.583,0.833,1,1,0.917,0.917,0.667,0.75,0.833,0.75,0.583,,sunday,Gaslamp,Downtown,TRUE,on_street,urban_core
+292,6th Ave,Island and J,E,7,7,6,7,7,5,5,5,6,7,6,7,7,,1,0.857,1,1,0.714,0.714,0.714,0.857,1,0.857,1,1,,sunday,Gaslamp,Downtown,TRUE,on_street,urban_core
+293,J St,6th and 7th,N,6,5,5,5,5,5,5,5,5,5,5,5,5,,0.833,0.833,0.833,0.833,0.833,0.833,0.833,0.833,0.833,0.833,0.833,0.833,,sunday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+294,J St,6th and 7th,S,5,5,5,5,5,6,5,5,5,5,6,5,5,,1,1,1,1,1.2,1,1,1,1,1.2,1,1,,sunday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+295,7th Ave,Island and J,E,3,3,4,4,6,4,5,3,5,4,5,3,2,,1,1.333,1.333,2,1.333,1.667,1,1.667,1.333,1.667,1,0.667,,sunday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+296,7th Ave,Island and J,W,11,10,10,10,10,10,10,10,10,9,8,7,10,,0.909,0.909,0.909,0.909,0.909,0.909,0.909,0.909,0.818,0.727,0.636,0.909,,sunday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+297,Market St,9th and 10th,N,9,1,9,9,9,9,9,9,9,9,6,7,8,,0.111,1,1,1,1,1,1,1,1,0.667,0.778,0.889,,sunday,East Village,Downtown,FALSE,on_street,urban_core
+298,Market St,9th and 10th,S,4,3,4,4,4,4,4,4,5,4,2,2,2,,0.75,1,1,1,1,1,1,1.25,1,0.5,0.5,0.5,,sunday,East Village,Downtown,FALSE,on_street,urban_core
+299,7th Ave,E and F,W,8,8,8,8,9,8,8,9,9,8,9,8,8,,1,1,1,1.125,1,1,1.125,1.125,1,1.125,1,1,,sunday,Core / East Village,Downtown,TRUE,on_street,urban_core
+300,7th Ave,E and F,E,21,10,18,18,20,20,20,20,20,20,20,20,19,,0.476,0.857,0.857,0.952,0.952,0.952,0.952,0.952,0.952,0.952,0.952,0.905,,sunday,Core / East Village,Downtown,TRUE,on_street,urban_core
+301,10th Ave,E and F,W,12,6,5,9,11,11,11,11,11,12,11,11,9,,0.5,0.417,0.75,0.917,0.917,0.917,0.917,0.917,1,0.917,0.917,0.75,,sunday,East Village,Downtown,FALSE,on_street,urban_core
+302,10th Ave,E and F,E,5,5,4,5,7,8,10,9,9,8,5,6,5,,1,0.8,1,1.4,1.6,2,1.8,1.8,1.6,1,1.2,1,,sunday,East Village,Downtown,FALSE,on_street,urban_core
+303,F St,10th and 11th,N,7,4,8,8,8,8,8,7,8,9,8,7,7,,0.571,1.143,1.143,1.143,1.143,1.143,1,1.143,1.286,1.143,1,1,,sunday,East Village,Downtown,FALSE,on_street,urban_core
+304,F St,10th and 11th,S,6,5,5,6,7,7,6,6,6,6,6,6,5,,0.833,0.833,1,1.167,1.167,1,1,1,1,1,1,0.833,,sunday,East Village,Downtown,FALSE,on_street,urban_core
+335,Juan St,Taylor and Wallace,E,15,0,3,6,10,9,9,8,8,8,8,8,7,,0,0.2,0.4,0.667,0.6,0.6,0.533,0.533,0.533,0.533,0.533,0.467,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+336,Juan St,Taylor and Wallace,W,7,1,6,7,7,7,9,9,9,9,9,8,6,,0.143,0.857,1,1,1,1.286,1.286,1.286,1.286,1.286,1.143,0.857,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+337,Juan St,Wallace and Mason,W,3,1,2,3,3,3,3,4,3,3,3,3,3,,0.333,0.667,1,1,1,1,1.333,1,1,1,1,1,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+338,Juan St,Wallace and Mason,E,10,5,7,8,8,9,9,9,9,9,8,9,7,,0.5,0.7,0.8,0.8,0.9,0.9,0.9,0.9,0.9,0.8,0.9,0.7,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+339,Calhoun St,Taylor and Wallace,E,18,6,12,14,15,14,16,15,15,14,16,16,12,,0.333,0.667,0.778,0.833,0.778,0.889,0.833,0.833,0.778,0.889,0.889,0.667,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+340,Calhoun St,Taylor and Wallace,W,20,0,6,16,17,17,17,17,16,18,17,12,15,,0,0.3,0.8,0.85,0.85,0.85,0.85,0.8,0.9,0.85,0.6,0.75,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+341,Congress St,Telegraph and Smith,E,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+342,Congress St,Telegraph and Smith,W,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+343,Congress St,Smith and Mason,E,8,4,6,7,7,7,7,7,7,7,8,7,4,,0.5,0.75,0.875,0.875,0.875,0.875,0.875,0.875,0.875,1,0.875,0.5,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+344,Congress St,Smith and Mason,W,13,0,3,12,12,12,11,12,12,12,11,10,6,,0,0.231,0.923,0.923,0.923,0.846,0.923,0.923,0.923,0.846,0.769,0.462,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+345,Congress St,Mason and Twiggs,E,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+346,Congress St,Mason and Twiggs,W,9,0,4,6,9,8,8,9,8,7,9,8,6,,0,0.444,0.667,1,0.889,0.889,1,0.889,0.778,1,0.889,0.667,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+347,Twiggs St,Juan and San Diego,N,0,0,2,1,3,3,4,2,2,1,0,1,4,,,,,,,,,,,,,,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+348,Twiggs St,Juan and San Diego,S,5,1,5,5,4,4,4,3,4,4,6,4,2,,0.2,1,1,0.8,0.8,0.8,0.6,0.8,0.8,1.2,0.8,0.4,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+349,San Diego Ave,Twiggs and Harney,E,15,5,10,10,10,9,12,9,11,10,9,11,6,,0.333,0.667,0.667,0.667,0.6,0.8,0.6,0.733,0.667,0.6,0.733,0.4,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+350,San Diego Ave,Twiggs and Harney,W,16,6,11,13,13,13,12,12,9,10,11,10,7,,0.375,0.688,0.813,0.813,0.813,0.75,0.75,0.563,0.625,0.688,0.625,0.438,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+351,San Diego Ave,Harney and Conde,E,14,6,11,10,11,11,12,12,12,12,12,12,12,,0.429,0.786,0.714,0.786,0.786,0.857,0.857,0.857,0.857,0.857,0.857,0.857,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+352,San Diego Ave,Harney and Conde,W,8,7,6,7,7,7,7,6,7,7,7,7,7,,0.875,0.75,0.875,0.875,0.875,0.875,0.75,0.875,0.875,0.875,0.875,0.875,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+353,San Diego Ave,Conde and Linwood,E,0,0,0,0,0,1,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+354,San Diego Ave,Conde and Arista,W,2,0,0,3,3,4,4,6,4,4,2,5,4,,0,0,1.5,1.5,2,2,3,2,2,1,2.5,2,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+355,San Diego Ave,Conde and Arista,E,6,0,1,4,5,5,6,5,5,6,5,6,5,,0,0.167,0.667,0.833,0.833,1,0.833,0.833,1,0.833,1,0.833,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+356,San Diego Ave,Arista and Ampudia,W,10,1,1,3,5,6,7,5,7,8,6,7,7,,0.1,0.1,0.3,0.5,0.6,0.7,0.5,0.7,0.8,0.6,0.7,0.7,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+357,San Diego Ave,Arista and Ampudia,E,8,1,1,3,4,6,6,5,6,6,4,5,5,,0.125,0.125,0.375,0.5,0.75,0.75,0.625,0.75,0.75,0.5,0.625,0.625,,sunday,Old Town,Old Town,FALSE,on_street,tourist_district
+358,Mission Blvd,Law and Chalcedony,W,7,3,6,6,7,6,6,6,6,6,6,4,6,,0.429,0.857,0.857,1,0.857,0.857,0.857,0.857,0.857,0.857,0.571,0.857,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+359,Mission Blvd,Law and Chalcedony,E,9,9,9,9,9,9,8,8,8,8,7,8,8,,1,1,1,1,1,0.889,0.889,0.889,0.889,0.778,0.889,0.889,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+360,Mission Blvd,Chalcedony and Missouri,W,8,8,8,7,8,8,8,8,8,8,8,6,7,,1,1,0.875,1,1,1,1,1,1,1,0.75,0.875,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+361,Mission Blvd,Chalcedony and Missouri,E,9,8,8,8,9,9,9,10,10,10,10,8,9,,0.889,0.889,0.889,1,1,1,1.111,1.111,1.111,1.111,0.889,1,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+362,Mission Blvd,Missouri and Diamond,W,7,6,7,7,7,7,7,7,7,7,7,5,6,,0.857,1,1,1,1,1,1,1,1,1,0.714,0.857,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+363,Mission Blvd,Missouri and Diamond,E,7,5,7,7,7,7,7,7,7,7,7,7,7,,0.714,1,1,1,1,1,1,1,1,1,1,1,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+364,Mission Blvd,Diamond and Emerald,W,10,8,10,9,10,9,10,10,10,10,10,8,10,,0.8,1,0.9,1,0.9,1,1,1,1,1,0.8,1,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+365,Mission Blvd,Diamond and Emerald,E,8,7,8,8,8,9,8,8,8,9,8,10,8,,0.875,1,1,1,1.125,1,1,1,1.125,1,1.25,1,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+366,Mission Blvd,Emerald and Felspar,W,11,9,9,9,10,10,10,10,10,11,10,11,10,,0.818,0.818,0.818,0.909,0.909,0.909,0.909,0.909,1,0.909,1,0.909,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+367,Mission Blvd,Emerald and Felspar,E,8,8,8,8,8,8,8,9,8,8,8,8,8,,1,1,1,1,1,1,1.125,1,1,1,1,1,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+368,Mission Blvd,Felspar and Garnet,W,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+369,Mission Blvd,Felspar and Garnet,E,0,0,0,0,0,0,1,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+370,Mission Blvd,Garnet and Hornblend,W,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+371,Mission Blvd,Garnet and Hornblend,E,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+372,Mission Blvd,Hornblend and Grand,W,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+373,Mission Blvd,Hornblend and Grand,E,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+374,Mission Blvd,Grand and Thomas,W,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+375,Mission Blvd,Grand and Thomas,E,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+376,Mission Blvd,Thomas and Reed,W,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+377,Mission Blvd,Thomas and Reed,E,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+378,Mission Blvd,Reed and Pacific Beach,W,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+379,Mission Blvd,Reed and Pacific Beach,E,6,1,1,5,5,6,6,5,6,6,7,5,6,,0.167,0.167,0.833,0.833,1,1,0.833,1,1,1.167,0.833,1,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+380,Bayard St,Grand and Thomas,W,11,10,10,10,10,10,10,10,10,10,9,10,9,,0.909,0.909,0.909,0.909,0.909,0.909,0.909,0.909,0.909,0.818,0.909,0.818,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+381,Bayard St,Grand and Thomas,E,10,9,10,10,10,10,10,10,10,10,10,10,10,,0.9,1,1,1,1,1,1,1,1,1,1,1,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+382,Bayard St,Hornblend and Grand,W,10,1,10,10,8,9,10,9,9,9,9,10,8,,0.1,1,1,0.8,0.9,1,0.9,0.9,0.9,0.9,1,0.8,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+383,Bayard St,Hornblend and Grand,E,6,0,5,6,5,6,6,6,6,6,6,6,5,,0,0.833,1,0.833,1,1,1,1,1,1,1,0.833,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+384,Hornblend St,Bayard and Cass,N,21,12,14,21,21,21,21,21,22,21,22,20,23,,0.571,0.667,1,1,1,1,1,1.048,1,1.048,0.952,1.095,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+385,Hornblend St,Bayard and Cass,S,30,12,13,29,30,30,31,31,31,31,31,31,30,,0.4,0.433,0.967,1,1,1.033,1.033,1.033,1.033,1.033,1.033,1,,sunday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+1,Lot 1,,,275,138,177,193,191,203,235,252,254,231,259,259,259,251,0.502,0.644,0.702,0.695,0.738,0.855,0.916,0.924,0.84,0.942,0.942,0.942,0.913,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+2,Lot 2,,,141,58,62,57,68,73,94,80,81,85,90,117,121,110,0.411,0.44,0.404,0.482,0.518,0.667,0.567,0.574,0.603,0.638,0.83,0.858,0.78,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+3,Lot 3,,,146,58,58,65,66,68,68,67,75,67,64,63,58,50,0.397,0.397,0.445,0.452,0.466,0.466,0.459,0.514,0.459,0.438,0.432,0.397,0.342,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+3.1,Lot 3.1,,,54,9,13,13,15,22,15,13,18,17,15,16,14,16,0.167,0.241,0.241,0.278,0.407,0.278,0.241,0.333,0.315,0.278,0.296,0.259,0.296,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+4,Lot 4,,,62,6,8,24,27,20,25,12,7,9,14,20,22,17,0.097,0.129,0.387,0.435,0.323,0.403,0.194,0.113,0.145,0.226,0.323,0.355,0.274,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+5,Lot 5,,,536,138,164,195,249,285,297,248,205,181,163,133,112,105,0.257,0.306,0.364,0.465,0.532,0.554,0.463,0.382,0.338,0.304,0.248,0.209,0.196,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+6,Lot 6,,,78,21,26,29,36,29,32,41,43,29,28,20,19,16,0.269,0.333,0.372,0.462,0.372,0.41,0.526,0.551,0.372,0.359,0.256,0.244,0.205,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+7,Lot 7,,,14,6,8,7,8,10,11,12,12,6,9,11,11,11,0.429,0.571,0.5,0.571,0.714,0.786,0.857,0.857,0.429,0.643,0.786,0.786,0.786,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+8,Lot 8,,,213,12,16,18,29,37,45,59,59,72,73,73,68,58,0.056,0.075,0.085,0.136,0.174,0.211,0.277,0.277,0.338,0.343,0.343,0.319,0.272,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+9,Lot 9,,,454,26,31,79,151,213,297,329,316,293,315,379,415,353,0.058,0.069,0.176,0.337,0.475,0.663,0.734,0.705,0.654,0.703,0.846,0.926,0.788,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+10,Lot 10,,,252,121,148,185,217,226,227,226,232,232,232,235,236,231,0.48,0.587,0.734,0.861,0.897,0.901,0.897,0.921,0.921,0.921,0.933,0.937,0.917,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+11,Lot 11,,,69,22,43,67,72,72,73,73,75,75,74,72,73,72,0.319,0.623,0.971,1.043,1.043,1.058,1.058,1.087,1.087,1.072,1.043,1.058,1.043,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+12,Lot 12,,,459,190,234,353,440,452,448,451,448,450,450,451,455,451,0.414,0.51,0.769,0.959,0.985,0.976,0.983,0.976,0.98,0.98,0.983,0.991,0.983,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+13,Lot 13,,,463,134,155,150,192,341,445,452,453,449,452,453,458,458,0.289,0.335,0.324,0.415,0.737,0.961,0.976,0.978,0.97,0.976,0.978,0.989,0.989,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+15,Lot 15,,,202,173,173,179,177,184,186,184,181,130,110,116,104,102,0.856,0.856,0.886,0.876,0.911,0.921,0.911,0.896,0.644,0.545,0.574,0.515,0.505,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+16,Lot 16,,,98,64,68,83,95,92,93,85,82,60,54,35,35,24,0.653,0.694,0.847,0.969,0.939,0.949,0.867,0.837,0.612,0.551,0.357,0.357,0.245,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+18,Lot 18,,,297,21,35,43,39,51,63,65,51,54,61,77,87,75,0.071,0.118,0.145,0.131,0.172,0.212,0.219,0.172,0.182,0.205,0.259,0.293,0.253,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+19,Lot 19,,,334,12,14,13,14,21,29,27,32,36,35,44,42,40,0.036,0.042,0.039,0.042,0.063,0.087,0.081,0.096,0.108,0.105,0.132,0.126,0.12,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+20,Lot 20,,,176,11,27,34,28,49,54,35,34,35,34,60,63,41,0.063,0.153,0.193,0.159,0.278,0.307,0.199,0.193,0.199,0.193,0.341,0.358,0.233,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+21,Lot 21,,,278,80,79,87,76,77,74,71,87,91,88,110,117,118,0.288,0.284,0.313,0.273,0.277,0.266,0.255,0.313,0.327,0.317,0.396,0.421,0.424,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+22,Lot 22,,,199,14,15,39,50,55,54,73,60,50,51,55,51,56,0.07,0.075,0.196,0.251,0.276,0.271,0.367,0.302,0.251,0.256,0.276,0.256,0.281,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+23,Lot 23,,,104,9,13,17,19,14,10,6,12,16,16,21,16,13,0.087,0.125,0.163,0.183,0.135,0.096,0.058,0.115,0.154,0.154,0.202,0.154,0.125,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+24,Lot 24,,,135,11,11,16,16,20,21,19,21,25,31,63,76,81,0.081,0.081,0.119,0.119,0.148,0.156,0.141,0.156,0.185,0.23,0.467,0.563,0.6,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+25,Lot 25,,,12,2,2,2,2,2,1,2,2,1,0,0,0,0,0.167,0.167,0.167,0.167,0.167,0.083,0.167,0.167,0.083,0,0,0,0,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+26,Lot 26,,,17,2,1,1,0,1,2,2,1,1,2,1,1,0,0.118,0.059,0.059,0,0.059,0.118,0.118,0.059,0.059,0.118,0.059,0.059,0,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+27,Lot 27,,,80,7,8,7,13,17,17,13,6,7,5,7,7,5,0.088,0.1,0.088,0.163,0.213,0.213,0.163,0.075,0.088,0.063,0.088,0.088,0.063,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+28,Lot 28,,,60,10,8,11,12,10,20,32,31,19,14,13,15,18,0.167,0.133,0.183,0.2,0.167,0.333,0.533,0.517,0.317,0.233,0.217,0.25,0.3,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+29,Lot 29,,,54,12,12,17,16,10,12,13,11,18,21,24,28,33,0.222,0.222,0.315,0.296,0.185,0.222,0.241,0.204,0.333,0.389,0.444,0.519,0.611,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+30,Lot 30,,,148,23,24,25,24,24,23,20,18,20,28,61,73,59,0.155,0.162,0.169,0.162,0.162,0.155,0.135,0.122,0.135,0.189,0.412,0.493,0.399,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+31,Lot 31,,,304,21,32,49,52,41,36,40,50,63,58,74,69,48,0.069,0.105,0.161,0.171,0.135,0.118,0.132,0.164,0.207,0.191,0.243,0.227,0.158,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+32,Lot 32,,,289,34,43,52,50,47,44,44,52,58,86,93,91,68,0.118,0.149,0.18,0.173,0.163,0.152,0.152,0.18,0.201,0.298,0.322,0.315,0.235,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+33,Lot 33,,,46,6,7,12,11,12,11,9,13,9,8,24,27,15,0.13,0.152,0.261,0.239,0.261,0.239,0.196,0.283,0.196,0.174,0.522,0.587,0.326,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+34,Lot 34,,,266,102,90,106,101,100,106,93,95,109,114,139,160,130,0.383,0.338,0.398,0.38,0.376,0.398,0.35,0.357,0.41,0.429,0.523,0.602,0.489,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+35,Lot 35,,,87,40,58,74,78,73,55,41,33,41,59,69,56,25,0.46,0.667,0.851,0.897,0.839,0.632,0.471,0.379,0.471,0.678,0.793,0.644,0.287,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+36,Lot 36,,,88,60,70,78,66,48,42,36,40,43,63,83,70,60,0.682,0.795,0.886,0.75,0.545,0.477,0.409,0.455,0.489,0.716,0.943,0.795,0.682,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+37,Lot 37,,,261,61,45,46,64,53,58,59,56,58,68,81,84,64,0.234,0.172,0.176,0.245,0.203,0.222,0.226,0.215,0.222,0.261,0.31,0.322,0.245,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+38,Lot 38,,,103,12,13,17,34,52,72,70,67,41,47,55,59,58,0.117,0.126,0.165,0.33,0.505,0.699,0.68,0.65,0.398,0.456,0.534,0.573,0.563,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+38.1,Lot 38.1,,,53,2,8,14,24,28,12,15,8,12,17,20,22,6,0.038,0.151,0.264,0.453,0.528,0.226,0.283,0.151,0.226,0.321,0.377,0.415,0.113,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+38.2,Lot 38.2,,,62,5,8,11,15,23,26,26,22,20,12,27,31,30,0.081,0.129,0.177,0.242,0.371,0.419,0.419,0.355,0.323,0.194,0.435,0.5,0.484,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+39,Lot 39,,,25,6,8,5,12,17,15,15,18,17,12,13,8,5,0.24,0.32,0.2,0.48,0.68,0.6,0.6,0.72,0.68,0.48,0.52,0.32,0.2,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+40,Lot 40,,,76,11,14,37,40,40,33,31,22,30,45,57,50,26,0.145,0.184,0.487,0.526,0.526,0.434,0.408,0.289,0.395,0.592,0.75,0.658,0.342,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+41,Lot 41,,,1595,230,580,988,1285,1349,1339,1265,1096,941,803,744,685,498,0.144,0.364,0.619,0.806,0.846,0.839,0.793,0.687,0.59,0.503,0.466,0.429,0.312,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+42,Lot 42,,,1394,6,78,337,594,791,777,655,492,367,264,193,157,78,0.004,0.056,0.242,0.426,0.567,0.557,0.47,0.353,0.263,0.189,0.138,0.113,0.056,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+43,Lot 43,,,90,25,61,85,87,86,85,82,71,68,50,71,41,13,0.278,0.678,0.944,0.967,0.956,0.944,0.911,0.789,0.756,0.556,0.789,0.456,0.144,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+44,Lot 44,,,226,69,173,219,224,224,217,221,191,136,100,122,128,97,0.305,0.765,0.969,0.991,0.991,0.96,0.978,0.845,0.602,0.442,0.54,0.566,0.429,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+44.1,Village Pl,Curve and Lots,N,14,11,12,13,14,14,14,13,14,14,12,13,14,14,0.786,0.857,0.929,1,1,1,0.929,1,1,0.857,0.929,1,1,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+44.2,Village Pl,Curve and Lots,S,8,7,7,7,7,7,8,7,6,7,5,7,7,5,0.875,0.875,0.875,0.875,0.875,1,0.875,0.75,0.875,0.625,0.875,0.875,0.625,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+44.3,Village Pl,Old Globe and Crosswalk,E,12,11,12,12,12,12,11,12,6,10,12,12,11,12,0.917,1,1,1,1,0.917,1,0.5,0.833,1,1,0.917,1,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+44.4,Village Pl,Crosswalk and El Prado,E,25,11,17,19,24,25,22,23,18,16,12,18,24,23,0.44,0.68,0.76,0.96,1,0.88,0.92,0.72,0.64,0.48,0.72,0.96,0.92,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+44.5,Village Pl,Old Globe and El Prado,W,12,1,7,1,2,1,2,4,3,5,4,4,3,0,0.083,0.583,0.083,0.167,0.083,0.167,0.333,0.25,0.417,0.333,0.333,0.25,0,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+45,Lot 45,,,102,68,89,91,95,95,94,95,96,94,74,90,92,70,0.667,0.873,0.892,0.931,0.931,0.922,0.931,0.941,0.922,0.725,0.882,0.902,0.686,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+46,Lot 46,,,82,35,79,80,81,81,82,81,79,76,62,62,80,60,0.427,0.963,0.976,0.988,0.988,1,0.988,0.963,0.927,0.756,0.756,0.976,0.732,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+47,Lot 47,,,154,14,62,146,153,153,152,150,136,128,111,81,78,71,0.091,0.403,0.948,0.994,0.994,0.987,0.974,0.883,0.831,0.721,0.526,0.506,0.461,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+48,Lot 48,,,120,1,4,42,111,116,115,110,87,66,43,25,23,15,0.008,0.033,0.35,0.925,0.967,0.958,0.917,0.725,0.55,0.358,0.208,0.192,0.125,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+49,Lot 49,,,120,57,105,110,115,117,113,114,113,111,115,118,116,112,0.475,0.875,0.917,0.958,0.975,0.942,0.95,0.942,0.925,0.958,0.983,0.967,0.933,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+50,Lot 50,,,352,9,82,170,280,331,341,326,292,264,252,337,349,228,0.026,0.233,0.483,0.795,0.94,0.969,0.926,0.83,0.75,0.716,0.957,0.991,0.648,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+51,Lot 51,,,150,12,39,83,134,148,147,149,96,97,75,109,140,94,0.08,0.26,0.553,0.893,0.987,0.98,0.993,0.64,0.647,0.5,0.727,0.933,0.627,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+52,Lot 52,,,32,9,13,18,20,19,14,11,10,9,2,3,1,2,0.281,0.406,0.563,0.625,0.594,0.438,0.344,0.313,0.281,0.063,0.094,0.031,0.063,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+53,Lot 53,,,509,43,56,86,121,231,284,249,173,136,92,78,123,91,0.084,0.11,0.169,0.238,0.454,0.558,0.489,0.34,0.267,0.181,0.153,0.242,0.179,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+54,Lot 54,,,406,103,127,141,161,187,188,191,174,130,98,94,92,51,0.254,0.313,0.347,0.397,0.461,0.463,0.47,0.429,0.32,0.241,0.232,0.227,0.126,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+55,Lot 55,,,924,65,83,95,123,129,143,113,81,57,40,24,20,13,0.07,0.09,0.103,0.133,0.14,0.155,0.122,0.088,0.062,0.043,0.026,0.022,0.014,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
+59,Lindo Paseo,College and Cantina,N,3,1,1,1,2,2,0,0,0,0,0,0,1,1,0.333,0.333,0.333,0.667,0.667,0,0,0,0,0,0,0.333,0.333,thursday,College Area,College Area,FALSE,on_street,urban_corridor
+60,Lindo Paseo,College and Cantina,S,6,2,6,5,5,5,4,3,4,2,4,4,3,2,0.333,1,0.833,0.833,0.833,0.667,0.5,0.667,0.333,0.667,0.667,0.5,0.333,thursday,College Area,College Area,FALSE,on_street,urban_corridor
+61,El Cajon Blvd,55th and 56th,N,6,2,3,5,5,5,3,2,0,0,1,0,0,0,0.333,0.5,0.833,0.833,0.833,0.5,0.333,0,0,0.167,0,0,0,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+62,El Cajon Blvd,55th and 56th,S,12,0,0,4,1,4,3,2,2,0,2,0,0,0,0,0,0.333,0.083,0.333,0.25,0.167,0.167,0,0.167,0,0,0,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+63,El Cajon Blvd,56th and El Cerrito,N,12,0,2,7,8,8,5,6,6,8,6,5,0,0,0,0.167,0.583,0.667,0.667,0.417,0.5,0.5,0.667,0.5,0.417,0,0,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+64,El Cajon Blvd,56th and 58th,S,15,4,4,8,7,7,6,7,7,7,4,5,2,3,0.267,0.267,0.533,0.467,0.467,0.4,0.467,0.467,0.467,0.267,0.333,0.133,0.2,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+65,El Cajon Blvd,El Cerrito and 58th,N,6,1,2,2,4,4,5,5,4,5,4,4,3,2,0.167,0.333,0.333,0.667,0.667,0.833,0.833,0.667,0.833,0.667,0.667,0.5,0.333,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+66,El Cajon Blvd,58th and Alice,N,2,2,3,3,3,1,3,3,3,3,3,3,3,3,1,1.5,1.5,1.5,0.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+67,El Cajon Blvd,58th and 59th,S,21,10,11,13,8,14,11,14,10,10,11,10,9,10,0.476,0.524,0.619,0.381,0.667,0.524,0.667,0.476,0.476,0.524,0.476,0.429,0.476,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+68,El Cajon Blvd,Alice and 59th,N,10,1,1,1,3,2,2,3,3,2,1,2,3,4,0.1,0.1,0.1,0.3,0.2,0.2,0.3,0.3,0.2,0.1,0.2,0.3,0.4,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+69,El Cajon Blvd,59th and Esther,N,5,2,4,4,5,4,4,3,2,3,1,2,3,4,0.4,0.8,0.8,1,0.8,0.8,0.6,0.4,0.6,0.2,0.4,0.6,0.8,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+70,El Cajon Blvd,59th and 60th,S,15,6,6,7,15,16,15,13,9,14,15,15,14,9,0.4,0.4,0.467,1,1.067,1,0.867,0.6,0.933,1,1,0.933,0.6,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+71,El Cajon Blvd,Esther and 60th,N,5,1,2,2,3,4,4,2,1,1,1,0,1,0,0.2,0.4,0.4,0.6,0.8,0.8,0.4,0.2,0.2,0.2,0,0.2,0,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+72,El Cajon Blvd,60th and College,N,8,1,3,1,1,2,1,1,1,1,1,1,1,0,0.125,0.375,0.125,0.125,0.25,0.125,0.125,0.125,0.125,0.125,0.125,0.125,0,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+73,El Cajon Blvd,60th and College,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+74,El Cajon Blvd,College and 62nd,N,16,7,8,8,9,7,8,9,10,7,8,8,7,7,0.438,0.5,0.5,0.563,0.438,0.5,0.563,0.625,0.438,0.5,0.5,0.438,0.438,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+75,El Cajon Blvd,College and Driveway,S,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0.333,0,0,0,0,0,0,0,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+76,El Cajon Blvd,Driveway and 62nd,S,15,2,1,1,1,0,1,1,1,1,0,0,0,0,0.133,0.067,0.067,0.067,0,0.067,0.067,0.067,0.067,0,0,0,0,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+77,El Cajon Blvd,62nd and 63rd,N,5,0,1,1,0,1,2,0,0,0,0,0,0,0,0,0.2,0.2,0,0.2,0.4,0,0,0,0,0,0,0,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+78,El Cajon Blvd,62nd and 63rd,S,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+79,El Cajon Blvd,63rd and Chocaw,N,18,2,5,7,13,12,15,10,8,11,9,10,14,13,0.111,0.278,0.389,0.722,0.667,0.833,0.556,0.444,0.611,0.5,0.556,0.778,0.722,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+80,El Cajon Blvd,63rd and Art,S,21,3,6,5,11,11,6,14,7,9,10,13,12,13,0.143,0.286,0.238,0.524,0.524,0.286,0.667,0.333,0.429,0.476,0.619,0.571,0.619,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+81,El Cajon Blvd,Choctaw and Art,N,11,9,9,10,10,10,6,7,7,3,3,5,9,7,0.818,0.818,0.909,0.909,0.909,0.545,0.636,0.636,0.273,0.273,0.455,0.818,0.636,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+82,El Cajon Blvd,Art and Filipo,S,16,16,15,15,16,16,16,15,5,5,7,10,4,4,1,0.938,0.938,1,1,1,0.938,0.313,0.313,0.438,0.625,0.25,0.25,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+83,El Cajon Blvd,Art and Aragon,N,23,18,19,21,22,16,18,12,14,11,11,9,8,8,0.783,0.826,0.913,0.957,0.696,0.783,0.522,0.609,0.478,0.478,0.391,0.348,0.348,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+84,El Cajon Blvd,Filipo and Aragon,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+85,El Cajon Blvd,Aragon and Rolando,N,9,2,3,6,5,5,5,4,5,5,7,5,5,5,0.222,0.333,0.667,0.556,0.556,0.556,0.444,0.556,0.556,0.778,0.556,0.556,0.556,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+86,El Cajon Blvd,Aragon and Rolando,S,10,2,7,8,9,7,8,7,7,7,5,2,1,2,0.2,0.7,0.8,0.9,0.7,0.8,0.7,0.7,0.7,0.5,0.2,0.1,0.2,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+87,El Cajon Blvd,Rolando and Amherst,S,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,1,0,1,1,1,1,1,1,1,0,0,0,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+88,El Cajon Blvd,Rolando and Montezuma,N,25,7,16,18,19,18,19,18,18,17,13,10,8,9,0.28,0.64,0.72,0.76,0.72,0.76,0.72,0.72,0.68,0.52,0.4,0.32,0.36,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+89,El Cajon Blvd,Amherst and 67th,S,11,3,6,8,6,6,10,9,8,6,6,4,3,2,0.273,0.545,0.727,0.545,0.545,0.909,0.818,0.727,0.545,0.545,0.364,0.273,0.182,thursday,College Area / Eastern Area,College Area / Mid-City,TRUE,on_street,urban_corridor
+90,Adams Ave,Mountainview and 32nd,N,9,1,2,4,2,5,5,6,4,6,4,3,4,4,0.111,0.222,0.444,0.222,0.556,0.556,0.667,0.444,0.667,0.444,0.333,0.444,0.444,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+91,Adams Ave,Mountainview and Iowa,S,7,1,1,2,4,1,4,1,4,2,2,2,2,3,0.143,0.143,0.286,0.571,0.143,0.571,0.143,0.571,0.286,0.286,0.286,0.286,0.429,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+92,Adams Ave,Iowa and 32nd,S,8,5,4,6,7,5,4,5,5,6,4,5,7,8,0.625,0.5,0.75,0.875,0.625,0.5,0.625,0.625,0.75,0.5,0.625,0.875,1,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+93,Adams Ave,32nd and Bancroft,N,8,1,3,7,7,6,6,7,6,6,7,7,7,7,0.125,0.375,0.875,0.875,0.75,0.75,0.875,0.75,0.75,0.875,0.875,0.875,0.875,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+94,Adams Ave,32nd and Bancroft,S,9,2,4,7,3,6,4,6,5,6,6,6,7,6,0.222,0.444,0.778,0.333,0.667,0.444,0.667,0.556,0.667,0.667,0.667,0.778,0.667,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+95,Adams Ave,Bancroft and 33rd,N,9,6,7,7,5,6,5,6,7,8,7,8,7,9,0.667,0.778,0.778,0.556,0.667,0.556,0.667,0.778,0.889,0.778,0.889,0.778,1,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+96,Adams Ave,Bancroft and 33rd,S,7,3,3,5,4,4,4,2,4,4,4,5,4,5,0.429,0.429,0.714,0.571,0.571,0.571,0.286,0.571,0.571,0.571,0.714,0.571,0.714,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+97,Adams Ave,33rd and Felton,N,10,8,8,6,8,5,5,7,6,9,9,9,10,11,0.8,0.8,0.6,0.8,0.5,0.5,0.7,0.6,0.9,0.9,0.9,1,1.1,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+98,Adams Ave,33rd and Felton,S,12,3,5,8,7,8,9,7,8,7,11,13,13,12,0.25,0.417,0.667,0.583,0.667,0.75,0.583,0.667,0.583,0.917,1.083,1.083,1,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+99,Adams Ave,Felton and 34th,N,8,7,7,5,6,5,6,7,7,6,7,7,8,7,0.875,0.875,0.625,0.75,0.625,0.75,0.875,0.875,0.75,0.875,0.875,1,0.875,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+100,Adams Ave,Felton and 34th,S,11,2,5,4,4,8,7,8,9,7,9,10,10,9,0.182,0.455,0.364,0.364,0.727,0.636,0.727,0.818,0.636,0.818,0.909,0.909,0.818,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+101,Adams Ave,34th and Hawley,N,5,3,3,6,2,5,3,6,7,5,8,8,10,8,0.6,0.6,1.2,0.4,1,0.6,1.2,1.4,1,1.6,1.6,2,1.6,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+102,Adams Ave,34th and Hawley,S,8,1,2,6,4,5,6,5,3,7,8,8,8,7,0.125,0.25,0.75,0.5,0.625,0.75,0.625,0.375,0.875,1,1,1,0.875,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+103,Adams Ave,Hawley and Mansfield,N,3,1,0,0,2,4,1,2,2,0,1,2,3,5,0.333,0,0,0.667,1.333,0.333,0.667,0.667,0,0.333,0.667,1,1.667,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+104,Adams Ave,Hawley and Mansfield,S,10,4,3,5,7,9,8,8,8,9,9,8,9,6,0.4,0.3,0.5,0.7,0.9,0.8,0.8,0.8,0.9,0.9,0.8,0.9,0.6,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+105,Adams Ave,Mansfield and 35th,N,8,0,0,3,4,7,6,7,6,5,5,5,6,5,0,0,0.375,0.5,0.875,0.75,0.875,0.75,0.625,0.625,0.625,0.75,0.625,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+106,Adams Ave,Mansfield and 35th,S,6,0,4,6,6,6,6,6,5,6,5,5,6,4,0,0.667,1,1,1,1,1,0.833,1,0.833,0.833,1,0.667,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+107,Adams Ave,35th and Wilson,N,14,5,5,6,7,7,8,2,7,5,5,9,7,9,0.357,0.357,0.429,0.5,0.5,0.571,0.143,0.5,0.357,0.357,0.643,0.5,0.643,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+108,Adams Ave,35th and Wilson,S,11,3,6,4,8,7,9,8,9,6,6,6,7,7,0.273,0.545,0.364,0.727,0.636,0.818,0.727,0.818,0.545,0.545,0.545,0.636,0.636,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+109,Adams Ave,Wilson and 36th,N,13,7,9,10,10,9,8,6,5,5,8,8,8,6,0.538,0.692,0.769,0.769,0.692,0.615,0.462,0.385,0.385,0.615,0.615,0.615,0.462,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+110,Adams Ave,Wilson and 36th,S,10,8,8,9,8,8,7,7,7,6,9,6,7,6,0.8,0.8,0.9,0.8,0.8,0.7,0.7,0.7,0.6,0.9,0.6,0.7,0.6,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+111,Adams Ave,36th and Cherokee,N,6,2,2,4,5,5,4,4,3,4,2,3,2,3,0.333,0.333,0.667,0.833,0.833,0.667,0.667,0.5,0.667,0.333,0.5,0.333,0.5,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+112,Adams Ave,36th and Cherokee,S,11,5,6,9,8,8,9,8,7,8,4,6,7,7,0.455,0.545,0.818,0.727,0.727,0.818,0.727,0.636,0.727,0.364,0.545,0.636,0.636,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+113,Adams Ave,Cherokee and Mountainview,N,14,7,10,12,10,10,10,8,7,5,5,8,7,5,0.5,0.714,0.857,0.714,0.714,0.714,0.571,0.5,0.357,0.357,0.571,0.5,0.357,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+114,Adams Ave,Cherokee and Mountainview,S,19,13,14,16,15,15,15,11,10,13,11,13,11,13,0.684,0.737,0.842,0.789,0.789,0.789,0.579,0.526,0.684,0.579,0.684,0.579,0.684,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+115,Adams Ave,Mountainview and 39th,N,7,5,6,7,6,6,6,5,6,5,5,5,5,5,0.714,0.857,1,0.857,0.857,0.857,0.714,0.857,0.714,0.714,0.714,0.714,0.714,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+116,Adams Ave,Mountainview and 39th,S,10,5,4,7,6,8,8,8,8,6,7,6,7,6,0.5,0.4,0.7,0.6,0.8,0.8,0.8,0.8,0.6,0.7,0.6,0.7,0.6,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+117,Adams Ave,39th and Bonnie,N,6,1,1,2,1,5,3,2,2,4,4,6,5,3,0.167,0.167,0.333,0.167,0.833,0.5,0.333,0.333,0.667,0.667,1,0.833,0.5,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+118,Adams Ave,39th and 40th,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+119,Adams Ave,Bonnie and NB Ramp,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+120,Adams Ave,40th and NB Ramp,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Normal Heights,Mid-City,FALSE,on_street,urban_corridor
+121,Adams Ave,Terrace and Kensington,N,11,5,5,6,4,5,9,5,6,10,10,9,10,7,0.455,0.455,0.545,0.364,0.455,0.818,0.455,0.545,0.909,0.909,0.818,0.909,0.636,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+122,Adams Ave,Terrace and Kensington,S,11,4,4,8,6,7,7,7,10,7,9,8,10,10,0.364,0.364,0.727,0.545,0.636,0.636,0.636,0.909,0.636,0.818,0.727,0.909,0.909,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+123,Terrace Dr,Adams and Park,W,14,2,5,5,9,11,9,9,12,12,13,13,13,10,0.143,0.357,0.357,0.643,0.786,0.643,0.643,0.857,0.857,0.929,0.929,0.929,0.714,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+124,Adams Ave,Adams and Park,E,5,1,3,1,2,2,2,2,4,4,5,5,4,5,0.2,0.6,0.2,0.4,0.4,0.4,0.4,0.8,0.8,1,1,0.8,1,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+125,Adams Ave,Kensington and Marlborough,N,8,4,4,5,5,5,4,4,3,5,7,5,8,6,0.5,0.5,0.625,0.625,0.625,0.5,0.5,0.375,0.625,0.875,0.625,1,0.75,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+126,Adams Ave,Kensington and Marlborough,S,7,3,5,6,6,6,5,5,5,5,6,5,6,6,0.429,0.714,0.857,0.857,0.857,0.714,0.714,0.714,0.714,0.857,0.714,0.857,0.857,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+127,Kensington Dr,Adams and Park,W,3,2,2,3,2,3,2,3,3,3,3,3,2,3,0.667,0.667,1,0.667,1,0.667,1,1,1,1,1,0.667,1,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+128,Kensington Dr,Adams and Park,E,3,2,2,2,2,2,2,2,2,2,2,2,2,2,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+129,Park Pl,Kensington and Marlborough,N,12,7,10,12,11,10,11,11,12,11,10,11,12,11,0.583,0.833,1,0.917,0.833,0.917,0.917,1,0.917,0.833,0.917,1,0.917,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+130,Park Pl,Kensington and Marlborough,S,11,8,10,10,10,8,9,9,9,10,7,10,11,11,0.727,0.909,0.909,0.909,0.727,0.818,0.818,0.818,0.909,0.636,0.909,1,1,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+131,Marlborough Dr,Adams and Park,W,2,2,2,2,2,2,2,2,1,2,3,1,1,0,1,1,1,1,1,1,1,0.5,1,1.5,0.5,0.5,0,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+132,Marlborough Dr,Adams and Park,E,4,3,3,2,2,3,3,2,1,3,2,3,2,1,0.75,0.75,0.5,0.5,0.75,0.75,0.5,0.25,0.75,0.5,0.75,0.5,0.25,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+133,Adams Ave,Marlborough and Edgeware,N,13,4,4,12,9,9,7,8,2,8,6,5,4,3,0.308,0.308,0.923,0.692,0.692,0.538,0.615,0.154,0.615,0.462,0.385,0.308,0.231,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+134,Adams Ave,Marlborough and Edgeware,S,10,5,8,8,7,9,8,9,6,7,4,7,4,4,0.5,0.8,0.8,0.7,0.9,0.8,0.9,0.6,0.7,0.4,0.7,0.4,0.4,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+135,Adams Ave,Edgeware and 42nd,N,4,3,4,4,4,3,3,3,3,3,2,2,3,4,0.75,1,1,1,0.75,0.75,0.75,0.75,0.75,0.5,0.5,0.75,1,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+136,Adams Ave,Edgeware and 42nd,S,4,2,3,3,3,4,4,3,4,3,2,4,4,4,0.5,0.75,0.75,0.75,1,1,0.75,1,0.75,0.5,1,1,1,thursday,Kensington,Mid-City,FALSE,on_street,urban_corridor
+137,El Cajon Blvd,Louisiana and Texas,N,6,3,3,3,4,5,4,3,4,5,5,9,6,8,0.5,0.5,0.5,0.667,0.833,0.667,0.5,0.667,0.833,0.833,1.5,1,1.333,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+138,El Cajon Blvd,Louisiana and Texas,S,4,2,2,2,4,2,2,3,1,3,4,4,4,4,0.5,0.5,0.5,1,0.5,0.5,0.75,0.25,0.75,1,1,1,1,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+139,El Cajon Blvd,Texas and Arizona,N,6,4,4,3,3,3,3,3,1,1,1,3,5,6,0.667,0.667,0.5,0.5,0.5,0.5,0.5,0.167,0.167,0.167,0.5,0.833,1,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+140,El Cajon Blvd,Texas and Arizona,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+141,El Cajon Blvd,Arizona and Hamilton,N,11,11,9,7,4,4,5,5,2,0,0,0,1,1,1,0.818,0.636,0.364,0.364,0.455,0.455,0.182,0,0,0,0.091,0.091,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+142,El Cajon Blvd,Arizona and Hamilton,S,10,7,7,5,6,7,8,8,6,2,1,2,1,1,0.7,0.7,0.5,0.6,0.7,0.8,0.8,0.6,0.2,0.1,0.2,0.1,0.1,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+143,El Cajon Blvd,Hamilton and Oregon,N,12,6,6,6,6,5,5,4,3,4,4,3,4,6,0.5,0.5,0.5,0.5,0.417,0.417,0.333,0.25,0.333,0.333,0.25,0.333,0.5,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+144,El Cajon Blvd,Hamilton and Oregon,S,11,9,10,9,9,8,9,8,10,9,8,9,9,8,0.818,0.909,0.818,0.818,0.727,0.818,0.727,0.909,0.818,0.727,0.818,0.818,0.727,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+145,El Cajon Blvd,Oregon and Idaho,N,6,6,6,5,5,6,6,5,4,1,1,1,2,3,1,1,0.833,0.833,1,1,0.833,0.667,0.167,0.167,0.167,0.333,0.5,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+146,El Cajon Blvd,Oregon and Idaho,S,9,5,5,5,6,4,5,6,4,3,5,4,7,6,0.556,0.556,0.556,0.667,0.444,0.556,0.667,0.444,0.333,0.556,0.444,0.778,0.667,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+147,El Cajon Blvd,Idaho and Utah,N,9,3,3,3,6,6,6,3,6,6,5,4,3,7,0.333,0.333,0.333,0.667,0.667,0.667,0.333,0.667,0.667,0.556,0.444,0.333,0.778,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+148,El Cajon Blvd,Idaho and Utah,S,2,2,0,1,1,1,2,1,1,1,1,2,2,2,1,0,0.5,0.5,0.5,1,0.5,0.5,0.5,0.5,1,1,1,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+149,El Cajon Blvd,Utah and Kansas,N,10,3,3,6,7,7,6,6,4,7,4,6,3,7,0.3,0.3,0.6,0.7,0.7,0.6,0.6,0.4,0.7,0.4,0.6,0.3,0.7,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+150,El Cajon Blvd,Utah and Kansas,S,10,9,6,7,7,7,8,8,6,7,9,9,10,9,0.9,0.6,0.7,0.7,0.7,0.8,0.8,0.6,0.7,0.9,0.9,1,0.9,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+151,El Cajon Blvd,Kansas and 30th,N,8,1,1,5,5,3,5,2,2,3,4,3,6,5,0.125,0.125,0.625,0.625,0.375,0.625,0.25,0.25,0.375,0.5,0.375,0.75,0.625,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+152,El Cajon Blvd,Kansas and 30th,S,10,3,1,4,7,6,4,6,5,2,3,6,9,7,0.3,0.1,0.4,0.7,0.6,0.4,0.6,0.5,0.2,0.3,0.6,0.9,0.7,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+153,El Cajon Blvd,30th and Ohio,N,5,0,2,1,2,3,4,4,0,1,0,0,4,4,0,0.4,0.2,0.4,0.6,0.8,0.8,0,0.2,0,0,0.8,0.8,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+154,El Cajon Blvd,30th and Ohio,S,5,1,0,0,2,1,3,3,3,1,4,3,5,4,0.2,0,0,0.4,0.2,0.6,0.6,0.6,0.2,0.8,0.6,1,0.8,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+155,El Cajon Blvd,Ohio and Illinois,N,10,1,3,3,2,2,2,6,5,6,4,6,6,7,0.1,0.3,0.3,0.2,0.2,0.2,0.6,0.5,0.6,0.4,0.6,0.6,0.7,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+156,El Cajon Blvd,Ohio and Illinois,S,12,2,3,4,4,5,7,8,4,6,5,5,11,7,0.167,0.25,0.333,0.333,0.417,0.583,0.667,0.333,0.5,0.417,0.417,0.917,0.583,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+157,El Cajon Blvd,Illinois and Iowa,N,10,0,0,0,1,1,1,0,0,2,1,4,3,3,0,0,0,0.1,0.1,0.1,0,0,0.2,0.1,0.4,0.3,0.3,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+158,El Cajon Blvd,Illinois and Iowa,S,9,8,7,8,8,8,6,9,8,8,6,7,8,8,0.889,0.778,0.889,0.889,0.889,0.667,1,0.889,0.889,0.667,0.778,0.889,0.889,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+159,El Cajon Blvd,Iowa and SB Ramps,N,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+160,El Cajon Blvd,Iowa and SB Ramps,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park (University Heights),North Park,FALSE,on_street,urban_corridor
+161,El Cajon Blvd,NB Ramps and 33rd Pl,N,2,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0.5,1,0,0,0,0,0,0,0,0,0,0,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+162,El Cajon Blvd,NB Ramps and 33rd St,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+163,El Cajon Blvd,33rd Pl and 33rd St,N,4,3,4,4,3,3,2,4,4,4,2,2,2,3,0.75,1,1,0.75,0.75,0.5,1,1,1,0.5,0.5,0.5,0.75,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+164,El Cajon Blvd,33rd and Felton,N,5,4,4,5,5,4,4,4,5,4,4,4,3,4,0.8,0.8,1,1,0.8,0.8,0.8,1,0.8,0.8,0.8,0.6,0.8,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+165,El Cajon Blvd,33rd and Felton,S,8,6,6,6,3,6,6,7,4,6,7,5,6,4,0.75,0.75,0.75,0.375,0.75,0.75,0.875,0.5,0.75,0.875,0.625,0.75,0.5,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+166,El Cajon Blvd,Felton and 34th,N,10,2,3,6,6,4,3,5,5,5,3,2,2,2,0.2,0.3,0.6,0.6,0.4,0.3,0.5,0.5,0.5,0.3,0.2,0.2,0.2,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+167,El Cajon Blvd,Felton and 34th,S,8,5,4,4,4,4,4,4,6,5,5,6,4,6,0.625,0.5,0.5,0.5,0.5,0.5,0.5,0.75,0.625,0.625,0.75,0.5,0.75,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+168,El Cajon Blvd,34th and Swift,N,8,2,3,5,5,5,4,5,5,5,5,5,3,2,0.25,0.375,0.625,0.625,0.625,0.5,0.625,0.625,0.625,0.625,0.625,0.375,0.25,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+169,El Cajon Blvd,34th and Swift,S,8,7,6,3,3,2,2,2,3,3,2,2,2,4,0.875,0.75,0.375,0.375,0.25,0.25,0.25,0.375,0.375,0.25,0.25,0.25,0.5,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+170,El Cajon Blvd,Swift and 35th,N,3,1,1,2,2,3,2,3,2,2,2,2,3,3,0.333,0.333,0.667,0.667,1,0.667,1,0.667,0.667,0.667,0.667,1,1,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+171,El Cajon Blvd,Swift and 35th,S,5,2,2,3,3,1,4,3,3,5,4,3,1,2,0.4,0.4,0.6,0.6,0.2,0.8,0.6,0.6,1,0.8,0.6,0.2,0.4,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+172,El Cajon Blvd,35th and Wilson,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+173,El Cajon Blvd,35th and Wilson,N,3,1,2,2,2,1,2,1,2,2,2,2,1,3,0.333,0.667,0.667,0.667,0.333,0.667,0.333,0.667,0.667,0.667,0.667,0.333,1,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+174,El Cajon Blvd,Wilson and 36th,S,7,4,4,3,3,3,3,3,2,2,0,0,0,4,0.571,0.571,0.429,0.429,0.429,0.429,0.429,0.286,0.286,0,0,0,0.571,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+175,El Cajon Blvd,Wilson and 36th,N,6,3,3,3,3,3,4,3,3,3,2,3,3,6,0.5,0.5,0.5,0.5,0.5,0.667,0.5,0.5,0.5,0.333,0.5,0.5,1,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+176,El Cajon Blvd,36th and Cherokee,S,5,1,1,2,2,2,1,3,3,3,3,3,2,4,0.2,0.2,0.4,0.4,0.4,0.2,0.6,0.6,0.6,0.6,0.6,0.4,0.8,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+177,El Cajon Blvd,36th and Cherokee,N,6,4,4,4,4,5,4,4,5,4,4,3,4,5,0.667,0.667,0.667,0.667,0.833,0.667,0.667,0.833,0.667,0.667,0.5,0.667,0.833,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+178,El Cajon Blvd,Cherokee and 37th,N,7,3,4,6,7,7,6,7,6,5,7,4,5,6,0.429,0.571,0.857,1,1,0.857,1,0.857,0.714,1,0.571,0.714,0.857,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+179,El Cajon Blvd,Cherokee and 37th,N,5,3,3,4,4,3,3,4,4,4,4,3,3,4,0.6,0.6,0.8,0.8,0.6,0.6,0.8,0.8,0.8,0.8,0.6,0.6,0.8,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+180,El Cajon Blvd,37th and McClintock,N,9,4,8,7,10,9,9,8,8,10,7,8,8,7,0.444,0.889,0.778,1.111,1,1,0.889,0.889,1.111,0.778,0.889,0.889,0.778,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+181,El Cajon Blvd,37th and 38th,S,12,9,9,9,11,8,9,9,8,9,11,10,11,11,0.75,0.75,0.75,0.917,0.667,0.75,0.75,0.667,0.75,0.917,0.833,0.917,0.917,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+182,El Cajon Blvd,McClintock and 38th,N,10,5,7,6,7,6,5,6,6,10,9,6,5,7,0.5,0.7,0.6,0.7,0.6,0.5,0.6,0.6,1,0.9,0.6,0.5,0.7,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+183,El Cajon Blvd,38th and 39th,N,5,3,4,3,3,3,4,4,4,2,1,1,1,1,0.6,0.8,0.6,0.6,0.6,0.8,0.8,0.8,0.4,0.2,0.2,0.2,0.2,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+184,El Cajon Blvd,38th and 39th,S,9,3,4,8,7,5,6,6,4,6,4,8,4,0,0.333,0.444,0.889,0.778,0.556,0.667,0.667,0.444,0.667,0.444,0.889,0.444,0,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+185,El Cajon Blvd,39th and SB Ramps,N,11,0,8,9,3,3,2,4,4,3,3,5,6,6,0,0.727,0.818,0.273,0.273,0.182,0.364,0.364,0.273,0.273,0.455,0.545,0.545,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+186,El Cajon Blvd,39th and SB Ramps,S,4,2,2,2,1,1,1,2,1,1,1,2,0,0,0.5,0.5,0.5,0.25,0.25,0.25,0.5,0.25,0.25,0.25,0.5,0,0,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+187,El Cajon Blvd,SB and NB Ramps,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+188,El Cajon Blvd,SB and NB Ramps,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Normal Heights / City Heights,Mid-City,TRUE,on_street,urban_corridor
+189,El Cajon Blvd,Central and 41st,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+190,El Cajon Blvd,Central and 41st,S,4,2,2,2,3,2,1,3,2,3,2,1,1,1,0.5,0.5,0.5,0.75,0.5,0.25,0.75,0.5,0.75,0.5,0.25,0.25,0.25,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+191,El Cajon Blvd,41st and Marlborough,N,7,2,2,0,1,3,4,2,1,2,3,3,2,3,0.286,0.286,0,0.143,0.429,0.571,0.286,0.143,0.286,0.429,0.429,0.286,0.429,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+192,El Cajon Blvd,41st and Marlborough,S,9,3,2,4,7,5,7,7,8,8,3,5,6,5,0.333,0.222,0.444,0.778,0.556,0.778,0.778,0.889,0.889,0.333,0.556,0.667,0.556,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+193,El Cajon Blvd,Marlborough and 42nd,N,9,2,1,5,4,3,3,3,1,4,4,5,6,6,0.222,0.111,0.556,0.444,0.333,0.333,0.333,0.111,0.444,0.444,0.556,0.667,0.667,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+194,El Cajon Blvd,Marlborough and 42nd,S,11,7,7,6,7,7,6,5,4,4,6,4,6,8,0.636,0.636,0.545,0.636,0.636,0.545,0.455,0.364,0.364,0.545,0.364,0.545,0.727,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+195,El Cajon Blvd,42nd and Copeland,N,7,0,1,2,2,3,3,3,5,6,5,4,3,6,0,0.143,0.286,0.286,0.429,0.429,0.429,0.714,0.857,0.714,0.571,0.429,0.857,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+196,El Cajon Blvd,42nd and Copeland,S,10,8,7,6,6,7,5,6,4,8,7,8,9,9,0.8,0.7,0.6,0.6,0.7,0.5,0.6,0.4,0.8,0.7,0.8,0.9,0.9,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+197,El Cajon Blvd,Copeland and Van Dyke,N,10,0,0,2,3,1,4,7,10,9,7,9,9,8,0,0,0.2,0.3,0.1,0.4,0.7,1,0.9,0.7,0.9,0.9,0.8,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+198,El Cajon Blvd,Copeland and Van Dyke,S,4,1,1,1,1,1,0,1,4,2,1,2,1,3,0.25,0.25,0.25,0.25,0.25,0,0.25,1,0.5,0.25,0.5,0.25,0.75,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+199,El Cajon Blvd,Van Dyke and 43rd,N,7,1,2,2,4,5,4,2,4,3,2,0,4,4,0.143,0.286,0.286,0.571,0.714,0.571,0.286,0.571,0.429,0.286,0,0.571,0.571,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+200,El Cajon Blvd,Van Dyke and 43rd,S,5,1,1,3,3,4,4,3,4,1,1,2,4,0,0.2,0.2,0.6,0.6,0.8,0.8,0.6,0.8,0.2,0.2,0.4,0.8,0,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+201,El Cajon Blvd,43rd and Fairmount,N,7,0,0,1,2,0,0,1,0,1,0,1,2,2,0,0,0.143,0.286,0,0,0.143,0,0.143,0,0.143,0.286,0.286,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+202,El Cajon Blvd,43rd and Fairmount,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Kensington-Talmadge / City Heights,Mid-City,TRUE,on_street,urban_corridor
+203,University Ave,NB Ramps and 41st,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+204,University Ave,NB Ramps and 41st,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+205,University Ave,41st and Marlborough,N,6,1,1,1,1,1,1,1,1,2,1,2,1,1,0.167,0.167,0.167,0.167,0.167,0.167,0.167,0.167,0.333,0.167,0.333,0.167,0.167,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+206,University Ave,41st and Marlborough,S,7,5,3,2,5,2,4,3,4,3,2,4,4,2,0.714,0.429,0.286,0.714,0.286,0.571,0.429,0.571,0.429,0.286,0.571,0.571,0.286,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+207,University Ave,Marlborough and 42nd,N,6,4,5,6,4,4,3,5,6,6,6,7,6,8,0.667,0.833,1,0.667,0.667,0.5,0.833,1,1,1,1.167,1,1.333,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+208,University Ave,Marlborough and 42nd,S,6,6,5,5,4,5,6,7,3,5,3,4,3,3,1,0.833,0.833,0.667,0.833,1,1.167,0.5,0.833,0.5,0.667,0.5,0.5,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+209,University Ave,42nd and Van Dyke,N,8,4,5,2,5,6,5,5,5,6,6,5,4,5,0.5,0.625,0.25,0.625,0.75,0.625,0.625,0.625,0.75,0.75,0.625,0.5,0.625,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+210,University Ave,42nd and Van Dyke,S,14,1,7,8,5,7,5,10,5,10,8,9,9,7,0.071,0.5,0.571,0.357,0.5,0.357,0.714,0.357,0.714,0.571,0.643,0.643,0.5,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+211,University Ave,Van Dyke and 43rd,N,12,5,7,8,10,9,8,7,10,10,10,9,8,5,0.417,0.583,0.667,0.833,0.75,0.667,0.583,0.833,0.833,0.833,0.75,0.667,0.417,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+212,University Ave,Van Dyke and 43rd,S,9,2,3,5,8,8,9,8,8,8,8,6,6,6,0.222,0.333,0.556,0.889,0.889,1,0.889,0.889,0.889,0.889,0.667,0.667,0.667,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+213,University Ave,43rd and Fairmount,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+214,University Ave,43rd and Fairmount,S,11,8,7,9,8,8,11,8,11,6,6,9,10,4,0.727,0.636,0.818,0.727,0.727,1,0.727,1,0.545,0.545,0.818,0.909,0.364,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+215,University Ave,Fairmount and 44th,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+216,University Ave,Fairmount and 44th,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+217,University Ave,44th and Highland,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+218,University Ave,44th and Highland,S,3,1,0,1,1,0,0,0,0,1,1,1,2,1,0.333,0,0.333,0.333,0,0,0,0,0.333,0.333,0.333,0.667,0.333,thursday,City Heights,Mid-City,FALSE,on_street,urban_corridor
+219,University Ave,Hamilton and Villa Terrace,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+220,University Ave,Hamilton and Villa Terrace,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+221,University Ave,Villa Terrace and Oregon,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+222,University Ave,Villa Terrace and Pershing,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+223,University Ave,Oregon and Idaho,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+224,University Ave,Pershing and 28th,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+225,University Ave,Idaho and Utah,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+226,University Ave,28th and Utah,S,6,3,4,6,6,4,2,4,2,1,4,5,5,5,0.5,0.667,1,1,0.667,0.333,0.667,0.333,0.167,0.667,0.833,0.833,0.833,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+227,University Ave,Utah and Kansas,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+228,University Ave,Utah and Granada,S,10,0,0,7,8,10,8,10,7,10,10,9,9,10,0,0,0.7,0.8,1,0.8,1,0.7,1,1,0.9,0.9,1,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+229,University Ave,Granada and 29th,S,6,1,4,5,5,6,6,6,6,6,6,6,6,6,0.167,0.667,0.833,0.833,1,1,1,1,1,1,1,1,1,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+230,University Ave,Kansas and 30th,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+231,University Ave,29th and 30th,S,5,4,3,4,5,5,4,4,4,5,4,5,5,5,0.8,0.6,0.8,1,1,0.8,0.8,0.8,1,0.8,1,1,1,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+232,University Ave,30th and Ohio,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+233,University Ave,30th and Ray,S,3,2,3,1,2,3,3,3,3,2,2,2,2,2,0.667,1,0.333,0.667,1,1,1,1,0.667,0.667,0.667,0.667,0.667,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+234,University Ave,Ray and Grim,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+235,University Ave,Ohio and Illinois,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+236,University Ave,Grim and 31st,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+237,University Ave,Illinois and Iowa,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+238,University Ave,31st and Herman,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+239,University Ave,Iowa and 32nd,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+240,University Ave,Herman and 32nd,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,North Park,North Park,FALSE,on_street,urban_corridor
+241,Park Blvd,University and Robinson,W,17,11,12,10,11,11,11,12,12,11,12,11,14,16,0.647,0.706,0.588,0.647,0.647,0.647,0.706,0.706,0.647,0.706,0.647,0.824,0.941,thursday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+242,Park Blvd,University and Robinson,E,15,6,6,14,7,7,10,8,12,10,7,7,13,13,0.4,0.4,0.933,0.467,0.467,0.667,0.533,0.8,0.667,0.467,0.467,0.867,0.867,thursday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+243,Cleveland Ave,Vermont and Richmond,N,31,23,22,25,29,30,27,29,25,28,28,27,28,22,0.742,0.71,0.806,0.935,0.968,0.871,0.935,0.806,0.903,0.903,0.871,0.903,0.71,thursday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+244,Cleveland Ave,Vermont and Richmond,S,28,13,14,17,20,19,19,23,20,21,23,20,19,13,0.464,0.5,0.607,0.714,0.679,0.679,0.821,0.714,0.75,0.821,0.714,0.679,0.464,thursday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+245,University Ave,10th and Vermont,N,17,1,2,4,5,4,8,1,4,3,9,12,11,11,0.059,0.118,0.235,0.294,0.235,0.471,0.059,0.235,0.176,0.529,0.706,0.647,0.647,thursday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+246,University Ave,10th and Vermont,S,9,0,0,2,2,5,6,5,6,8,9,8,8,8,0,0,0.222,0.222,0.556,0.667,0.556,0.667,0.889,1,0.889,0.889,0.889,thursday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+247,University Ave,Vermont and Richmond,N,33,3,2,5,7,8,7,10,13,18,23,28,31,26,0.091,0.061,0.152,0.212,0.242,0.212,0.303,0.394,0.545,0.697,0.848,0.939,0.788,thursday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+248,University Ave,Vermont and Richmond,S,25,8,13,11,17,24,23,20,18,20,18,25,23,19,0.32,0.52,0.44,0.68,0.96,0.92,0.8,0.72,0.8,0.72,1,0.92,0.76,thursday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+249,7th Ave,University and Robinson,W,19,13,12,15,13,16,15,16,14,12,9,9,7,13,0.684,0.632,0.789,0.684,0.842,0.789,0.842,0.737,0.632,0.474,0.474,0.368,0.684,thursday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+250,7th Ave,University and Robinson,E,17,12,14,15,15,16,14,14,15,15,14,11,9,12,0.706,0.824,0.882,0.882,0.941,0.824,0.824,0.882,0.882,0.824,0.647,0.529,0.706,thursday,Hillcrest,Uptown,FALSE,on_street,urban_corridor
+251,W Washington St,Hawk and Goldfinch,N,4,0,1,3,2,4,3,3,3,3,3,3,4,4,0,0.25,0.75,0.5,1,0.75,0.75,0.75,0.75,0.75,0.75,1,1,thursday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+252,W Washington St,Hawk and Goldfinch,S,7,7,4,6,5,4,5,4,3,3,6,6,7,7,1,0.571,0.857,0.714,0.571,0.714,0.571,0.429,0.429,0.857,0.857,1,1,thursday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+253,Goldfinch St,Fort Stockton and Washington,W,8,2,4,5,5,7,6,3,7,4,6,6,7,8,0.25,0.5,0.625,0.625,0.875,0.75,0.375,0.875,0.5,0.75,0.75,0.875,1,thursday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+254,Goldfinch St,Fort Stockton and Washington,E,12,8,7,10,10,10,10,7,6,11,11,11,10,10,0.667,0.583,0.833,0.833,0.833,0.833,0.583,0.5,0.917,0.917,0.917,0.833,0.833,thursday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+255,Goldfinch St,Washington and University,W,2,2,2,2,4,3,3,2,2,2,2,1,1,2,1,1,1,2,1.5,1.5,1,1,1,1,0.5,0.5,1,thursday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+256,Goldfinch St,Washington and University,E,6,5,3,4,4,3,7,0,7,6,4,5,6,6,0.833,0.5,0.667,0.667,0.5,1.167,0,1.167,1,0.667,0.833,1,1,thursday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+257,W Washington St,Falcon and Eagle,N,8,7,3,7,6,6,7,6,5,7,1,4,6,5,0.875,0.375,0.875,0.75,0.75,0.875,0.75,0.625,0.875,0.125,0.5,0.75,0.625,thursday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+258,W Washington St,Falcon and Eagle,S,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,thursday,Mission Hills,Uptown,FALSE,on_street,urban_corridor
+259,30th St,Kalmia and Juniper,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+260,30th St,Kalmia and Juniper,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+261,Fern St,Juniper and Ivy,W,11,2,9,10,10,10,9,9,8,10,11,10,11,10,0.182,0.818,0.909,0.909,0.909,0.818,0.818,0.727,0.909,1,0.909,1,0.909,thursday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+262,Fern St,Juniper and Ivy,E,8,3,4,6,7,6,6,6,7,7,7,7,7,8,0.375,0.5,0.75,0.875,0.75,0.75,0.75,0.875,0.875,0.875,0.875,0.875,1,thursday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+263,Fern St,Ivy and Hawthorn,W,8,4,3,5,6,8,7,7,6,8,7,8,10,8,0.5,0.375,0.625,0.75,1,0.875,0.875,0.75,1,0.875,1,1.25,1,thursday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+264,Fern St,Ivy and Hawthorn,E,8,1,2,3,6,8,6,6,5,7,6,5,7,9,0.125,0.25,0.375,0.75,1,0.75,0.75,0.625,0.875,0.75,0.625,0.875,1.125,thursday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+265,Fern St,Hawthorn and Grape,W,12,6,5,6,5,7,5,6,5,5,7,8,10,8,0.5,0.417,0.5,0.417,0.583,0.417,0.5,0.417,0.417,0.583,0.667,0.833,0.667,thursday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+266,Fern St,Hawthorn and Grape,E,6,1,3,3,3,3,3,3,2,2,2,6,6,6,0.167,0.5,0.5,0.5,0.5,0.5,0.5,0.333,0.333,0.333,1,1,1,thursday,South Park,Greater Golden Hill,FALSE,on_street,urban_corridor
+267,Kettner Blvd,Hawthorn and Grape,W,9,2,6,7,6,5,8,7,7,8,7,8,8,8,0.222,0.667,0.778,0.667,0.556,0.889,0.778,0.778,0.889,0.778,0.889,0.889,0.889,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+268,Kettner Blvd,Hawthorn and Grape,E,8,4,8,6,4,6,6,4,7,7,6,6,6,6,0.5,1,0.75,0.5,0.75,0.75,0.5,0.875,0.875,0.75,0.75,0.75,0.75,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+269,Pacific Hwy,Grape and Cedar,W,14,12,14,9,15,13,11,8,7,4,6,0,1,1,0.857,1,0.643,1.071,0.929,0.786,0.571,0.5,0.286,0.429,0,0.071,0.071,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+270,Pacific Hwy,Grape and Cedar,E,2,0,1,0,1,1,1,7,1,0,2,0,0,0,0,0.5,0,0.5,0.5,0.5,3.5,0.5,0,1,0,0,0,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+271,N Harbor Dr,Grape and County Center N,E,17,6,5,3,5,2,2,2,2,1,1,2,1,1,0.353,0.294,0.176,0.294,0.118,0.118,0.118,0.118,0.059,0.059,0.118,0.059,0.059,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+272,N Harbor Dr,County Center N and Walkway,E,38,7,4,1,1,1,1,1,1,1,1,1,1,1,0.184,0.105,0.026,0.026,0.026,0.026,0.026,0.026,0.026,0.026,0.026,0.026,0.026,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+273,N Harbor Dr,Walkway and County Center S,E,6,1,1,1,1,1,1,1,1,1,1,1,1,1,0.167,0.167,0.167,0.167,0.167,0.167,0.167,0.167,0.167,0.167,0.167,0.167,0.167,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+274,N Harbor Dr,County Center S and Ash,E,18,6,2,6,6,1,1,1,1,1,1,1,1,1,0.333,0.111,0.333,0.333,0.056,0.056,0.056,0.056,0.056,0.056,0.056,0.056,0.056,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+275,Columbia St,Elm and Date,E,6,5,6,6,6,5,6,5,5,6,6,7,6,5,0.833,1,1,1,0.833,1,0.833,0.833,1,1,1.167,1,0.833,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+276,Columbia St,Elm and Date,W,6,5,3,6,5,5,5,6,5,8,8,8,8,8,0.833,0.5,1,0.833,0.833,0.833,1,0.833,1.333,1.333,1.333,1.333,1.333,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+277,State St,Cedar and Beech,W,10,7,8,9,9,10,9,9,6,4,7,9,10,11,0.7,0.8,0.9,0.9,1,0.9,0.9,0.6,0.4,0.7,0.9,1,1.1,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+278,State St,Cedar and Beech,E,13,12,12,13,12,12,12,9,11,12,12,13,13,13,0.923,0.923,1,0.923,0.923,0.923,0.692,0.846,0.923,0.923,1,1,1,thursday,Little Italy,Downtown,FALSE,on_street,urban_core
+279,India St,Ash and A,W,8,5,8,7,8,7,7,8,6,8,8,7,8,8,0.625,1,0.875,1,0.875,0.875,1,0.75,1,1,0.875,1,1,thursday,Columbia,Downtown,FALSE,on_street,urban_core
+280,India St,Ash and A,E,14,7,8,12,11,11,11,10,7,10,12,12,11,11,0.5,0.571,0.857,0.786,0.786,0.786,0.714,0.5,0.714,0.857,0.857,0.786,0.786,thursday,Columbia,Downtown,FALSE,on_street,urban_core
+281,Kettner Blvd,E and F,W,8,7,9,8,9,9,8,7,8,8,7,7,7,6,0.875,1.125,1,1.125,1.125,1,0.875,1,1,0.875,0.875,0.875,0.75,thursday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+282,Kettner Blvd,E and F,E,12,11,12,12,12,12,12,12,11,11,7,9,11,11,0.917,1,1,1,1,1,1,0.917,0.917,0.583,0.75,0.917,0.917,thursday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+283,W G St,India and Columbia,N,13,10,14,13,13,13,13,13,13,11,10,13,13,13,0.769,1.077,1,1,1,1,1,1,0.846,0.769,1,1,1,thursday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+284,W G St,India and Columbia,S,8,4,7,7,8,8,8,8,8,8,7,8,7,7,0.5,0.875,0.875,1,1,1,1,1,1,0.875,1,0.875,0.875,thursday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+285,Columbia St,G and Market,W,6,6,7,4,6,7,8,7,6,3,4,4,6,5,1,1.167,0.667,1,1.167,1.333,1.167,1,0.5,0.667,0.667,1,0.833,thursday,Marina,Downtown,FALSE,on_street,urban_core
+286,Columbia St,G and Market,E,8,6,7,6,7,6,8,8,6,7,7,8,7,8,0.75,0.875,0.75,0.875,0.75,1,1,0.75,0.875,0.875,1,0.875,1,thursday,Marina,Downtown,FALSE,on_street,urban_core
+287,W G St,State and Union,N,13,13,13,13,13,13,13,12,12,13,8,7,6,7,1,1,1,1,1,1,0.923,0.923,1,0.615,0.538,0.462,0.538,thursday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+288,W G St,State and Union,S,8,8,8,8,8,8,8,8,7,6,6,5,8,7,1,1,1,1,1,1,1,0.875,0.75,0.75,0.625,1,0.875,thursday,Columbia / Marina,Downtown,TRUE,on_street,urban_core
+289,4th Ave,Island and J,W,10,7,7,7,8,7,8,7,7,10,7,9,10,9,0.7,0.7,0.7,0.8,0.7,0.8,0.7,0.7,1,0.7,0.9,1,0.9,thursday,Gaslamp,Downtown,FALSE,on_street,urban_core
+290,4th Ave,Island and J,E,9,0,4,7,4,6,7,6,6,8,7,7,9,7,0,0.444,0.778,0.444,0.667,0.778,0.667,0.667,0.889,0.778,0.778,1,0.778,thursday,Gaslamp,Downtown,FALSE,on_street,urban_core
+291,6th Ave,Island and J,W,12,5,7,8,10,7,7,9,6,4,6,8,9,8,0.417,0.583,0.667,0.833,0.583,0.583,0.75,0.5,0.333,0.5,0.667,0.75,0.667,thursday,Gaslamp,Downtown,TRUE,on_street,urban_core
+292,6th Ave,Island and J,E,7,5,5,6,7,5,4,5,5,6,4,5,5,5,0.714,0.714,0.857,1,0.714,0.571,0.714,0.714,0.857,0.571,0.714,0.714,0.714,thursday,Gaslamp,Downtown,TRUE,on_street,urban_core
+293,J St,6th and 7th,N,6,5,5,5,6,6,6,6,3,6,5,6,6,6,0.833,0.833,0.833,1,1,1,1,0.5,1,0.833,1,1,1,thursday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+294,J St,6th and 7th,S,5,4,5,5,4,5,5,5,3,4,5,5,5,5,0.8,1,1,0.8,1,1,1,0.6,0.8,1,1,1,1,thursday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+295,7th Ave,Island and J,E,3,2,2,2,3,3,3,2,2,2,2,0,3,5,0.667,0.667,0.667,1,1,1,0.667,0.667,0.667,0.667,0,1,1.667,thursday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+296,7th Ave,Island and J,W,11,3,2,6,6,6,5,5,3,2,5,6,10,11,0.273,0.182,0.545,0.545,0.545,0.455,0.455,0.273,0.182,0.455,0.545,0.909,1,thursday,Gaslamp / East Village,Downtown,TRUE,on_street,urban_core
+297,Market St,9th and 10th,N,9,2,7,6,6,7,2,6,7,7,7,8,8,8,0.222,0.778,0.667,0.667,0.778,0.222,0.667,0.778,0.778,0.778,0.889,0.889,0.889,thursday,East Village,Downtown,FALSE,on_street,urban_core
+298,Market St,9th and 10th,S,4,3,4,3,4,4,3,3,3,2,2,2,3,4,0.75,1,0.75,1,1,0.75,0.75,0.75,0.5,0.5,0.5,0.75,1,thursday,East Village,Downtown,FALSE,on_street,urban_core
+299,7th Ave,E and F,W,8,7,8,7,7,6,7,7,8,4,7,7,8,8,0.875,1,0.875,0.875,0.75,0.875,0.875,1,0.5,0.875,0.875,1,1,thursday,Core / East Village,Downtown,TRUE,on_street,urban_core
+300,7th Ave,E and F,E,21,19,19,20,19,19,18,19,17,17,17,17,20,19,0.905,0.905,0.952,0.905,0.905,0.857,0.905,0.81,0.81,0.81,0.81,0.952,0.905,thursday,Core / East Village,Downtown,TRUE,on_street,urban_core
+301,10th Ave,E and F,W,12,8,8,8,10,11,8,10,10,6,9,8,10,9,0.667,0.667,0.667,0.833,0.917,0.667,0.833,0.833,0.5,0.75,0.667,0.833,0.75,thursday,East Village,Downtown,FALSE,on_street,urban_core
+302,10th Ave,E and F,E,5,0,2,2,4,4,5,5,4,4,4,3,5,4,0,0.4,0.4,0.8,0.8,1,1,0.8,0.8,0.8,0.6,1,0.8,thursday,East Village,Downtown,FALSE,on_street,urban_core
+303,F St,10th and 11th,N,7,0,0,4,6,6,1,3,3,2,3,5,7,7,0,0,0.571,0.857,0.857,0.143,0.429,0.429,0.286,0.429,0.714,1,1,thursday,East Village,Downtown,FALSE,on_street,urban_core
+304,F St,10th and 11th,S,6,1,2,6,5,5,4,5,5,2,5,7,6,6,0.167,0.333,1,0.833,0.833,0.667,0.833,0.833,0.333,0.833,1.167,1,1,thursday,East Village,Downtown,FALSE,on_street,urban_core
+305,E St,14th and 15th,N,21,18,18,18,21,21,20,17,15,20,18,19,17,10,0.857,0.857,0.857,1,1,0.952,0.81,0.714,0.952,0.857,0.905,0.81,0.476,thursday,East Village,Downtown,FALSE,on_street,urban_core
+306,E St,14th and 15th,S,15,9,8,12,11,15,14,14,12,14,14,14,14,9,0.6,0.533,0.8,0.733,1,0.933,0.933,0.8,0.933,0.933,0.933,0.933,0.6,thursday,East Village,Downtown,FALSE,on_street,urban_core
+307,C St,14th and 15th,N,5,4,5,5,5,5,5,4,4,4,5,4,5,5,0.8,1,1,1,1,1,0.8,0.8,0.8,1,0.8,1,1,thursday,East Village,Downtown,FALSE,on_street,urban_core
+308,C St,14th and 15th,S,17,12,11,10,10,11,10,6,8,8,15,12,14,15,0.706,0.647,0.588,0.588,0.647,0.588,0.353,0.471,0.471,0.882,0.706,0.824,0.882,thursday,East Village,Downtown,FALSE,on_street,urban_core
+309,C St,15th and 16th,N,4,4,4,4,4,3,4,3,4,3,4,4,4,4,1,1,1,1,0.75,1,0.75,1,0.75,1,1,1,1,thursday,East Village,Downtown,FALSE,on_street,urban_core
+310,C St,15th and 16th,S,9,8,8,7,8,8,7,6,7,6,7,6,6,8,0.889,0.889,0.778,0.889,0.889,0.778,0.667,0.778,0.667,0.778,0.667,0.667,0.889,thursday,East Village,Downtown,FALSE,on_street,urban_core
+311,C St,16th and 17th,N,4,3,4,4,4,2,4,3,3,2,3,3,3,3,0.75,1,1,1,0.5,1,0.75,0.75,0.5,0.75,0.75,0.75,0.75,thursday,East Village,Downtown,FALSE,on_street,urban_core
+312,C St,16th and 17th,S,4,4,4,4,4,4,4,2,3,4,4,4,2,2,1,1,1,1,1,1,0.5,0.75,1,1,1,0.5,0.5,thursday,East Village,Downtown,FALSE,on_street,urban_core
+313,B St,Park and West side of Overhead,N,14,11,12,13,13,13,11,10,11,10,9,9,9,8,0.786,0.857,0.929,0.929,0.929,0.786,0.714,0.786,0.714,0.643,0.643,0.643,0.571,thursday,East Village,Downtown,FALSE,on_street,urban_core
+314,B St,Park and West side of Overhead,S,15,14,14,14,14,13,14,12,11,10,10,10,10,7,0.933,0.933,0.933,0.933,0.867,0.933,0.8,0.733,0.667,0.667,0.667,0.667,0.467,thursday,East Village,Downtown,FALSE,on_street,urban_core
+315,B St,Under Overhead,N,16,14,14,13,14,14,14,11,9,6,4,6,7,4,0.875,0.875,0.813,0.875,0.875,0.875,0.688,0.563,0.375,0.25,0.375,0.438,0.25,thursday,East Village,Downtown,FALSE,on_street,urban_core
+316,B St,Under Overhead,S,19,14,15,14,15,15,15,14,10,9,8,9,8,6,0.737,0.789,0.737,0.789,0.789,0.789,0.737,0.526,0.474,0.421,0.474,0.421,0.316,thursday,East Village,Downtown,FALSE,on_street,urban_core
+317,B St,East side of Overhead and 16th,N,11,8,9,9,8,8,8,8,5,10,7,10,7,7,0.727,0.818,0.818,0.727,0.727,0.727,0.727,0.455,0.909,0.636,0.909,0.636,0.636,thursday,East Village,Downtown,FALSE,on_street,urban_core
+318,B St,East side of Overhead and 16th,S,17,12,12,12,12,12,11,10,9,5,10,10,10,11,0.706,0.706,0.706,0.706,0.706,0.647,0.588,0.529,0.294,0.588,0.588,0.588,0.647,thursday,East Village,Downtown,FALSE,on_street,urban_core
+319,B St,16th and 17th,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,East Village,Downtown,FALSE,on_street,urban_core
+320,B St,16th and 17th,S,11,7,8,8,7,6,6,6,3,3,0,0,0,0,0.636,0.727,0.727,0.636,0.545,0.545,0.545,0.273,0.273,0,0,0,0,thursday,East Village,Downtown,FALSE,on_street,urban_core
+321,B St,8th and 9th,N,7,3,7,6,7,6,5,7,5,6,7,7,7,7,0.429,1,0.857,1,0.857,0.714,1,0.714,0.857,1,1,1,1,thursday,East Village,Downtown,FALSE,on_street,urban_core
+322,B St,8th and 9th,S,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,East Village,Downtown,FALSE,on_street,urban_core
+323,8th Ave,Beech and Ash,E,14,13,13,14,14,15,14,14,14,12,11,16,14,13,0.929,0.929,1,1,1.071,1,1,1,0.857,0.786,1.143,1,0.929,thursday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+324,8th Ave,Beech and Ash,W,10,10,10,9,9,10,9,9,8,6,6,10,10,9,1,1,0.9,0.9,1,0.9,0.9,0.8,0.6,0.6,1,1,0.9,thursday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+325,Beech St,6th and 7th,N,6,4,5,5,5,4,5,5,5,3,3,3,3,3,0.667,0.833,0.833,0.833,0.667,0.833,0.833,0.833,0.5,0.5,0.5,0.5,0.5,thursday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+326,Beech St,6th and 7th,S,15,12,14,11,13,10,10,15,13,11,11,9,10,9,0.8,0.933,0.733,0.867,0.667,0.667,1,0.867,0.733,0.733,0.6,0.667,0.6,thursday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+327,Beech St,5th and 6th,N,6,5,5,5,5,5,4,4,4,5,5,5,5,5,0.833,0.833,0.833,0.833,0.833,0.667,0.667,0.667,0.833,0.833,0.833,0.833,0.833,thursday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+328,Beech St,5th and 6th,S,8,7,7,7,7,7,7,7,6,7,6,6,7,7,0.875,0.875,0.875,0.875,0.875,0.875,0.875,0.75,0.875,0.75,0.75,0.875,0.875,thursday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+329,6th Ave,Beech and Ash,W,7,6,5,7,6,7,5,5,5,2,5,2,3,5,0.857,0.714,1,0.857,1,0.714,0.714,0.714,0.286,0.714,0.286,0.429,0.714,thursday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+330,6th Ave,Beech and Ash,E,7,5,6,5,6,4,6,1,0,0,2,3,3,6,0.714,0.857,0.714,0.857,0.571,0.857,0.143,0,0,0.286,0.429,0.429,0.857,thursday,Cortez Hill,Downtown,FALSE,on_street,urban_core
+331,Ash St,4th and 5th,N,7,6,7,6,6,6,6,3,5,6,5,6,6,3,0.857,1,0.857,0.857,0.857,0.857,0.429,0.714,0.857,0.714,0.857,0.857,0.429,thursday,Cortez Hill / Core,Downtown,TRUE,on_street,urban_core
+332,Ash St,4th and 5th,S,6,6,6,5,6,4,6,3,5,6,4,4,5,4,1,1,0.833,1,0.667,1,0.5,0.833,1,0.667,0.667,0.833,0.667,thursday,Cortez Hill / Core,Downtown,TRUE,on_street,urban_core
+333,3rd Ave,Ash and A,W,14,10,12,15,12,15,13,10,11,12,11,9,9,12,0.714,0.857,1.071,0.857,1.071,0.929,0.714,0.786,0.857,0.786,0.643,0.643,0.857,thursday,Core,Downtown,FALSE,on_street,urban_core
+334,3rd Ave,Ash and A,E,11,11,12,12,12,12,11,12,10,8,8,12,8,10,1,1.091,1.091,1.091,1.091,1,1.091,0.909,0.727,0.727,1.091,0.727,0.909,thursday,Core,Downtown,FALSE,on_street,urban_core
+335,Juan St,Taylor and Wallace,E,14,1,2,2,7,7,6,7,6,6,6,6,8,8,0.071,0.143,0.143,0.5,0.5,0.429,0.5,0.429,0.429,0.429,0.429,0.571,0.571,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+336,Juan St,Taylor and Wallace,W,7,4,5,7,7,8,9,8,7,7,6,7,7,7,0.571,0.714,1,1,1.143,1.286,1.143,1,1,0.857,1,1,1,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+337,Juan St,Wallace and Mason,W,3,0,0,2,3,3,3,2,3,3,3,3,3,3,0,0,0.667,1,1,1,0.667,1,1,1,1,1,1,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+338,Juan St,Wallace and Mason,E,10,2,4,9,10,10,10,10,10,10,9,9,9,7,0.2,0.4,0.9,1,1,1,1,1,1,0.9,0.9,0.9,0.7,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+339,Calhoun St,Taylor and Wallace,E,18,2,4,5,13,14,13,12,11,12,11,11,12,5,0.111,0.222,0.278,0.722,0.778,0.722,0.667,0.611,0.667,0.611,0.611,0.667,0.278,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+340,Calhoun St,Taylor and Wallace,W,20,4,8,11,13,15,15,13,13,15,10,11,14,11,0.2,0.4,0.55,0.65,0.75,0.75,0.65,0.65,0.75,0.5,0.55,0.7,0.55,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+341,Congress St,Telegraph and Smith,E,0,0,0,0,0,1,0,1,2,0,0,0,0,0,,,,,,,,,,,,,,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+342,Congress St,Telegraph and Smith,W,0,0,1,0,0,0,0,1,0,1,0,1,1,0,,,,,,,,,,,,,,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+343,Congress St,Smith and Mason,E,8,1,3,2,3,8,5,5,5,4,4,7,6,5,0.125,0.375,0.25,0.375,1,0.625,0.625,0.625,0.5,0.5,0.875,0.75,0.625,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+344,Congress St,Smith and Mason,W,16,0,3,3,6,10,8,10,2,8,9,11,8,5,0,0.188,0.188,0.375,0.625,0.5,0.625,0.125,0.5,0.563,0.688,0.5,0.313,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+345,Congress St,Mason and Twiggs,E,0,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+346,Congress St,Mason and Twiggs,W,11,4,6,6,7,8,8,7,7,7,6,8,8,8,0.364,0.545,0.545,0.636,0.727,0.727,0.636,0.636,0.636,0.545,0.727,0.727,0.727,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+347,Twiggs St,Juan and San Diego,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+348,Twiggs St,Juan and San Diego,S,5,3,3,4,4,4,4,4,4,5,4,4,4,4,0.6,0.6,0.8,0.8,0.8,0.8,0.8,0.8,1,0.8,0.8,0.8,0.8,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+349,San Diego Ave,Twiggs and Harney,E,15,6,3,6,7,8,9,7,12,9,9,10,10,11,0.4,0.2,0.4,0.467,0.533,0.6,0.467,0.8,0.6,0.6,0.667,0.667,0.733,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+350,San Diego Ave,Twiggs and Harney,W,16,2,1,0,5,10,8,10,10,8,9,9,8,10,0.125,0.063,0,0.313,0.625,0.5,0.625,0.625,0.5,0.563,0.563,0.5,0.625,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+351,San Diego Ave,Harney and Conde,E,14,1,3,4,7,9,8,10,9,7,9,9,9,10,0.071,0.214,0.286,0.5,0.643,0.571,0.714,0.643,0.5,0.643,0.643,0.643,0.714,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+352,San Diego Ave,Harney and Conde,W,8,1,5,7,6,7,8,7,7,7,7,7,7,7,0.125,0.625,0.875,0.75,0.875,1,0.875,0.875,0.875,0.875,0.875,0.875,0.875,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+353,San Diego Ave,Conde and Linwood,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+354,San Diego Ave,Conde and Arista,W,2,0,0,0,0,3,4,2,2,2,3,4,4,4,0,0,0,0,1.5,2,1,1,1,1.5,2,2,2,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+355,San Diego Ave,Conde and Arista,E,6,4,4,4,4,4,4,5,5,3,4,5,4,5,0.667,0.667,0.667,0.667,0.667,0.667,0.833,0.833,0.5,0.667,0.833,0.667,0.833,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+356,San Diego Ave,Arista and Ampudia,W,10,2,2,1,2,4,4,5,6,6,7,8,6,8,0.2,0.2,0.1,0.2,0.4,0.4,0.5,0.6,0.6,0.7,0.8,0.6,0.8,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+357,San Diego Ave,Arista and Ampudia,E,8,2,3,3,4,6,5,5,7,6,4,6,7,6,0.25,0.375,0.375,0.5,0.75,0.625,0.625,0.875,0.75,0.5,0.75,0.875,0.75,thursday,Old Town,Old Town,FALSE,on_street,tourist_district
+358,Mission Blvd,Law and Chalcedony,W,7,1,3,1,3,4,6,6,6,5,5,6,7,6,0.143,0.429,0.143,0.429,0.571,0.857,0.857,0.857,0.714,0.714,0.857,1,0.857,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+359,Mission Blvd,Law and Chalcedony,E,9,5,5,5,4,7,9,8,9,8,8,7,7,6,0.556,0.556,0.556,0.444,0.778,1,0.889,1,0.889,0.889,0.778,0.778,0.667,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+360,Mission Blvd,Chalcedony and Missouri,W,8,6,6,7,7,6,8,8,8,7,5,6,7,5,0.75,0.75,0.875,0.875,0.75,1,1,1,0.875,0.625,0.75,0.875,0.625,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+361,Mission Blvd,Chalcedony and Missouri,E,9,6,10,8,7,9,7,9,9,9,7,9,9,9,0.667,1.111,0.889,0.778,1,0.778,1,1,1,0.778,1,1,1,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+362,Mission Blvd,Missouri and Diamond,W,7,6,5,4,6,6,6,5,6,5,5,6,7,6,0.857,0.714,0.571,0.857,0.857,0.857,0.714,0.857,0.714,0.714,0.857,1,0.857,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+363,Mission Blvd,Missouri and Diamond,E,7,4,4,5,5,7,8,6,6,5,6,6,7,5,0.571,0.571,0.714,0.714,1,1.143,0.857,0.857,0.714,0.857,0.857,1,0.714,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+364,Mission Blvd,Diamond and Emerald,W,10,6,6,6,9,9,10,9,9,9,7,9,10,8,0.6,0.6,0.6,0.9,0.9,1,0.9,0.9,0.9,0.7,0.9,1,0.8,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+365,Mission Blvd,Diamond and Emerald,E,8,5,5,6,6,6,7,7,8,6,7,9,8,6,0.625,0.625,0.75,0.75,0.75,0.875,0.875,1,0.75,0.875,1.125,1,0.75,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+366,Mission Blvd,Emerald and Felspar,W,11,5,5,7,7,8,9,10,8,9,7,8,11,10,0.455,0.455,0.636,0.636,0.727,0.818,0.909,0.727,0.818,0.636,0.727,1,0.909,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+367,Mission Blvd,Emerald and Felspar,E,8,4,7,6,6,8,7,6,5,6,8,8,9,8,0.5,0.875,0.75,0.75,1,0.875,0.75,0.625,0.75,1,1,1.125,1,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+368,Mission Blvd,Felspar and Garnet,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+369,Mission Blvd,Felspar and Garnet,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+370,Mission Blvd,Garnet and Hornblend,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+371,Mission Blvd,Garnet and Hornblend,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+372,Mission Blvd,Hornblend and Grand,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+373,Mission Blvd,Hornblend and Grand,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+374,Mission Blvd,Grand and Thomas,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+375,Mission Blvd,Grand and Thomas,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+376,Mission Blvd,Thomas and Reed,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+377,Mission Blvd,Thomas and Reed,E,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+378,Mission Blvd,Reed and Pacific Beach,W,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+379,Mission Blvd,Reed and Pacific Beach,E,6,1,1,3,1,4,3,2,4,3,3,5,5,6,0.167,0.167,0.5,0.167,0.667,0.5,0.333,0.667,0.5,0.5,0.833,0.833,1,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+380,Bayard St,Grand and Thomas,W,11,8,10,10,10,10,10,10,10,10,10,9,10,10,0.727,0.909,0.909,0.909,0.909,0.909,0.909,0.909,0.909,0.909,0.818,0.909,0.909,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+381,Bayard St,Grand and Thomas,E,10,10,10,10,10,10,10,10,10,10,10,10,10,10,1,1,1,1,1,1,1,1,1,1,1,1,1,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+382,Bayard St,Hornblend and Grand,W,10,4,3,3,3,7,9,9,6,8,10,10,9,10,0.4,0.3,0.3,0.3,0.7,0.9,0.9,0.6,0.8,1,1,0.9,1,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+383,Bayard St,Hornblend and Grand,E,6,4,2,4,5,2,3,6,4,6,6,6,6,6,0.667,0.333,0.667,0.833,0.333,0.5,1,0.667,1,1,1,1,1,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+384,Hornblend St,Bayard and Cass,N,21,16,21,21,21,20,21,21,20,23,21,21,21,19,0.762,1,1,1,0.952,1,1,0.952,1.095,1,1,1,0.905,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+385,Hornblend St,Bayard and Cass,S,30,9,17,29,27,27,30,28,28,31,28,31,29,29,0.3,0.567,0.967,0.9,0.9,1,0.933,0.933,1.033,0.933,1.033,0.967,0.967,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+386,Garnet Ave,Fanuel and Gresham,N,22,9,14,20,19,20,18,10,12,15,17,21,19,19,0.409,0.636,0.909,0.864,0.909,0.818,0.455,0.545,0.682,0.773,0.955,0.864,0.864,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+387,Garnet Ave,Fanuel and Gresham,S,16,3,10,9,13,12,14,9,12,12,8,13,13,12,0.188,0.625,0.563,0.813,0.75,0.875,0.563,0.75,0.75,0.5,0.813,0.813,0.75,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+388,Garnet Ave,Gresham and Haines,N,22,8,7,15,19,18,22,18,19,19,19,20,22,23,0.364,0.318,0.682,0.864,0.818,1,0.818,0.864,0.864,0.864,0.909,1,1.045,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+389,Garnet Ave,Gresham and Haines,S,20,6,4,9,15,14,16,9,11,18,20,17,17,20,0.3,0.2,0.45,0.75,0.7,0.8,0.45,0.55,0.9,1,0.85,0.85,1,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+390,Garnet Ave,Haines and Ingraham,N,17,2,14,14,15,13,12,9,8,8,14,13,13,11,0.118,0.824,0.824,0.882,0.765,0.706,0.529,0.471,0.471,0.824,0.765,0.765,0.647,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+391,Garnet Ave,Haines and Ingraham,S,10,1,7,8,9,5,3,6,4,5,9,11,10,10,0.1,0.7,0.8,0.9,0.5,0.3,0.6,0.4,0.5,0.9,1.1,1,1,thursday,Pacific Beach,Pacific Beach,FALSE,on_street,beach
+397,Balboa Dr,6th and Quince,E,64,20,24,33,36,40,41,30,26,36,17,18,14,4,0.313,0.375,0.516,0.563,0.625,0.641,0.469,0.406,0.563,0.266,0.281,0.219,0.063,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+398,Balboa Dr,6th and Quince,W,85,7,5,29,57,57,58,40,31,37,20,19,18,10,0.082,0.059,0.341,0.671,0.671,0.682,0.471,0.365,0.435,0.235,0.224,0.212,0.118,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+399,Quince Dr,6th and Balboa,N,5,0,2,4,4,4,4,1,1,2,2,0,0,1,0,0.4,0.8,0.8,0.8,0.8,0.2,0.2,0.4,0.4,0,0,0.2,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+400,Quince Dr,6th and Balboa,S,0,0,1,0,1,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+401,Balboa Dr,Quince and El Prado,E,77,5,0,6,21,18,26,22,16,21,23,33,37,30,0.065,0,0.078,0.273,0.234,0.338,0.286,0.208,0.273,0.299,0.429,0.481,0.39,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+402,Balboa Dr,Quince and El Prado,W,115,5,9,19,31,37,46,47,47,38,39,56,72,51,0.043,0.078,0.165,0.27,0.322,0.4,0.409,0.409,0.33,0.339,0.487,0.626,0.443,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+403,El Prado,6th and Balboa,N,7,3,7,7,7,8,7,6,8,7,9,7,7,7,0.429,1,1,1,1.143,1,0.857,1.143,1,1.286,1,1,1,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+404,El Prado,6th and Balboa,S,10,7,9,9,9,9,9,9,9,9,9,9,8,8,0.7,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.8,0.8,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+405,Juniper Rd,6th and Balboa,N,9,4,6,6,6,6,6,6,6,5,3,3,4,2,0.444,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.556,0.333,0.333,0.444,0.222,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+406,Balboa Dr,El Prado and Juniper,W,37,3,18,29,33,36,35,36,37,37,34,35,37,23,0.081,0.486,0.784,0.892,0.973,0.946,0.973,1,1,0.919,0.946,1,0.622,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+407,Balboa Dr,El Prado and Juniper,E,30,11,17,24,22,27,26,25,26,27,25,25,25,16,0.367,0.567,0.8,0.733,0.9,0.867,0.833,0.867,0.9,0.833,0.833,0.833,0.533,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+408,Juniper Rd,6th and Balboa,S,16,8,14,14,14,15,13,15,15,11,8,6,6,5,0.5,0.875,0.875,0.875,0.938,0.813,0.938,0.938,0.688,0.5,0.375,0.375,0.313,thursday,Balboa Park,Balboa Park,FALSE,on_street,park
+409,Lot 409,,,2,1,0,1,2,1,1,2,0,0,0,0,0,0,0.5,0,0.5,1,0.5,0.5,1,0,0,0,0,0,0,thursday,,Park lot (Mission Bay or Balboa Park),FALSE,lot,park
