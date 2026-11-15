@@ -80,7 +80,7 @@ nrow(clean_parking %>% filter(day_of_week == "sunday")) #Every Sunday recording 
 #Prepare dataframe for plotting
 rotated_df <- clean_parking |> pivot_longer(cols = c((names(clean_parking)[19:31])),
                                             names_to = "time",
-                                            values_to = "pct") |> select(site_id, time, pct, day_of_week)
+                                            values_to = "pct") |> select(site_id, time, pct, day_of_week, neighborhood, region)
 rotated_df$time <- factor(rotated_df$time, levels = names(clean_parking)[19:31])
 rotated_df$day_of_week <- case_when(rotated_df$day_of_week == "saturday" ~ "Saturday",
                                     rotated_df$day_of_week == "sunday" ~ "Sunday",
