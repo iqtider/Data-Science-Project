@@ -35,49 +35,40 @@ nrow(
 clean_parking <- parking_data %>%
   filter(total_inventory > 0)
 
-# Boxplot of parking lot capacity
-ufence <- quantile(
-  clean_parking$total_inventory,
-  0.75,
-  na.rm = TRUE
-) + (
-  1.5 * IQR(
-    clean_parking$total_inventory,
-    na.rm = TRUE
-  )
-)
+# Capacity distribution across unique parking sites
+# A histogram is used instead of hiding large-capacity outliers.
+capacity_by_site <- clean_parking %>%
+  distinct(site_id, total_inventory)
 
 parking_capacity_plot <- ggplot(
-  clean_parking,
+  capacity_by_site,
   aes(x = total_inventory)
 ) +
-  geom_boxplot(
-    outlier.shape = NA
+  geom_histogram(
+    bins = 30
   ) +
-  coord_cartesian(
-    xlim = c(0, ufence)
+  scale_x_log10() +
+  theme_minimal(
+    base_size = 14
   ) +
-  theme_minimal() +
   labs(
-    x = "Parking Spots",
-    title = "Spread of Parking Lot Capacity"
-  ) +
-  theme(
-    axis.text.y = element_blank()
+    x = "Listed Parking Capacity (spaces, log scale)",
+    y = "Number of Unique Sites",
+    title = "Distribution of Parking Capacity Across Study Sites"
   )
 
-# Save boxplot used in report
+# Save capacity histogram used in report
 ggsave(
-  filename = "docs/images/parking_capacity_boxplot.png",
+  filename = "docs/images/parking_capacity_histogram.png",
   plot = parking_capacity_plot,
-  width = 8,
-  height = 5,
+  width = 9,
+  height = 5.5,
   dpi = 300
 )
 
 # Five number summary
 summary(
-  clean_parking$total_inventory
+  capacity_by_site$total_inventory
 )
 
 # Whisker maximum
@@ -282,7 +273,8 @@ rotated_df <- clean_parking |>
     pct,
     day_of_week,
     neighborhood,
-    region
+    region,
+    total_inventory
   )
 
 rotated_df$time <- factor(
@@ -299,6 +291,7 @@ rotated_df$day_of_week <- case_when(
 # Plot average occupancy percentage by time and day
 hourly_occupancy_plot <- ggplot(
   rotated_df %>%
+    filter(!is.na(pct)) %>%
     group_by(
       time,
       day_of_week
@@ -342,7 +335,7 @@ hourly_occupancy_plot <- ggplot(
       "8pm"
     )
   ) +
-  theme_minimal()
+  theme_minimal(base_size = 14)
 
 # Save hourly occupancy plot used in report
 ggsave(
@@ -356,6 +349,7 @@ ggsave(
 # Plot percentage of locations at or above 100% occupancy
 maximum_capacity_plot <- ggplot(
   rotated_df %>%
+    filter(!is.na(pct)) %>%
     group_by(
       time,
       day_of_week
@@ -373,7 +367,7 @@ maximum_capacity_plot <- ggplot(
     fill = day_of_week
   )
 ) +
-  geom_col() +
+  geom_col(position = "dodge") +
   scale_x_discrete(
     labels = c(
       "8am",
@@ -397,7 +391,7 @@ maximum_capacity_plot <- ggplot(
     title = "Percentage of Parking Lots at Maximum Capacity",
     fill = "Day"
   ) +
-  theme_minimal()
+  theme_minimal(base_size = 14)
 
 # Save maximum-capacity plot used in report
 ggsave(
@@ -407,6 +401,44 @@ ggsave(
   height = 5.5,
   dpi = 300
 )
+
+# Additional EDA requested after Deliverable 1 feedback
+# Compare occupancy by geographic region.
+region_occupancy_summary <- rotated_df %>%
+  filter(!is.na(pct)) %>%
+  group_by(region) %>%
+  summarize(
+    mean_occupancy_pct = mean(pct) * 100,
+    unique_sites = n_distinct(site_id),
+    observations = n(),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(mean_occupancy_pct))
+
+cat("\nMean Occupancy by Region\n")
+print(region_occupancy_summary)
+
+# Compare occupancy across parking-capacity groups.
+lot_size_summary <- rotated_df %>%
+  filter(!is.na(pct)) %>%
+  mutate(
+    lot_size_group = cut(
+      total_inventory,
+      breaks = c(0, 5, 10, 20, 50, 100, Inf),
+      labels = c("1-5", "6-10", "11-20", "21-50", "51-100", "101+"),
+      include.lowest = TRUE
+    )
+  ) %>%
+  group_by(lot_size_group) %>%
+  summarize(
+    mean_occupancy_pct = mean(pct) * 100,
+    unique_sites = n_distinct(site_id),
+    observations = n(),
+    .groups = "drop"
+  )
+
+cat("\nMean Occupancy by Parking Capacity Group\n")
+print(lot_size_summary)
 
 # Final check of number of records by site
 parking_data %>%

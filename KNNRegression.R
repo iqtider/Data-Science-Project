@@ -23,15 +23,17 @@ rotated_df <- rotated_df %>%
       time == "7_pm_pct" ~ 19,
       time == "8_pm_pct" ~ 20
     ),
+    log_inventory = log1p(total_inventory),
 
-    #Used for stratified splitting
+    #Used to monitor high-occupancy observations after grouped site splitting
     isFull = factor(pct >= 1)
   ) %>%
   filter(
     !is.na(pct),
     !is.na(numeric_time),
     !is.na(day_of_week),
-    !is.na(region)
+    !is.na(region),
+    !is.na(total_inventory)
   )
 
 #Occupancy percentages above 100% are retained
@@ -39,19 +41,28 @@ rotated_df <- rotated_df %>%
 set.seed(12345); #For reproduction
 
 #Split data for training, validation, and testing
-split <- initial_split(
+split <- group_initial_split(
   rotated_df,
-  prop = 0.8,
-  strata = isFull
+  group = site_id,
+  prop = 0.8
 )
 
 train_data <- training(split)
 test_data <- testing(split)
 
-folds <- vfold_cv(
+cat("\nTraining Sites:", n_distinct(train_data$site_id), "\n")
+cat("Testing Sites:", n_distinct(test_data$site_id), "\n")
+cat(
+  "Shared Sites:",
+  length(intersect(unique(train_data$site_id), unique(test_data$site_id))),
+  "\n"
+)
+
+folds <- group_vfold_cv(
   train_data,
+  group = site_id,
   v = 10,
-  strata = isFull
+  balance = "observations"
 )
 
 #Create default model and worflow
@@ -62,7 +73,7 @@ parkingKNNReg <- nearest_neighbor(
 )
 
 parkingRecipeReg <- recipe(
-  pct ~ numeric_time + day_of_week + region,
+  pct ~ numeric_time + day_of_week + region + log_inventory,
   data = train_data
 ) |>
   step_normalize(

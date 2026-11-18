@@ -24,6 +24,7 @@ rotated_df <- rotated_df %>%
     ),
     day_of_week = as.factor(day_of_week),
     region = as.factor(region),
+    log_inventory = log1p(total_inventory),
 
     #Full = occupancy at or above 100%
     isFull = factor(
@@ -35,31 +36,41 @@ rotated_df <- rotated_df %>%
     !is.na(pct),
     !is.na(numeric_time),
     !is.na(day_of_week),
-    !is.na(region)
+    !is.na(region),
+    !is.na(total_inventory)
   )
 
 set.seed(12345); #For reproduction
 
 #Split data for training and testing
-split <- initial_split(
+split <- group_initial_split(
   rotated_df,
-  prop = 0.8,
-  strata = isFull
+  group = site_id,
+  prop = 0.8
 )
 
 train_data <- training(split)
 test_data <- testing(split)
 
+cat("\nTraining Sites:", n_distinct(train_data$site_id), "\n")
+cat("Testing Sites:", n_distinct(test_data$site_id), "\n")
+cat(
+  "Shared Sites:",
+  length(intersect(unique(train_data$site_id), unique(test_data$site_id))),
+  "\n"
+)
+
 #Create 10-fold cross-validation
-folds <- vfold_cv(
+folds <- group_vfold_cv(
   train_data,
+  group = site_id,
   v = 10,
-  strata = isFull
+  balance = "observations"
 )
 
 #Create logistic regression recipe
 parkingRecipeLogistic <- recipe(
-  isFull ~ numeric_time + day_of_week + region,
+  isFull ~ numeric_time + day_of_week + region + log_inventory,
   data = train_data
 ) |>
   step_dummy(

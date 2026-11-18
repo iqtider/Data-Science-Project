@@ -17,16 +17,17 @@ rotated_df <- rotated_df %>%
     numeric_time = as.integer(time) + 7,
     day_of_week = as.factor(day_of_week),
     region = as.factor(region),
+    log_inventory = log1p(total_inventory),
 
-    # Used only to keep high-occupancy observations
-    # distributed across the train/test split
+    # Used to monitor high-occupancy observations after grouped site splitting
     isFull = factor(pct >= 1)
   ) %>%
   filter(
     !is.na(pct),
     !is.na(numeric_time),
     !is.na(day_of_week),
-    !is.na(region)
+    !is.na(region),
+    !is.na(total_inventory)
   )
 
 # Occupancy values above 100% are intentionally retained.
@@ -39,14 +40,22 @@ rotated_df <- rotated_df %>%
 
 set.seed(12345)
 
-split <- initial_split(
+split <- group_initial_split(
   rotated_df,
-  prop = 0.8,
-  strata = isFull
+  group = site_id,
+  prop = 0.8
 )
 
 train_data <- training(split)
 test_data <- testing(split)
+
+cat("\nTraining Sites:", n_distinct(train_data$site_id), "\n")
+cat("Testing Sites:", n_distinct(test_data$site_id), "\n")
+cat(
+  "Shared Sites:",
+  length(intersect(unique(train_data$site_id), unique(test_data$site_id))),
+  "\n"
+)
 
 cat("\nTraining Observations:", nrow(train_data), "\n")
 cat("Testing Observations:", nrow(test_data), "\n")
@@ -57,10 +66,11 @@ cat("Testing Observations:", nrow(test_data), "\n")
 
 set.seed(12345)
 
-folds <- vfold_cv(
+folds <- group_vfold_cv(
   train_data,
+  group = site_id,
   v = 10,
-  strata = isFull
+  balance = "observations"
 )
 
 # ---------------------------------------------------------
@@ -68,7 +78,7 @@ folds <- vfold_cv(
 # ---------------------------------------------------------
 
 parkingRecipeReg <- recipe(
-  pct ~ numeric_time + day_of_week + region,
+  pct ~ numeric_time + day_of_week + region + log_inventory,
   data = train_data
 )
 
