@@ -11,11 +11,11 @@ dir.create(
   showWarnings = FALSE
 )
 
-# See if you can convert site_id to ints
-# Check to make sure nothing is changed first
+# See if site_id can be converted to integers
+# Some identifiers contain decimals such as 38.1, so it cannot.
 parking_data %>%
-  filter(parking_data$site_id != as.integer(parking_data$site_id)) %>%
-  select(site_id) # You cannot
+  filter(site_id != as.integer(site_id)) %>%
+  select(site_id)
 
 ## See counts by day
 parking_data %>%
@@ -23,7 +23,7 @@ parking_data %>%
   summarize(n = n())
 
 ## See missings
-# Several missings when total_inventory = 0
+# Several missing occupancy percentages occur when total_inventory = 0.
 colSums(is.na(parking_data))
 
 nrow(
@@ -31,81 +31,102 @@ nrow(
     filter(total_inventory == 0)
 )
 
-## Create cleaned dataset where total_inventory <= 0 are removed
+## Create cleaned dataset where total_inventory <= 0 is removed
 clean_parking <- parking_data %>%
   filter(total_inventory > 0)
 
-# Capacity distribution across unique parking sites
-# A histogram is used instead of hiding large-capacity outliers.
+# -------------------------------------------------------------------
+# Capacity EDA
+# -------------------------------------------------------------------
+
+# A small number of site_id values have slightly different
+# total_inventory values across repeated records.
+#
+# For site-level exploratory analysis, assign each site one
+# representative capacity using the median listed inventory.
+#
+# This prevents the same site from being counted in more than one
+# capacity group while leaving the original row-level capacity values
+# unchanged for the modeling data.
+
+capacity_variation <- clean_parking %>%
+  group_by(site_id) %>%
+  summarize(
+    capacity_values = n_distinct(total_inventory),
+    min_capacity = min(total_inventory, na.rm = TRUE),
+    max_capacity = max(total_inventory, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  filter(capacity_values > 1)
+
+cat("\nSites with more than one listed capacity\n")
+print(capacity_variation)
+
 capacity_by_site <- clean_parking %>%
-  distinct(site_id, total_inventory)
+  group_by(site_id) %>%
+  summarize(
+    site_capacity = median(total_inventory, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+cat(
+  "\nUnique positive-capacity sites:",
+  nrow(capacity_by_site),
+  "\n"
+)
+
+# Histogram of one representative capacity per unique site.
+#
+# A logarithmic x-axis allows both the many small locations and the
+# few very large parking facilities to remain visible.
 
 parking_capacity_plot <- ggplot(
   capacity_by_site,
-  aes(x = total_inventory)
+  aes(x = site_capacity)
 ) +
   geom_histogram(
     bins = 30
   ) +
   scale_x_log10() +
+  labs(
+    x = "Listed Parking Capacity (log scale)",
+    y = "Number of Sites",
+    title = "Distribution of Parking Capacity"
+  ) +
   theme_minimal(
     base_size = 14
-  ) +
-  labs(
-    x = "Listed Parking Capacity (spaces, log scale)",
-    y = "Number of Unique Sites",
-    title = "Distribution of Parking Capacity Across Study Sites"
   )
 
-# Save capacity histogram used in report
 ggsave(
   filename = "docs/images/parking_capacity_histogram.png",
   plot = parking_capacity_plot,
-  width = 9,
-  height = 5.5,
+  width = 8,
+  height = 5,
   dpi = 300
 )
 
-# Five number summary
-summary(
-  capacity_by_site$total_inventory
+# Capacity summary based on one representative value per unique site
+cat("\nParking Capacity Summary by Unique Site\n")
+
+print(
+  summary(
+    capacity_by_site$site_capacity
+  )
 )
 
-# Whisker maximum
-clean_parking %>%
-  filter(
-    total_inventory <
-      quantile(
-        total_inventory,
-        0.75,
-        na.rm = TRUE
-      ) +
-      (
-        1.5 * IQR(
-          total_inventory,
-          na.rm = TRUE
-        )
-      )
-  ) %>%
-  pull(total_inventory) %>%
-  max()
+# Make sure to note that there are several large-capacity facilities.
+# These are retained because they appear to be legitimate study sites.
 
-# Full boxplot with outliers
-# Kept for exploratory analysis but not used in report
-full_capacity_plot <- ggplot(
-  clean_parking,
-  aes(x = total_inventory)
-) +
-  geom_boxplot()
-
-# Make sure to note that there are several outliers,
-# it is just not feasible to plot them on the report graph
 colSums(
   is.na(clean_parking)
 )
 
-# Check to see if occupancy ever is above max capacity
-# and if pct is ever > 100
+# -------------------------------------------------------------------
+# Occupancy validity checks
+# -------------------------------------------------------------------
+
+# Check whether occupied counts ever exceed listed capacity.
+
 clean_parking %>%
   filter(
     if_any(
@@ -113,6 +134,8 @@ clean_parking %>%
       ~ .x > total_inventory
     )
   )
+
+# Check whether occupancy percentage ever exceeds 100%.
 
 clean_parking %>%
   filter(
@@ -126,7 +149,8 @@ clean_parking %>%
     names(clean_parking)[19:31]
   )
 
-# Look at how much they were over
+# Look at how much observations exceeded listed capacity.
+
 max_overflows <- clean_parking %>%
   mutate(
     row_max = apply(
@@ -162,22 +186,22 @@ max(
   max_overflows$overflow_cnt
 )
 
-# Since the amount that cars are parked past capacity is a max of 6,
-# this is likely not an issue and may instead represent cars parked
-# on curbs, grass, dividers, outside marked spaces, etc.
+# The maximum overflow is only a small number of vehicles.
 #
 # These observations are retained rather than capped at 100%.
-# Capping them would change the original regression target and remove
-# information about how far above listed capacity an observation was.
+# Capping them would change the original regression target.
 
-# Make sure that percents are correct
-# Check for inconsistencies
+# Check that recorded occupancy percentages match:
+#
+# occupied count / total_inventory
+
 sum(
   clean_parking[6:18] / clean_parking$total_inventory -
     clean_parking[19:31] > 0.001,
   na.rm = TRUE
 )
-# Sum = 0, so no mismatches
+
+# Sum = 0, so no mismatches.
 
 findIQROutliers <- function(x, s, n) {
 
@@ -238,7 +262,12 @@ outliers <- Map(
 ) %>%
   bind_rows()
 
-# Every missing 8_pm recording is on a Sunday
+# -------------------------------------------------------------------
+# Sunday missing-value check
+# -------------------------------------------------------------------
+
+# Every missing 8_pm recording is on a Sunday.
+
 colSums(
   is.na(
     clean_parking %>%
@@ -255,10 +284,21 @@ nrow(
     )
 )
 
-# Every Sunday recording does not have an 8pm recording,
-# so it is likely not missing at random
+# Sunday observations do not have an 8 p.m. recording,
+# so these values are treated as missing rather than zero.
 
-# Prepare dataframe for plotting and modeling
+# -------------------------------------------------------------------
+# Prepare long-format dataframe for plotting and modeling
+# -------------------------------------------------------------------
+
+# IMPORTANT:
+#
+# Keep the original row-level total_inventory value here.
+#
+# The median site capacity created above is used only for site-level
+# EDA grouping. It does NOT change the capacity values used by the
+# modeling scripts.
+
 rotated_df <- clean_parking |>
   pivot_longer(
     cols = c(
@@ -288,19 +328,111 @@ rotated_df$day_of_week <- case_when(
   rotated_df$day_of_week == "thursday" ~ "Thursday"
 )
 
+# -------------------------------------------------------------------
+# Occupancy by region
+# -------------------------------------------------------------------
+
+region_occupancy_summary <- rotated_df %>%
+  filter(
+    !is.na(pct)
+  ) %>%
+  group_by(region) %>%
+  summarize(
+    mean_occupancy_pct = mean(pct) * 100,
+    unique_sites = n_distinct(site_id),
+    observations = n(),
+    .groups = "drop"
+  ) %>%
+  arrange(
+    desc(mean_occupancy_pct)
+  )
+
+cat("\nMean Occupancy by Region\n")
+
+print(
+  region_occupancy_summary
+)
+
+# -------------------------------------------------------------------
+# Occupancy by parking capacity group
+# -------------------------------------------------------------------
+
+# Assign each unique site to exactly one capacity group using its
+# representative median capacity.
+
+site_capacity_groups <- capacity_by_site %>%
+  mutate(
+    lot_size_group = cut(
+      site_capacity,
+      breaks = c(
+        -Inf,
+        5,
+        10,
+        20,
+        50,
+        100,
+        Inf
+      ),
+      labels = c(
+        "1-5",
+        "6-10",
+        "11-20",
+        "21-50",
+        "51-100",
+        "101+"
+      ),
+      right = TRUE
+    )
+  )
+
+capacity_occupancy_summary <- rotated_df %>%
+  filter(
+    !is.na(pct)
+  ) %>%
+  left_join(
+    site_capacity_groups %>%
+      select(
+        site_id,
+        site_capacity,
+        lot_size_group
+      ),
+    by = "site_id"
+  ) %>%
+  group_by(lot_size_group) %>%
+  summarize(
+    mean_occupancy_pct = mean(pct) * 100,
+    unique_sites = n_distinct(site_id),
+    observations = n(),
+    .groups = "drop"
+  )
+
+cat("\nMean Occupancy by Parking Capacity Group\n")
+
+print(
+  capacity_occupancy_summary
+)
+
+cat(
+  "\nUnique sites represented across capacity groups:",
+  sum(capacity_occupancy_summary$unique_sites),
+  "\n"
+)
+
+# -------------------------------------------------------------------
 # Plot average occupancy percentage by time and day
+# -------------------------------------------------------------------
+
 hourly_occupancy_plot <- ggplot(
   rotated_df %>%
-    filter(!is.na(pct)) %>%
+    filter(
+      !is.na(pct)
+    ) %>%
     group_by(
       time,
       day_of_week
     ) %>%
     summarize(
-      avg_pct = mean(
-        pct,
-        na.rm = TRUE
-      ),
+      avg_pct = mean(pct),
       .groups = "drop"
     ),
   aes(
@@ -314,8 +446,8 @@ hourly_occupancy_plot <- ggplot(
   geom_line() +
   labs(
     x = "Time of Day",
-    y = "Avg. Capacity (%)",
-    title = "Average Parking Lot Occupancy by Day",
+    y = "Average Occupancy (%)",
+    title = "Average Parking Occupancy by Day",
     col = "Day"
   ) +
   scale_x_discrete(
@@ -335,9 +467,10 @@ hourly_occupancy_plot <- ggplot(
       "8pm"
     )
   ) +
-  theme_minimal(base_size = 14)
+  theme_minimal(
+    base_size = 14
+  )
 
-# Save hourly occupancy plot used in report
 ggsave(
   filename = "docs/images/hourly_occupancy_by_day.png",
   plot = hourly_occupancy_plot,
@@ -346,18 +479,22 @@ ggsave(
   dpi = 300
 )
 
+# -------------------------------------------------------------------
 # Plot percentage of locations at or above 100% occupancy
+# -------------------------------------------------------------------
+
 maximum_capacity_plot <- ggplot(
   rotated_df %>%
-    filter(!is.na(pct)) %>%
+    filter(
+      !is.na(pct)
+    ) %>%
     group_by(
       time,
       day_of_week
     ) %>%
     summarise(
       overall_pct = mean(
-        pct >= 1,
-        na.rm = TRUE
+        pct >= 1
       ) * 100,
       .groups = "drop"
     ),
@@ -367,7 +504,9 @@ maximum_capacity_plot <- ggplot(
     fill = day_of_week
   )
 ) +
-  geom_col(position = "dodge") +
+  geom_col(
+    position = "dodge"
+  ) +
   scale_x_discrete(
     labels = c(
       "8am",
@@ -387,13 +526,14 @@ maximum_capacity_plot <- ggplot(
   ) +
   labs(
     x = "Time of Day",
-    y = "Percentage",
-    title = "Percentage of Parking Lots at Maximum Capacity",
+    y = "Locations at or Above Capacity (%)",
+    title = "Percentage of Parking Locations at Maximum Capacity",
     fill = "Day"
   ) +
-  theme_minimal(base_size = 14)
+  theme_minimal(
+    base_size = 14
+  )
 
-# Save maximum-capacity plot used in report
 ggsave(
   filename = "docs/images/maximum_capacity_by_hour.png",
   plot = maximum_capacity_plot,
@@ -402,45 +542,10 @@ ggsave(
   dpi = 300
 )
 
-# Additional EDA requested after Deliverable 1 feedback
-# Compare occupancy by geographic region.
-region_occupancy_summary <- rotated_df %>%
-  filter(!is.na(pct)) %>%
-  group_by(region) %>%
-  summarize(
-    mean_occupancy_pct = mean(pct) * 100,
-    unique_sites = n_distinct(site_id),
-    observations = n(),
-    .groups = "drop"
-  ) %>%
-  arrange(desc(mean_occupancy_pct))
-
-cat("\nMean Occupancy by Region\n")
-print(region_occupancy_summary)
-
-# Compare occupancy across parking-capacity groups.
-lot_size_summary <- rotated_df %>%
-  filter(!is.na(pct)) %>%
-  mutate(
-    lot_size_group = cut(
-      total_inventory,
-      breaks = c(0, 5, 10, 20, 50, 100, Inf),
-      labels = c("1-5", "6-10", "11-20", "21-50", "51-100", "101+"),
-      include.lowest = TRUE
-    )
-  ) %>%
-  group_by(lot_size_group) %>%
-  summarize(
-    mean_occupancy_pct = mean(pct) * 100,
-    unique_sites = n_distinct(site_id),
-    observations = n(),
-    .groups = "drop"
-  )
-
-cat("\nMean Occupancy by Parking Capacity Group\n")
-print(lot_size_summary)
-
+# -------------------------------------------------------------------
 # Final check of number of records by site
+# -------------------------------------------------------------------
+
 parking_data %>%
   group_by(site_id) %>%
   summarize(

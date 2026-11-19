@@ -58,11 +58,17 @@ Several occupancy entries were slightly greater than the listed maximum capacity
 
 There are also several large values for `total_inventory` because some parking lots are much larger than the majority of locations in the study. These observations appear to represent legitimate parking facilities rather than errors and were retained.
 
+The R packages used to load, clean, and prepare the data were `readr`, `dplyr`, `tidyr`, and `ggplot2`. The `read_csv()` function from `readr` was used to load the data. The `pivot_longer()` function from `tidyr` was used to reshape the hourly data. `dplyr` was used for filtering, grouping, summarizing, and piping operations together. `ggplot2` was used to create the exploratory plots.
+
 ## Key Exploratory Plots
 
 ### Parking Capacity Distribution
 
-The original capacity boxplot made the middle of the distribution visible only by hiding the large outlier points. Based on Deliverable 1 feedback, this was replaced with a histogram displayed on a logarithmic capacity scale so that the full range remains visible. After removing zero-capacity records, there are 350 unique sites. Capacity ranges from 1 to 1,595 spaces, with Q1 of 7, a median of 10, and Q3 of 17 spaces. This confirms that the capacity distribution is strongly right-skewed rather than showing that the large facilities are simply errors.
+The original capacity boxplot made the middle of the distribution visible only by hiding the large outlier points. Based on Deliverable 1 feedback, this was replaced with a histogram displayed on a logarithmic capacity scale so that the full range remains visible.
+
+For site-level capacity analysis, each `site_id` is represented once. A small number of sites have slightly different `total_inventory` values across repeated records, so the median recorded inventory for each site is used as its representative capacity for this exploratory analysis.
+
+After removing zero-capacity records, there are 350 unique sites. Capacity ranges from 1 to 1,595 spaces, with Q1 of 7, a median of 10, and Q3 of 17 spaces. This confirms that the capacity distribution is strongly right-skewed rather than showing that the large facilities are simply errors.
 
 ![](images/parking_capacity_histogram.png){width=80%}
 
@@ -70,7 +76,9 @@ The original capacity boxplot made the middle of the distribution visible only b
 
 ### Mean Hourly Parking Occupancy by Day
 
-The hourly occupancy plot shows that average occupancy changes throughout the day and differs across the observed days. Weekend observations generally have higher average occupancy than Thursday, with Sunday highest during several midday hours. Sunday observations were collected only at selected locations, and Sunday 8 p.m. occupancy is missing, so the Sunday line ends at 7 p.m. rather than treating missing values as zero.
+The hourly occupancy plot shows that average occupancy changes throughout the day and differs across the observed days. Weekend observations generally have higher average occupancy than Thursday, with Sunday highest during several midday hours.
+
+Sunday observations were collected only at selected locations, and Sunday 8 p.m. occupancy is missing, so the Sunday line ends at 7 p.m. rather than treating missing values as zero.
 
 ![](images/hourly_occupancy_by_day.png){width=90%}
 
@@ -106,22 +114,28 @@ The regional averages vary substantially, which supports retaining region as a m
 
 ## Occupancy by Parking Capacity
 
-Parking capacity was explored directly because it is part of the project question and is now included in the predictive models. To make the relationship easier to read, sites were grouped into capacity ranges.
+Parking capacity was explored directly because it is part of the project question and is now included in the predictive models. A small number of sites have slightly different `total_inventory` values across repeated records. For this site-level exploratory analysis, each `site_id` is assigned one representative capacity using the median of its recorded inventory values. This prevents a single site from being counted in more than one capacity group.
 
 | Listed Capacity | Mean Occupancy | Unique Sites |
 |---|---:|---:|
 | 1-5 spaces | 66.9% | 54 |
 | 6-10 spaces | 70.4% | 135 |
-| 11-20 spaces | 62.0% | 86 |
+| 11-20 spaces | 62.1% | 86 |
 | 21-50 spaces | 70.0% | 21 |
 | 51-100 spaces | 57.6% | 18 |
 | 101+ spaces | 57.2% | 36 |
 
-The relationship is not monotonic, but the larger capacity groups have lower average occupancy than several of the smaller groups. Because capacity ranges from 1 to 1,595 spaces and is strongly right-skewed, the models use `log(1 + total_inventory)` rather than raw capacity. This keeps the capacity information while reducing the influence of the very largest facilities on scale-sensitive models.
+The six groups contain 350 unique sites in total. The relationship is not monotonic, but the larger capacity groups have lower average occupancy than several of the smaller groups.
+
+Because capacity ranges from 1 to 1,595 spaces and is strongly right-skewed, the models use `log(1 + total_inventory)` rather than raw capacity. This keeps the capacity information while reducing the influence of the very largest facilities on scale-sensitive models.
 
 ## Limitations
 
-These data are useful for comparing parking activity across sites and hours, but there are clear limitations that need to be considered when interpreting the results. The observations were collected during June 2024, with Thursday and Saturday observations collected across the study areas and Sunday observations limited to selected locations. Because the same locations were not necessarily observed on all three days, differences between days may be influenced by both the day of the week and the locations included in the sample. Sunday 8 p.m. occupancy is also missing for the Sunday observations. The results should therefore not be assumed to represent every season, weekday, or parking location in San Diego.
+These data are useful for comparing parking activity across sites and hours, but there are clear limitations that need to be considered when interpreting the results. The observations were collected during June 2024, with Thursday and Saturday observations collected across the study areas and Sunday observations limited to selected locations.
+
+Because the same locations were not necessarily observed on all three days, differences between days may be influenced by both the day of the week and the locations included in the sample. Sunday 8 p.m. occupancy is also missing for the Sunday observations.
+
+The results should therefore not be assumed to represent every season, weekday, or parking location in San Diego.
 
 # 3. Methods
 
@@ -129,7 +143,9 @@ These data are useful for comparing parking activity across sites and hours, but
 
 The models use the long-format dataset produced during cleaning and exploratory analysis. Each row represents a parking location at a particular hour. Observations without a valid occupancy percentage are removed before modeling.
 
-Time of day is converted from the original hourly column names into a numeric value ranging from 8 through 20. Day of the week and geographic region are treated as categorical predictors. Parking capacity is retained as a predictor and transformed as `log(1 + total_inventory)` because the original capacity distribution is strongly right-skewed. Models that require numeric inputs convert categorical variables into dummy variables, and scale-sensitive models normalize numeric predictors.
+Time of day is converted from the original hourly column names into a numeric value ranging from 8 through 20. Day of the week and geographic region are treated as categorical predictors.
+
+Parking capacity is retained as a predictor and transformed as `log(1 + total_inventory)` because the original capacity distribution is strongly right-skewed. Models that require numeric inputs convert categorical variables into dummy variables, and scale-sensitive models normalize numeric predictors.
 
 The common predictor set is therefore:
 
@@ -138,193 +154,16 @@ The common predictor set is therefore:
 - geographic region
 - log-transformed parking capacity
 
-For regression, the response variable is the recorded occupancy percentage and values above 100 percent are retained. For classification, the response is converted into two classes:
+For regression, the response variable is the recorded occupancy percentage and values above 100 percent are retained.
+
+For classification, the response is converted into two classes:
 
 - `Full` when occupancy is at or above 100 percent
 - `NotFull` when occupancy is below 100 percent
+
+The classification variable is the response being predicted and is not used as an input predictor.
 
 The same fixed random seed is used throughout the project:
 
 ```r
 set.seed(12345)
-```
-
-## Site-Grouped Train/Test Split
-
-Deliverable 1 feedback identified an important issue with the original row-level random split: the same parking site appears repeatedly across hours and days. A row-level split could place some observations from one site in training and other observations from that same site in testing. That would allow site-specific patterns to appear on both sides of the evaluation and could make test performance look better than performance at a genuinely unseen location.
-
-The evaluation was therefore changed to a site-grouped split using `site_id`. Approximately 80 percent of sites are assigned to training and 20 percent to the held-out test set, and every observation from a given site remains entirely in one partition. The model is therefore evaluated on sites that were not used during training.
-
-Cross-validation was changed for the same reason. The training data use 10-fold grouped cross-validation with `group_vfold_cv()`, again grouping on `site_id`. All observations from one site stay together within a fold. The folds are balanced by number of observations where possible.
-
-Row-level class stratification is no longer used for the split because `Full` and `NotFull` can both occur at the same site. Splitting first by class would conflict with the requirement that a site remain intact. Class distributions are still reported and monitored, and the SVM continues to address classification imbalance through class weighting.
-
-## Baseline Models
-
-Simple baseline models are included so the team can determine whether the predictive models actually improve on an easy prediction strategy.
-
-For regression, the main baseline predicts the mean occupancy value from the training data for every test observation. Linear regression is also included as a simple statistical model.
-
-For classification, the simplest baseline predicts the majority class for every observation. Since most observations are not full, this baseline generally predicts `NotFull`. Logistic regression is also included as a basic classification model.
-
-These baselines are important because raw model performance is more meaningful when compared against a simple alternative.
-
-## Regression Models
-
-The regression models predict parking occupancy percentage.
-
-### Linear Regression
-
-Linear regression provides a straightforward model of the relationship between occupancy and time, day, region, and log-transformed capacity. It also gives the team a simple statistical model to compare against more flexible methods.
-
-### Nonlinear Regression
-
-The nonlinear regression model adds a squared time term to the linear regression model. This allows the relationship between time of day and occupancy to curve rather than forcing the change in occupancy to follow one straight-line pattern.
-
-### k-Nearest Neighbors Regression
-
-The kNN regression model predicts occupancy using observations that are close to one another in the predictor space. Numeric predictors are normalized and categorical variables are converted to dummy variables before fitting the model.
-
-The number of neighbors is tuned using 10-fold site-grouped cross-validation. Odd values of `k` from 1 through 51 are tested, and the value with the lowest cross-validation RMSE is selected.
-
-### Decision Tree Regression
-
-The decision tree regression model divides the predictor space into smaller groups based on conditions involving time, day, region, and capacity. This allows the model to capture relationships that do not need to follow a straight line.
-
-### Random Forest Regression
-
-Random forest regression combines many decision trees. This can reduce the instability of a single tree and allow the model to capture more complicated relationships in the data.
-
-## Classification Models
-
-The classification models predict whether a parking observation is full or not full.
-
-### Logistic Regression
-
-Logistic regression provides a simple probabilistic classification model and serves as a useful comparison for the more complex classification methods.
-
-### k-Nearest Neighbors Classification
-
-The kNN classification model uses nearby observations to determine whether a new observation should be classified as full or not full. Numeric predictors are normalized and categorical variables are converted to dummy variables. Odd values of `k` from 1 through 51 are evaluated using site-grouped cross-validation, and the model is tuned using ROC-AUC.
-
-### Decision Tree Classification
-
-The decision tree classifier creates a sequence of rules that divide observations into full and not-full groups. This provides a model that can represent interactions and nonlinear relationships between predictors.
-
-### Random Forest Classification
-
-The random forest classifier combines multiple classification trees. The goal is to improve predictive stability and reduce the dependence on one individual tree.
-
-### Support Vector Machine Classification
-
-A linear support vector machine is also used for classification. The SVM is implemented with the `LiblineaR` package and uses the same site-grouped train/test split, grouped cross-validation, and common predictor set as the other models.
-
-The classification dataset contains substantially more `NotFull` observations than `Full` observations. Because of this imbalance, the SVM uses class weighting so that errors involving the less common `Full` class receive more weight during training. Different cost values are evaluated using site-grouped cross-validation. Balanced accuracy is used during tuning so performance on both classes is considered instead of allowing the majority class to dominate model selection.
-
-## Model Evaluation
-
-Regression models are evaluated using RMSE, MAE, and R-squared. Classification models are evaluated using accuracy, precision, recall, specificity, F1 score, balanced accuracy, confusion matrices, and ROC-AUC when available.
-
-Using several classification metrics is important because the target is imbalanced. A model can receive high accuracy by predicting `NotFull` most of the time while still failing to identify most actual full observations. Recall, F1 score, and balanced accuracy are therefore important parts of the comparison.
-
-Because the splitting strategy and predictor set changed after Deliverable 1 feedback, results from the earlier row-level split are considered preliminary and will not be used as the final model comparison. All models must be rerun under the site-grouped evaluation before the final Results section is completed.
-
-# 4. Tools and Reproducibility
-
-## Software and Tools
-
-The analysis is completed in R using R 4.6.1. RStudio and Visual Studio Code are used to edit and run project files. Git and GitHub are used for version control and team collaboration. Quarto is used to maintain the report and render it as a PDF.
-
-The repository is hosted on GitHub:
-
-<https://github.com/iqtider/Data-Science-Project>
-
-## R Packages
-
-The main packages used in the project are:
-
-- `tidyverse` for data manipulation and general analysis
-- `readr` for loading CSV files
-- `dplyr` for filtering, grouping, and summarizing data
-- `tidyr` for reshaping the hourly parking data
-- `ggplot2` for exploratory visualizations
-- `tidymodels` for grouped data splitting, recipes, workflows, cross-validation, and evaluation
-- `kknn` for k-nearest neighbors
-- `rpart` for decision trees
-- `ranger` for random forests
-- `LiblineaR` for the support vector machine
-
-The grouped resampling functions `group_initial_split()` and `group_vfold_cv()` are used so repeated observations from the same `site_id` stay together during evaluation.
-
-The required packages are listed in `requirements.R`. The script checks the installed packages and installs any that are missing.
-
-## Repository Structure
-
-```text
-Data-Science-Project/
-|-- Parking.R
-|-- LinearRegression.R
-|-- NonlinearRegression.R
-|-- LogisticRegression.R
-|-- KNNRegression.R
-|-- KNNClassification.R
-|-- DecisionTreeRegression.R
-|-- DecisionTreeClassification.R
-|-- SVMClassification.R
-|-- requirements.R
-|-- README.md
-|-- parking_study_occupancy_datasd.csv
-|-- parking_with_regions.csv
-|-- FinalProject.Rproj
-`-- docs/
-    |-- CSC3220 Team8 Deliverable2.qmd
-    |-- Team Update.md
-    `-- images/
-        |-- parking_capacity_histogram.png
-        |-- hourly_occupancy_by_day.png
-        `-- maximum_capacity_by_hour.png
-```
-
-`Parking.R` performs the main data loading, cleaning, reshaping, and exploratory analysis. Each model is stored in a separate R file so it can be run and tested independently.
-
-## Reproducing the Analysis
-
-First check or install the required packages:
-
-```powershell
-Rscript --vanilla .\requirements.R
-```
-
-Run the data preparation and EDA:
-
-```powershell
-Rscript --vanilla .\Parking.R
-```
-
-Then run each model script. For example:
-
-```powershell
-Rscript --vanilla .\LinearRegression.R
-```
-
-The same command format applies to the remaining model files. Every model uses the random seed `12345`, the site-grouped 80/20 split, and site-grouped cross-validation.
-
-The Deliverable 2 PDF can be rendered from the repository root with:
-
-```powershell
-quarto render "docs/CSC3220 Team8 Deliverable2.qmd"
-```
-
-If `Rscript` or `quarto` is not recognized, the files can be run through RStudio or the local R/Quarto installation can be added to the system PATH. Personal computer paths are not hard-coded into the shared repository.
-
-# References
-
-Channamallu, S. S., Kermanshachi, S., Rosenberger, J. M., & Pamidimukkala, A. (2023). Parking occupancy prediction and analysis: A comprehensive study. *Transportation Research Procedia, 73*, 297-304. https://doi.org/10.1016/j.trpro.2023.11.921
-
-Channamallu, S. S., Padavala, V. K., Kermanshachi, S., Rosenberger, J. M., & Pamidimukkala, A. (2023). Examining parking occupancy prediction models: A comparative analysis. *Transportation Research Procedia, 73*, 281-288. https://doi.org/10.1016/j.trpro.2023.11.919
-
-City of San Diego. (2025a). *Parking Study: counts and percentages of occupied parking spaces*. City of San Diego Open Data Portal. https://data.sandiego.gov/datasets/parking-study-occupancy/
-
-City of San Diego. (2025b). *Parking Study: average occupancy by site*. City of San Diego Open Data Portal. https://data.sandiego.gov/datasets/parking-study-summary/
-
-City of San Diego. (2025c). *Parking Demand Management Study*. Transportation Department. https://www.sandiego.gov/sites/default/files/2025-02/bpcagenda20250306-item5.pdf
