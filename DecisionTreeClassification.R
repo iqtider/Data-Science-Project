@@ -1,15 +1,8 @@
-# Decision Tree and Random Forest Classification
-# CSC 3220 - Team 8
-
 library(tidyverse)
 library(tidymodels)
-library(rpart)
 library(ranger)
 
-# ---------------------------------------------------------
 # Load and prepare data
-# ---------------------------------------------------------
-
 source("Parking.R")
 
 rotated_df <- rotated_df %>%
@@ -17,26 +10,15 @@ rotated_df <- rotated_df %>%
     numeric_time = as.integer(time) + 7,
     day_of_week = as.factor(day_of_week),
     region = as.factor(region),
-    log_inventory = log1p(total_inventory),
-
-    # Full = occupancy at or above 100%
     isFull = factor(
       if_else(pct >= 1, "1", "0"),
       levels = c("1", "0")
     )
   ) %>%
-  filter(
-    !is.na(pct),
-    !is.na(numeric_time),
-    !is.na(day_of_week),
-    !is.na(region),
-    !is.na(total_inventory)
-  )
+  filter(!is.na(pct), !is.na(numeric_time),
+         !is.na(day_of_week), !is.na(region))
 
-# ---------------------------------------------------------
-# Train/test split
-# ---------------------------------------------------------
-
+# Grouped 80/20 train/test split
 set.seed(12345)
 
 split <- group_initial_split(
@@ -48,210 +30,80 @@ split <- group_initial_split(
 train_data <- training(split)
 test_data <- testing(split)
 
-cat("\nTraining Sites:", n_distinct(train_data$site_id), "\n")
-cat("Testing Sites:", n_distinct(test_data$site_id), "\n")
-cat(
-  "Shared Sites:",
-  length(intersect(unique(train_data$site_id), unique(test_data$site_id))),
-  "\n"
-)
-
-cat("\nTraining Class Distribution\n")
-print(table(train_data$isFull))
-
-cat("\nTesting Class Distribution\n")
-print(table(test_data$isFull))
-
-cat("\nTraining Observations:", nrow(train_data), "\n")
-cat("Testing Observations:", nrow(test_data), "\n")
-
-# ---------------------------------------------------------
-# 10-fold cross-validation
-# ---------------------------------------------------------
-
-set.seed(12345)
-
+# Grouped 10-fold cross-validation
 folds <- group_vfold_cv(
   train_data,
   group = site_id,
-  v = 10,
-  balance = "observations"
+  v = 10
 )
 
-# ---------------------------------------------------------
-# Modeling recipe
-# ---------------------------------------------------------
-
+# Recipe
 parkingRecipeClass <- recipe(
-  isFull ~ numeric_time + day_of_week + region + log_inventory,
+  isFull ~ numeric_time + day_of_week + region,
   data = train_data
 )
 
-# ---------------------------------------------------------
-# Classification metrics
-# ---------------------------------------------------------
-
-classification_metrics <- metric_set(
-  accuracy,
-  precision,
-  recall,
-  spec,
-  f_meas,
-  bal_accuracy
-)
-
-cv_metrics <- metric_set(
-  accuracy,
-  precision,
-  recall,
-  spec,
-  f_meas,
-  bal_accuracy,
-  roc_auc
-)
-
-# =========================================================
-# Decision Tree Classification
-# =========================================================
-
-tree_model <- decision_tree(
-  mode = "classification",
-  tree_depth = 10,
-  min_n = 10
-) %>%
-  set_engine("rpart")
-
-tree_workflow <- workflow() %>%
-  add_recipe(parkingRecipeClass) %>%
-  add_model(tree_model)
-
-# ---------------------------------------------------------
-# Decision tree cross-validation
-# ---------------------------------------------------------
-
-set.seed(12345)
-
-tree_cv <- fit_resamples(
-  tree_workflow,
-  resamples = folds,
-  metrics = cv_metrics
-)
-
-tree_cv_results <- collect_metrics(
-  tree_cv
-)
-
-cat(
-  "\nDecision Tree 10-Fold Cross-Validation Results\n"
-)
-
-print(
-  tree_cv_results
-)
-
-# ---------------------------------------------------------
-# Train final decision tree
-# ---------------------------------------------------------
-
-set.seed(12345)
-
-tree_fit <- fit(
-  tree_workflow,
-  data = train_data
-)
-
-tree_predictions <- augment(
-  tree_fit,
-  test_data
-)
-
-# ---------------------------------------------------------
-# Decision tree test results
-# ---------------------------------------------------------
-
-tree_results <- classification_metrics(
-  tree_predictions,
-  truth = isFull,
-  estimate = .pred_class
-)
-
-tree_auc <- roc_auc(
-  tree_predictions,
-  truth = isFull,
-  .pred_1
-)
-
-cat(
-  "\nDecision Tree Test Results\n"
-)
-
-print(
-  tree_results
-)
-
-print(
-  tree_auc
-)
-
-cat(
-  "\nDecision Tree Confusion Matrix\n"
-)
-
-print(
-  conf_mat(
-    tree_predictions,
-    truth = isFull,
-    estimate = .pred_class
-  )
-)
-
-# =========================================================
-# Random Forest Classification
-# =========================================================
-
+# Random Forest with selected hyperparameters
 forest_model <- rand_forest(
   mode = "classification",
   trees = 500,
-  mtry = 2,
-  min_n = 5
+  mtry = 3,
+  min_n = 2
 ) %>%
-  set_engine(
-    "ranger",
-    probability = TRUE
-  )
+  set_engine("ranger", probability = TRUE)
 
 forest_workflow <- workflow() %>%
   add_recipe(parkingRecipeClass) %>%
   add_model(forest_model)
 
-# ---------------------------------------------------------
-# Random forest cross-validation
-# ---------------------------------------------------------
+# Classification threshold
+threshold <- 0.25
 
+# Cross-validation
 set.seed(12345)
 
 forest_cv <- fit_resamples(
   forest_workflow,
   resamples = folds,
-  metrics = cv_metrics
+  metrics = metric_set(roc_auc),
+  control = control_resamples(save_pred = TRUE)
 )
 
-forest_cv_results <- collect_metrics(
-  forest_cv
+# Apply threshold to cross-validation predictions
+cv_predictions <- collect_predictions(forest_cv) %>%
+  mutate(
+    .pred_class = factor(
+      if_else(.pred_1 >= threshold, "1", "0"),
+      levels = c("1", "0")
+    )
+  )
+
+# Classification metrics
+class_metrics <- metric_set(
+  bal_accuracy,
+  accuracy,
+  precision,
+  recall,
+  specificity,
+  f_meas
 )
 
-cat(
-  "\nRandom Forest 10-Fold Cross-Validation Results\n"
-)
+# Cross-validation results
+cv_results <- cv_predictions %>%
+  group_by(id) %>%
+  class_metrics(truth = isFull, estimate = .pred_class)
 
-print(
-  forest_cv_results
-)
+cv_auc <- cv_predictions %>%
+  group_by(id) %>%
+  roc_auc(truth = isFull, .pred_1)
 
-# ---------------------------------------------------------
-# Train final random forest
-# ---------------------------------------------------------
+cv_summary <- bind_rows(cv_results, cv_auc) %>%
+  group_by(.metric) %>%
+  summarise(mean = mean(.estimate), .groups = "drop")
 
+print(cv_summary)
+
+# Train final model
 set.seed(12345)
 
 forest_fit <- fit(
@@ -259,16 +111,17 @@ forest_fit <- fit(
   data = train_data
 )
 
-forest_predictions <- augment(
-  forest_fit,
-  test_data
-)
+# Test predictions
+forest_predictions <- augment(forest_fit, test_data) %>%
+  mutate(
+    .pred_class = factor(
+      if_else(.pred_1 >= threshold, "1", "0"),
+      levels = c("1", "0")
+    )
+  )
 
-# ---------------------------------------------------------
-# Random forest test results
-# ---------------------------------------------------------
-
-forest_results <- classification_metrics(
+# Test results
+forest_results <- class_metrics(
   forest_predictions,
   truth = isFull,
   estimate = .pred_class
@@ -280,111 +133,19 @@ forest_auc <- roc_auc(
   .pred_1
 )
 
-cat(
-  "\nRandom Forest Test Results\n"
-)
-
-print(
-  forest_results
-)
-
-print(
-  forest_auc
-)
-
-cat(
-  "\nRandom Forest Confusion Matrix\n"
-)
-
-print(
-  conf_mat(
-    forest_predictions,
-    truth = isFull,
-    estimate = .pred_class
-  )
-)
-
-# =========================================================
-# Majority-Class Baseline
-# =========================================================
-
-majority_class <- names(
-  which.max(
-    table(train_data$isFull)
-  )
-)
-
-baseline_predictions <- test_data %>%
-  mutate(
-    .pred_class = factor(
-      rep(
-        majority_class,
-        nrow(test_data)
-      ),
-      levels = levels(isFull)
-    )
-  )
-
-baseline_results <- classification_metrics(
-  baseline_predictions,
+# Confusion matrix
+print(conf_mat(
+  forest_predictions,
   truth = isFull,
   estimate = .pred_class
-)
+))
 
-cat(
-  "\nMajority-Class Baseline Results\n"
-)
-
-cat(
-  "Predicted Class:",
-  majority_class,
-  "\n"
-)
-
-print(
-  baseline_results
-)
-
-# =========================================================
-# Final Model Comparison
-# =========================================================
-
-tree_comparison <- bind_rows(
-  tree_results,
-  tree_auc
-) %>%
-  mutate(
-    model = "Decision Tree"
-  )
-
+# Final results table
 forest_comparison <- bind_rows(
   forest_results,
   forest_auc
 ) %>%
-  mutate(
-    model = "Random Forest"
-  )
+  mutate(model = "Random Forest") %>%
+  select(model, .metric, .estimate)
 
-baseline_comparison <- baseline_results %>%
-  mutate(
-    model = "Majority Baseline"
-  )
-
-comparison <- bind_rows(
-  tree_comparison,
-  forest_comparison,
-  baseline_comparison
-) %>%
-  select(
-    model,
-    .metric,
-    .estimate
-  )
-
-cat(
-  "\nClassification Model Comparison\n"
-)
-
-print(
-  comparison
-)
+print(forest_comparison)
