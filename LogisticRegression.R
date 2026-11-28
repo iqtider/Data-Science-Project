@@ -82,9 +82,9 @@ logistic_cv <- fit_resamples(
   parkingLogisticWorkflow,
   resamples = folds,
   metrics = metric_set(
-    accuracy,
-    precision,
-    recall,
+    yardstick::accuracy,
+    yardstick::precision,
+    yardstick::recall,
     yardstick::spec,
     f_meas,
     bal_accuracy,
@@ -123,9 +123,9 @@ print(
 
 #Show classification metrics
 logistic_metrics <- metric_set(
-  accuracy,
-  precision,
-  recall,
+  yardstick::accuracy,
+  yardstick::precision,
+  yardstick::recall,
   yardstick::spec,
   f_meas,
   bal_accuracy
@@ -191,7 +191,6 @@ logistic_comparison <- bind_rows(
   mutate(
     model = "Logistic Regression"
   )
-
 baseline_comparison <- baseline_results %>%
   mutate(
     model = "Majority Baseline"
