@@ -25,15 +25,17 @@ rotated_df <- rotated_df %>%
     numeric_time_squared = numeric_time^2,
     day_of_week = as.factor(day_of_week),
     region = as.factor(region),
+    log_inventory = log1p(total_inventory),
 
-    #Used for stratified splitting
+    #Used to monitor high-occupancy observations after grouped site splitting
     isFull = factor(pct >= 1)
   ) %>%
   filter(
     !is.na(pct),
     !is.na(numeric_time),
     !is.na(day_of_week),
-    !is.na(region)
+    !is.na(region),
+    !is.na(total_inventory)
   )
 
 #Occupancy values above 100% are retained
@@ -41,26 +43,35 @@ rotated_df <- rotated_df %>%
 set.seed(12345); #For reproduction
 
 #Split data for training and testing
-split <- initial_split(
+split <- group_initial_split(
   rotated_df,
-  prop = 0.8,
-  strata = isFull
+  group = site_id,
+  prop = 0.8
 )
 
 train_data <- training(split)
 test_data <- testing(split)
 
+cat("\nTraining Sites:", n_distinct(train_data$site_id), "\n")
+cat("Testing Sites:", n_distinct(test_data$site_id), "\n")
+cat(
+  "Shared Sites:",
+  length(intersect(unique(train_data$site_id), unique(test_data$site_id))),
+  "\n"
+)
+
 #Create 10-fold cross-validation
-folds <- vfold_cv(
+folds <- group_vfold_cv(
   train_data,
+  group = site_id,
   v = 10,
-  strata = isFull
+  balance = "observations"
 )
 
 #Create nonlinear regression recipe
 #The squared time term allows occupancy to follow a curved pattern
 parkingRecipeNonlinear <- recipe(
-  pct ~ numeric_time + numeric_time_squared + day_of_week + region,
+  pct ~ numeric_time + numeric_time_squared + day_of_week + region + log_inventory,
   data = train_data
 ) |>
   step_dummy(
@@ -149,7 +160,7 @@ nonlinear_predictions |>
 
 #Create linear regression model for comparison
 parkingRecipeLinear <- recipe(
-  pct ~ numeric_time + day_of_week + region,
+  pct ~ numeric_time + day_of_week + region + log_inventory,
   data = train_data
 ) |>
   step_dummy(

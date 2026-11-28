@@ -11,67 +11,17 @@
   .libPaths()
 ))
 
+library(tidymodels)
 library(LiblineaR)
 
 # ---------------------------------------------------------
-# Load parking data
+# Load prepared parking data
 # ---------------------------------------------------------
 
-parking_data <- read.csv(
-  "parking_with_regions.csv",
-  check.names = FALSE,
-  stringsAsFactors = FALSE
-)
-
-# Remove locations with no usable parking capacity
-parking_data <- parking_data[
-  !is.na(parking_data$total_inventory) &
-    parking_data$total_inventory > 0,
-]
+source("Parking.R")
 
 # ---------------------------------------------------------
-# Convert hourly percentage columns to long format
-# ---------------------------------------------------------
-
-pct_columns <- grep(
-  "_pct$",
-  names(parking_data),
-  value = TRUE
-)
-
-n_sites <- nrow(parking_data)
-
-svm_data <- data.frame(
-  site_id = rep(
-    parking_data$site_id,
-    times = length(pct_columns)
-  ),
-
-  time = rep(
-    pct_columns,
-    each = n_sites
-  ),
-
-  pct = as.numeric(
-    unlist(
-      parking_data[pct_columns],
-      use.names = FALSE
-    )
-  ),
-
-  day_of_week = rep(
-    parking_data$day_of_week,
-    times = length(pct_columns)
-  ),
-
-  region = rep(
-    parking_data$region,
-    times = length(pct_columns)
-  )
-)
-
-# ---------------------------------------------------------
-# Create numeric time variable
+# Prepare features and target
 # ---------------------------------------------------------
 
 time_lookup <- c(
@@ -90,85 +40,56 @@ time_lookup <- c(
   "8_pm_pct"  = 20
 )
 
-svm_data$numeric_time <- unname(
-  time_lookup[svm_data$time]
-)
+svm_data <- rotated_df %>%
+  mutate(
+    numeric_time = unname(time_lookup[as.character(time)]),
+    log_inventory = log1p(total_inventory),
+    day_of_week = factor(day_of_week),
+    region = factor(region),
+    isFull = factor(
+      if_else(pct >= 1, "Full", "NotFull"),
+      levels = c("Full", "NotFull")
+    )
+  ) %>%
+  filter(
+    !is.na(pct),
+    !is.na(numeric_time),
+    !is.na(day_of_week),
+    !is.na(region),
+    !is.na(total_inventory)
+  ) %>%
+  mutate(
+    row_id = row_number()
+  )
 
 # ---------------------------------------------------------
-# Create classification target
-# ---------------------------------------------------------
-
-svm_data$isFull <- ifelse(
-  svm_data$pct >= 1,
-  "Full",
-  "NotFull"
-)
-
-svm_data$isFull <- factor(
-  svm_data$isFull,
-  levels = c("Full", "NotFull")
-)
-
-# Remove unusable observations
-svm_data <- svm_data[
-  !is.na(svm_data$pct) &
-    !is.na(svm_data$numeric_time) &
-    !is.na(svm_data$day_of_week) &
-    !is.na(svm_data$region),
-]
-
-svm_data$day_of_week <- factor(
-  svm_data$day_of_week
-)
-
-svm_data$region <- factor(
-  svm_data$region
-)
-
-# ---------------------------------------------------------
-# Create predictor matrix
+# Create common predictor matrix
 # ---------------------------------------------------------
 
 x_all <- model.matrix(
-  ~ numeric_time + day_of_week + region - 1,
+  ~ numeric_time + day_of_week + region + log_inventory - 1,
   data = svm_data
 )
 
 y_all <- svm_data$isFull
 
 # ---------------------------------------------------------
-# Stratified 80/20 train-test split
+# Site-grouped 80/20 train-test split
 # ---------------------------------------------------------
 
 set.seed(12345)
 
-full_rows <- which(
-  y_all == "Full"
+split <- group_initial_split(
+  svm_data,
+  group = site_id,
+  prop = 0.8
 )
 
-notfull_rows <- which(
-  y_all == "NotFull"
-)
+train_data <- training(split)
+test_data <- testing(split)
 
-train_full <- sample(
-  full_rows,
-  floor(length(full_rows) * 0.80)
-)
-
-train_notfull <- sample(
-  notfull_rows,
-  floor(length(notfull_rows) * 0.80)
-)
-
-train_index <- c(
-  train_full,
-  train_notfull
-)
-
-test_index <- setdiff(
-  seq_len(nrow(svm_data)),
-  train_index
-)
+train_index <- train_data$row_id
+test_index <- test_data$row_id
 
 x_train_raw <- x_all[
   train_index,
@@ -182,29 +103,22 @@ x_test_raw <- x_all[
   drop = FALSE
 ]
 
-y_train <- y_all[
-  train_index
-]
+y_train <- y_all[train_index]
+y_test <- y_all[test_index]
 
-y_test <- y_all[
-  test_index
-]
-
+cat("\nTraining Sites:", n_distinct(train_data$site_id), "\n")
+cat("Testing Sites:", n_distinct(test_data$site_id), "\n")
 cat(
-  "\nTraining Class Distribution\n"
+  "Shared Sites:",
+  length(intersect(unique(train_data$site_id), unique(test_data$site_id))),
+  "\n"
 )
 
-print(
-  table(y_train)
-)
+cat("\nTraining Class Distribution\n")
+print(table(y_train))
 
-cat(
-  "\nTesting Class Distribution\n"
-)
-
-print(
-  table(y_test)
-)
+cat("\nTesting Class Distribution\n")
+print(table(y_test))
 
 # ---------------------------------------------------------
 # Helper function: normalize using training subset only
@@ -341,41 +255,16 @@ calculate_metrics <- function(actual, predicted) {
 }
 
 # ---------------------------------------------------------
-# Create stratified 10-fold cross-validation assignments
+# Site-grouped 10-fold cross-validation
 # ---------------------------------------------------------
 
 set.seed(12345)
 
-k <- 10
-
-fold_id <- integer(
-  length(y_train)
-)
-
-full_train_rows <- which(
-  y_train == "Full"
-)
-
-notfull_train_rows <- which(
-  y_train == "NotFull"
-)
-
-full_train_rows <- sample(
-  full_train_rows
-)
-
-notfull_train_rows <- sample(
-  notfull_train_rows
-)
-
-fold_id[full_train_rows] <- rep(
-  1:k,
-  length.out = length(full_train_rows)
-)
-
-fold_id[notfull_train_rows] <- rep(
-  1:k,
-  length.out = length(notfull_train_rows)
+folds <- group_vfold_cv(
+  train_data,
+  group = site_id,
+  v = 10,
+  balance = "observations"
 )
 
 # ---------------------------------------------------------
@@ -404,7 +293,7 @@ for (cost_index in seq_along(cost_values)) {
 
   fold_metrics <- matrix(
     NA_real_,
-    nrow = k,
+    nrow = nrow(folds),
     ncol = 6
   )
 
@@ -417,35 +306,33 @@ for (cost_index in seq_along(cost_values)) {
     "balanced_accuracy"
   )
 
-  for (fold in 1:k) {
+  for (fold in seq_len(nrow(folds))) {
 
-    validation_rows <- which(
-      fold_id == fold
+    fold_train_data <- analysis(
+      folds$splits[[fold]]
     )
 
-    training_rows <- which(
-      fold_id != fold
+    fold_validation_data <- assessment(
+      folds$splits[[fold]]
     )
 
-    fold_x_train_raw <- x_train_raw[
+    training_rows <- fold_train_data$row_id
+    validation_rows <- fold_validation_data$row_id
+
+    fold_x_train_raw <- x_all[
       training_rows,
       ,
       drop = FALSE
     ]
 
-    fold_x_validation_raw <- x_train_raw[
+    fold_x_validation_raw <- x_all[
       validation_rows,
       ,
       drop = FALSE
     ]
 
-    fold_y_train <- y_train[
-      training_rows
-    ]
-
-    fold_y_validation <- y_train[
-      validation_rows
-    ]
+    fold_y_train <- y_all[training_rows]
+    fold_y_validation <- y_all[validation_rows]
 
     # Normalize using only the current fold's training data
     scaled <- normalize_data(
@@ -467,7 +354,7 @@ for (cost_index in seq_along(cost_values)) {
 
     fold_full_weight <- (
       fold_notfull_count /
-      fold_full_count
+        fold_full_count
     )
 
     # Train weighted linear SVM
@@ -509,9 +396,7 @@ for (cost_index in seq_along(cost_values)) {
   )
 }
 
-cat(
-  "\n10-Fold Cross-Validation Results\n"
-)
+cat("\nSite-Grouped 10-Fold Cross-Validation Results\n")
 
 print(
   round(
@@ -586,7 +471,7 @@ notfull_count <- sum(
 
 full_weight <- (
   notfull_count /
-  full_count
+    full_count
 )
 
 cat(
@@ -613,7 +498,7 @@ final_svm <- LiblineaR(
 )
 
 # ---------------------------------------------------------
-# Predict held-out test data
+# Predict held-out unseen-site test data
 # ---------------------------------------------------------
 
 svm_prediction <- predict(
@@ -627,7 +512,7 @@ predicted_class <- factor(
 )
 
 # ---------------------------------------------------------
-# Confusion matrix
+# Confusion matrix and final metrics
 # ---------------------------------------------------------
 
 confusion <- table(
@@ -635,80 +520,22 @@ confusion <- table(
   Predicted = predicted_class
 )
 
-cat(
-  "\nFinal Test Confusion Matrix\n"
-)
-
-print(
-  confusion
-)
-
-# ---------------------------------------------------------
-# Final classification metrics
-# ---------------------------------------------------------
+cat("\nFinal Test Confusion Matrix\n")
+print(confusion)
 
 final_metrics <- calculate_metrics(
   y_test,
   predicted_class
 )
 
-cat(
-  "\nFinal Test Set Results\n"
-)
+cat("\nFinal Unseen-Site Test Results\n")
 
-cat(
-  "Accuracy:",
-  round(
-    final_metrics["accuracy"],
-    4
-  ),
-  "\n"
-)
-
-cat(
-  "Precision:",
-  round(
-    final_metrics["precision"],
-    4
-  ),
-  "\n"
-)
-
-cat(
-  "Recall:",
-  round(
-    final_metrics["recall"],
-    4
-  ),
-  "\n"
-)
-
-cat(
-  "Specificity:",
-  round(
-    final_metrics["specificity"],
-    4
-  ),
-  "\n"
-)
-
-cat(
-  "F1 Score:",
-  round(
-    final_metrics["f1"],
-    4
-  ),
-  "\n"
-)
-
-cat(
-  "Balanced Accuracy:",
-  round(
-    final_metrics["balanced_accuracy"],
-    4
-  ),
-  "\n"
-)
+cat("Accuracy:", round(final_metrics["accuracy"], 4), "\n")
+cat("Precision:", round(final_metrics["precision"], 4), "\n")
+cat("Recall:", round(final_metrics["recall"], 4), "\n")
+cat("Specificity:", round(final_metrics["specificity"], 4), "\n")
+cat("F1 Score:", round(final_metrics["f1"], 4), "\n")
+cat("Balanced Accuracy:", round(final_metrics["balanced_accuracy"], 4), "\n")
 
 # ---------------------------------------------------------
 # Majority-class baseline
@@ -733,51 +560,11 @@ baseline_metrics <- calculate_metrics(
   baseline_predictions
 )
 
-cat(
-  "\nMajority-Class Baseline\n"
-)
+cat("\nMajority-Class Baseline\n")
+cat("Predicted Class:", majority_class, "\n")
+cat("Accuracy:", round(baseline_metrics["accuracy"], 4), "\n")
+cat("Recall:", round(baseline_metrics["recall"], 4), "\n")
+cat("Balanced Accuracy:", round(baseline_metrics["balanced_accuracy"], 4), "\n")
 
-cat(
-  "Predicted Class:",
-  majority_class,
-  "\n"
-)
-
-cat(
-  "Accuracy:",
-  round(
-    baseline_metrics["accuracy"],
-    4
-  ),
-  "\n"
-)
-
-cat(
-  "Recall:",
-  round(
-    baseline_metrics["recall"],
-    4
-  ),
-  "\n"
-)
-
-cat(
-  "Balanced Accuracy:",
-  round(
-    baseline_metrics["balanced_accuracy"],
-    4
-  ),
-  "\n"
-)
-
-cat(
-  "\nTraining Observations:",
-  length(y_train),
-  "\n"
-)
-
-cat(
-  "Testing Observations:",
-  length(y_test),
-  "\n"
-)
+cat("\nTraining Observations:", length(y_train), "\n")
+cat("Testing Observations:", length(y_test), "\n")
